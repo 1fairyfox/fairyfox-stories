@@ -9,6 +9,9 @@ Looser ambitions — no commitment, just direction.
   character meets another from a different era of the same realm.
 - **Reader polish.** Bookmarks/resume, per-book table of contents, a subtle in-book progress
   rail, all `prefers-reduced-motion`-safe.
+- **Per-book author byline.** Surface each book's fictional **author-persona** as a pen-name
+  byline ("by …") + a tiny author blurb, so the shelf visibly reads as a collaboration of many
+  writers (`reference/craft/author-personas.md`). A small manifest field + card/reader tweak.
 - **Community books.** Lean into open contribution — a book submitted via PR that meets the
   blueprint + craft + integrity bar is a first-class citizen.
 - **Audio / long-form exports.** Optional per-book EPUB or print-style export once a book is

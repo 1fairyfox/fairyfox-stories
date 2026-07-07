@@ -10,6 +10,8 @@ writing-community and published knowledge, not intuition — update it as unders
 | `structure.md` | Story architecture: the core loop, arcs, scene/sequel, chapters, pacing |
 | `character.md` | Real, flawed, agency-driven characters; anti-Mary-Sue; why the hollow reader-insert is disproven |
 | `voice-and-pov.md` | First-person craft: building a true interior voice and its pitfalls |
+| `style-spectrum.md` | The range of **prose styles** and rolling a distinct one per book (technique) |
+| `author-personas.md` | Writing each book as a distinct, passionate **author** — the shelf as many writers (personality) |
 | `what-makes-fiction-good.md` | Captivation, stakes, resonance; what well-received books share; what readers dislike |
 | `pitfalls.md` | The newbie traps to never fall into |
 | `serialization.md` | Writing a book a chapter at a time so it pulls across a daily-grown serial |

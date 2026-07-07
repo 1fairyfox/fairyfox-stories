@@ -12,6 +12,9 @@ first-class quality goal, not decoration.
 - **Vary the everything.** Tone (cosy ↔ harrowing), scope (a single room ↔ a world), energy
   (quiet ↔ propulsive), time period, setting, and the *kind* of protagonist. Two adjacent
   books should never feel like siblings.
+- **Vary the *author*, not just the story.** Each book has its own **prose style**
+  (`style-spectrum.md`) and its own **author-persona** (`author-personas.md`) — the shelf should
+  read like a collaboration of many different, passionate writers, never one voice on repeat.
 - **Sometimes swing.** Deliberately reach for the creative / out-of-the-box — an unusual
   premise, an odd structure, an unexpected narrator, a concept that shouldn't work and does.
   Not every book, but the shelf should surprise.

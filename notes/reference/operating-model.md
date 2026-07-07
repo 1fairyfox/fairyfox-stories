@@ -23,6 +23,11 @@ grown on later days like any other.
    sets the structure (`forms.md`).
 3. **Choose premise, genre, energy** — forcing range (`craft/genre-range.md`); distinct from
    everything on the shelf.
+3b. **Roll the author + style** — invent a distinct **author-persona** (`craft/author-personas.md`)
+   and a **prose style** (`craft/style-spectrum.md`) for the book, both coherent with the genre and
+   **deliberately unlike the last few books' authors/styles**. The shelf should feel written by
+   many different, passionate authors. Record the persona + style in the book-notes; write the
+   whole book as that author.
 4. **Build the main character + cast** (`craft/character.md`) — first person, real, flawed,
    with agency.
 5. **Blueprint the whole arc and every chapter** (`craft/structure.md`) — know the ending.

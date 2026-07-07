@@ -2,6 +2,13 @@
 
 Private continuity + voice bible. Not published (under `notes/`, excluded from the build).
 
+## Author-persona & style
+
+- **Author-persona:** *the wry street-poet* — noir/hard-boiled sensibility, obsessed with cities,
+  class, and nerve; deadpan wit aimed a little at himself (`craft/author-personas.md`).
+- **Prose style:** hard-boiled / propulsive on the `style-spectrum` — terse, sensory, wisecracking,
+  street-level; momentum over ornament (`craft/style-spectrum.md`). Hold it chapter to chapter.
+
 ## Voice (hold across all 7 chapters)
 
 - First person, **past tense**, Juno Vale. Wry, fast, confident; notices exits, tells, and the
