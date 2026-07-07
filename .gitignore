@@ -23,3 +23,7 @@ _site/
 .sass-cache/
 vendor/
 
+
+# local jekyll serve log
+_site_serve.log
+
