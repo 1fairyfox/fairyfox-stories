@@ -27,7 +27,7 @@ layout: default
     {%- if books.size == 0 -%}
       <p class="empty">The first books are being planted. Check back soon.</p>
     {%- else -%}
-      <div class="grid cols-3 shelf" id="shelf">
+      <div class="shelf" id="shelf">
         {%- for b in books -%}{% include book-card.html book=b %}{%- endfor -%}
       </div>
     {%- endif -%}

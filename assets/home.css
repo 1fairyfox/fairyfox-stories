@@ -6,8 +6,9 @@
 .empty{color:var(--text-faint);font-style:italic}
 
 /* ── The shelf grid ─────────────────────────────────────────────────────── */
-.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
-  gap:clamp(1.1rem,2.5vw,1.7rem);align-items:stretch}
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,232px));
+  gap:clamp(1.1rem,2.5vw,1.7rem);justify-content:start;align-items:stretch}
+@media(max-width:520px){.shelf{grid-template-columns:repeat(auto-fill,minmax(150px,1fr))}}
 
 .book-card{display:flex;flex-direction:column;overflow:hidden;padding:0;
   text-decoration:none;color:inherit;transition:transform .18s var(--ease),box-shadow .18s var(--ease)}

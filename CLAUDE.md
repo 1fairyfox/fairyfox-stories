@@ -71,8 +71,12 @@ in `notes/reference/operating-model.md`. The craft you write to lives in
   `localStorage` only, no cookies/analytics/tracking, self-hosted fonts, static Pages. A
   data-practice change updates the docs **in the same change**, with a bumped "Last updated"
   date. Fonts stay **self-hosted** (`assets/fonts/`).
-- **Content transparency.** Books range across genres and can go dark; the blueprint and a
-  quiet content note give informed consent up front.
+- **Content transparency + accessibility.** Books range across genres and can go dark, tense,
+  or sad; the blueprint and a quiet content note give informed consent up front. But the shelf
+  stays **broadly accessible — not walled behind a maturity gate**: no NSFW/explicit, gore,
+  gruesome horror, or obscenity. The bar is "dark but not adult-only" (think *Carmen Sandiego*):
+  real danger and darkness, never graphic. Restraint is a craft tool, not a loss of edge — see
+  `craft/genre-range.md`.
 - **Never bump MAJOR** (`→ 1.0.0`) — Fairy Fox's call only.
 
 ## Standing Rules — the books are first-class citizens (a standing instruction)

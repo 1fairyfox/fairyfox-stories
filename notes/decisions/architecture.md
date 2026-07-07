@@ -2,6 +2,15 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-06 — Content bar: dark but broadly accessible (no explicit)
+
+Books may be dark, tense, sad, and frightening, but the shelf stays **broadly accessible and
+is not walled behind a maturity gate**: **no** NSFW/sexual explicitness, gore, gruesome horror,
+or obscenity. Benchmark: "dark but not adult-only" (*Carmen Sandiego* — real danger and darkness,
+never graphic). **Why:** the owner wants wide reach without sacrificing creativity; restraint is
+a craft tool, not a muzzle. Encoded in `CLAUDE.md` (landmines) and `craft/genre-range.md`;
+enforced by author judgement + the content note.
+
 ## 2026-07-06 — Comprehensive sub-note collections (characters + cities)
 
 Characters and cities/places are **first-class Jekyll collections** from the start (not just

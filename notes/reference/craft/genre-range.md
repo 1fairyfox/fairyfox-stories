@@ -35,8 +35,20 @@ first-class quality goal, not decoration.
 - Keep a short **idea bench** in `notes/plans/` — pitched premises across genres — and pull
   from it to force breadth, while still rolling the universe (`universe-system.md`) and form.
 
-## Content range & consent
+## Content range, tone, and accessibility
 
-Books may go dark or intense. That's allowed and can be excellent — but the **blueprint**
-(open, spoiler-forward) and a quiet **content note** on the book give informed consent up
-front. Range never means gratuitous; intensity must serve the story.
+Books can be **dark, tense, sad, morally serious, even frightening** — that range is welcome
+and often where the best work lives. But this shelf is **broadly accessible and not walled
+behind a maturity gate**, so keep it out of the explicit:
+
+- **No NSFW / sexual explicitness, no gore or gruesome horror, nothing obscene** or
+  shock-for-its-own-sake. Violence and menace can be present but stay restrained — implied or
+  off-page, not depicted in graphic detail.
+- **The benchmark is "dark but not adult-only."** Think how *Carmen Sandiego* (Netflix) carried
+  real danger, villainy, loss, and genuine darkness while staying reachable across a wide age
+  range and never feeling explicit or gratuitous. Aim there.
+- **Don't sacrifice creativity, edge, or bite to stay in bounds.** Restraint is a craft tool,
+  not a muzzle — the most unsettling and moving effects come from suggestion, not graphic detail.
+- The **blueprint** (open, spoiler-forward) and a quiet **content note** still give informed
+  consent for the darker books — they signal tone; they don't wall the story off. Intensity must
+  always serve the story, never decorate it.
