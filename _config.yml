@@ -1,0 +1,84 @@
+# ── Fairy Fox Stories ────────────────────────────────────────────────────────
+# Jekyll configuration. An AI-managed story farm: short interactive books over a
+# meshed world of universes, characters, and cities. Built to static output and
+# served by GitHub Pages at fairyfox.io/fairyfox-stories/. The version number is
+# NOT here — the single source of truth is the repo-root VERSION file.
+
+title: Fairy Fox Stories
+tagline: An ever-growing library of short interactive books.
+description: >-
+  An AI-managed story farm: short interactive books — genuine fiction, fully
+  planned then written a chapter at a time — planted in living universes and
+  tended by AI. New books are sown regularly and the ones already growing keep
+  getting deeper.
+
+# Served under the project path on the shared domain (same as fairyfox-games).
+url: "https://fairyfox.io"
+baseurl: "/fairyfox-stories"
+
+author:
+  name: Fairy Fox
+  github: junebug12851
+
+# ── Collections — the meshed world ───────────────────────────────────────────
+collections:
+  books:
+    output: true
+    permalink: /stories/:path/
+  chapters:
+    output: true
+    permalink: /stories/:path/
+  universes:
+    output: true
+    permalink: /universes/:path/
+  characters:
+    output: true
+    permalink: /characters/:path/
+  cities:
+    output: true
+    permalink: /cities/:path/
+
+# ── Build behaviour ──────────────────────────────────────────────────────────
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+defaults:
+  - scope: { path: "", type: books }
+    values: { layout: book }
+  - scope: { path: "", type: chapters }
+    values: { layout: chapter }
+  - scope: { path: "", type: universes }
+    values: { layout: universe }
+  - scope: { path: "", type: characters }
+    values: { layout: character }
+  - scope: { path: "", type: cities }
+    values: { layout: city }
+  - scope: { path: "" }
+    values: { layout: default }
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+feed:
+  path: /feed.xml
+
+# ── What Jekyll must NOT render ──────────────────────────────────────────────
+exclude:
+  - assets/references/
+  - notes/
+  - scripts/
+  - Gemfile
+  - Gemfile.lock
+  - package.json
+  - README.md
+  - CONTRIBUTING.md
+  - CLAUDE.md
+  - SECURITY.md
+  - VERSION
+  - "*.ps1"
+  - .github/

@@ -1,0 +1,48 @@
+---
+layout: default
+---
+{%- assign books = site.books | where: "universe", page.slug -%}
+{%- assign chars = site.characters | where: "universe", page.slug -%}
+{%- assign places = site.cities | where: "universe", page.slug -%}
+
+<article class="codex wrap reading">
+  <p class="eyebrow">Universe{% if page.tone %} · {{ page.tone }}{% endif %}</p>
+  <h1>{{ page.title }}</h1>
+  {%- if page.tagline %}<p class="logline">{{ page.tagline }}</p>{% endif -%}
+
+  <div class="codex-body">
+    {{ content }}
+  </div>
+
+  <section class="mesh-index">
+    <h2>Books in this universe</h2>
+    {%- if books.size == 0 -%}<p class="empty">None yet.</p>{%- else -%}
+      <ul class="mesh-list">
+        {%- for b in books -%}<li><a href="{{ b.url | relative_url }}">{{ b.title }}</a> <span class="ml-form">{{ b.form }}</span></li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if chars.size > 0 -%}
+      <h2>Characters</h2>
+      <ul class="mesh-list">
+        {%- for c in chars -%}<li><a href="{{ c.url | relative_url }}">{{ c.title }}</a>{% if c.role %} <span class="ml-form">{{ c.role }}</span>{% endif %}</li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if places.size > 0 -%}
+      <h2>Places</h2>
+      <ul class="mesh-list">
+        {%- for p in places -%}<li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+
+    {%- if page.bridges and page.bridges.size > 0 -%}
+      <h2>Bridges to other universes</h2>
+      <ul class="mesh-list">
+        {%- for slug in page.bridges -%}{%- assign u = site.universes | where: "slug", slug | first -%}
+          {%- if u %}<li><a href="{{ u.url | relative_url }}">{{ u.title }}</a></li>{% endif -%}
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </section>
+</article>

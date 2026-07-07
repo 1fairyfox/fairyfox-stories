@@ -1,0 +1,79 @@
+---
+layout: default
+---
+{%- assign planned = page.chaptersPlanned | default: 1 -%}
+{%- assign chapters = site.chapters | where: "book", page.slug | sort: "order" -%}
+{%- assign written = chapters | size -%}
+{%- assign pct = 0 -%}
+{%- if planned > 0 -%}{%- assign pct = written | times: 100 | divided_by: planned -%}{%- endif -%}
+{%- assign uni = site.universes | where: "slug", page.universe | first -%}
+
+<article class="book-home wrap reading">
+  <div class="book-hero">
+    <div class="book-cover-lg">
+      {%- if page.cover -%}
+        <img src="{{ page.cover | relative_url }}" alt="Cover of {{ page.title }}">
+      {%- else -%}
+        <div class="cover-fallback" aria-hidden="true"><span>{{ page.title }}</span></div>
+      {%- endif -%}
+    </div>
+    <div class="book-hero-text">
+      <p class="eyebrow">{{ page.form }}{% if page.genre %} · {{ page.genre }}{% endif %}</p>
+      <h1 class="book-title">{{ page.title }}</h1>
+      {%- if page.logline %}<p class="logline">{{ page.logline }}</p>{% endif -%}
+
+      <div class="progress big" role="img" aria-label="{{ written }} of {{ planned }} chapters written">
+        <div class="progress-bar" style="width: {{ pct }}%"></div>
+      </div>
+      <p class="prog-label">
+        {%- if page.state == 'complete-no-sequel' -%}✦ Complete · a standalone story, no sequel
+        {%- elsif written >= planned and planned > 0 -%}Complete · {{ planned }} chapters
+        {%- else -%}{{ written }} of {{ planned }} chapters written{%- endif -%}
+      </p>
+
+      <div class="book-links">
+        {%- if chapters.first -%}
+          <a class="btn" href="{{ chapters.first.url | relative_url }}">▶ Start reading</a>
+        {%- endif -%}
+        <a class="btn ghost" href="{{ '/stories/' | append: page.slug | append: '/blueprint/' | relative_url }}">The blueprint (full spoilers)</a>
+      </div>
+
+      {%- if page.content_note -%}
+        <p class="content-note"><strong>Content note:</strong> {{ page.content_note }}</p>
+      {%- endif -%}
+    </div>
+  </div>
+
+  {%- if uni or page.characters or page.cities -%}
+  <aside class="mesh-links">
+    {%- if uni -%}<p><span class="ml-label">Universe</span> <a href="{{ uni.url | relative_url }}">{{ uni.title }}</a></p>{%- endif -%}
+    {%- if page.characters -%}
+      <p><span class="ml-label">Characters</span>
+      {%- for c in page.characters -%}{%- assign ch = site.characters | where: "slug", c | first -%}
+        {%- if ch %} <a href="{{ ch.url | relative_url }}">{{ ch.title }}</a>{% unless forloop.last %} ·{% endunless %}{% endif -%}
+      {%- endfor -%}</p>
+    {%- endif -%}
+    {%- if page.cities -%}
+      <p><span class="ml-label">Places</span>
+      {%- for c in page.cities -%}{%- assign ci = site.cities | where: "slug", c | first -%}
+        {%- if ci %} <a href="{{ ci.url | relative_url }}">{{ ci.title }}</a>{% unless forloop.last %} ·{% endunless %}{% endif -%}
+      {%- endfor -%}</p>
+    {%- endif -%}
+  </aside>
+  {%- endif -%}
+
+  {%- if content and content != '' -%}
+    <div class="book-about">{{ content }}</div>
+  {%- endif -%}
+
+  <section class="chapter-index">
+    <h2>Chapters</h2>
+    <ol class="chapter-list">
+      {%- for ch in chapters -%}
+        <li><a href="{{ ch.url | relative_url }}"><span class="ci-n">{{ ch.order }}</span> {{ ch.title }}</a></li>
+      {%- endfor -%}
+      {%- assign remaining = planned | minus: written -%}
+      {%- if remaining > 0 -%}<li class="pending">…{{ remaining }} more chapter{% if remaining != 1 %}s{% endif %} planned</li>{%- endif -%}
+    </ol>
+  </section>
+</article>

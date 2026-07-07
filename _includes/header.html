@@ -1,0 +1,38 @@
+<!-- Shared fairyfox.io site header (brand, logo, colours, nav). The brand on the left
+     is the way home. "Stories" sits right of Projects, matching the hub's nav. -->
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="https://fairyfox.io/">
+      <img class="brand-logo" src="https://fairyfox.io/assets/icons/fox.png" alt="" aria-hidden="true">
+      <span class="brand-name">Fairy&nbsp;Fox</span>
+    </a>
+
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+
+    <nav class="nav" aria-label="Primary">
+      <a href="https://fairyfox.io/">Home</a>
+      <a href="https://fairyfox.io/projects/">Projects</a>
+      <a href="{{ '/' | relative_url }}" class="active">Stories</a>
+      <a href="https://fairyfox.io/docs/">Docs</a>
+      <a href="https://fairyfox.io/blog/">Updates</a>
+      <a href="https://fairyfox.io/about/">About</a>
+    </nav>
+  </div>
+</header>
+
+<!-- Subproject section bar: navigates within Fairy Fox Stories and names the project. -->
+<nav class="subnav" aria-label="Fairy Fox Stories section">
+  <div class="wrap">
+    <a class="sub-brand" href="{{ '/' | relative_url }}">Fairy Fox Stories</a>
+    <a href="{{ '/' | relative_url }}">The Library</a>
+    <a href="{{ '/universes/' | relative_url }}">Universes</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a href="{{ '/legal/privacy.html' | relative_url }}">Privacy</a>
+    <a href="{{ '/legal/terms.html' | relative_url }}">Terms</a>
+    <a href="{{ '/legal/cookies.html' | relative_url }}">Cookies</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a class="ext" href="https://github.com/junebug12851/fairyfox-stories">Source ↗</a>
+  </div>
+</nav>

@@ -1,0 +1,58 @@
+/* Fairy Fox Stories — shelf (landing) styles. Builds on the vendored mesh theme
+   (assets/styles.css); uses its tokens (--accent, --panel, --line, --display, …).
+   The shelf is a library of individual books — never binned by universe. */
+
+.section-note{color:var(--text-soft);max-width:46rem;margin:.2rem 0 1.4rem}
+.empty{color:var(--text-faint);font-style:italic}
+
+/* ── The shelf grid ─────────────────────────────────────────────────────── */
+.shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));
+  gap:clamp(1.1rem,2.5vw,1.7rem);align-items:stretch}
+
+.book-card{display:flex;flex-direction:column;overflow:hidden;padding:0;
+  text-decoration:none;color:inherit;transition:transform .18s var(--ease),box-shadow .18s var(--ease)}
+.book-card:hover{transform:translateY(-4px)}
+
+/* Cover — portrait, like a real book spine-face. */
+.book-cover{position:relative;aspect-ratio:3/4;background:var(--panel-2);overflow:hidden;
+  border-bottom:1px solid var(--line)}
+.book-cover img{width:100%;height:100%;object-fit:cover;display:block}
+.cover-fallback{width:100%;height:100%;display:grid;place-items:center;padding:1rem;text-align:center;
+  background:linear-gradient(150deg,var(--panel-3),var(--panel));}
+.cover-fallback span{font-family:var(--display);font-weight:600;font-size:1.15rem;line-height:1.2;
+  color:var(--text-soft);letter-spacing:-.01em}
+
+.book-body{display:flex;flex-direction:column;gap:.5rem;padding:.85rem .95rem 1rem;flex:1}
+.book-card .tags{display:flex;gap:.4rem;flex-wrap:wrap}
+.book-card h3{font-family:var(--display);font-weight:600;font-size:1.12rem;line-height:1.2;margin:0}
+.book-card .blurb{color:var(--text-soft);font-size:.9rem;line-height:1.5;margin:0}
+
+/* ── Progress bar ───────────────────────────────────────────────────────── */
+.progress{height:6px;border-radius:999px;background:color-mix(in srgb,var(--line) 70%,transparent);
+  overflow:hidden;margin-top:auto}
+.progress-bar{height:100%;border-radius:999px;background:var(--accent);
+  background:linear-gradient(90deg,var(--accent),var(--violet-deep))}
+.progress.big{height:9px}
+
+.book-meta{display:flex;align-items:center;justify-content:space-between;gap:.5rem;
+  font-size:.78rem;color:var(--text-faint)}
+.chap-count{font-variant-numeric:tabular-nums}
+.mark{font-weight:650}
+.mark-done{color:var(--green)}
+.mark-final{color:var(--plum,#c79bf0);letter-spacing:.01em}
+.uni-tag{color:var(--text-faint);font-style:italic;text-align:right;
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:9rem}
+
+/* ── Universe index ─────────────────────────────────────────────────────── */
+.universe-index{list-style:none;padding:0;margin:0;display:grid;gap:.7rem}
+.universe-index li{padding:.7rem .9rem;border:1px solid var(--line);border-radius:var(--radius-sm);
+  background:var(--panel)}
+.universe-index a{font-family:var(--display);font-weight:600;font-size:1.05rem}
+.ui-count{display:inline-block;margin-left:.5rem;font-size:.78rem;color:var(--text-faint)}
+
+/* ── Mesh lists (on universe/character/city pages) ──────────────────────── */
+.mesh-index{margin-top:2rem;border-top:1px solid var(--line);padding-top:1.2rem}
+.mesh-index h2{font-family:var(--display);font-size:1.15rem;margin:1.2rem 0 .5rem}
+.mesh-list{list-style:none;padding:0;margin:0;display:grid;gap:.35rem}
+.mesh-list li{display:flex;gap:.5rem;align-items:baseline}
+.ml-form{font-size:.76rem;color:var(--text-faint);font-style:italic}

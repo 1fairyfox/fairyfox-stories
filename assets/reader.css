@@ -1,0 +1,84 @@
+/* Fairy Fox Stories — reading surfaces: book home, the immersive chapter reader
+   (with drop cap), blueprint, and the universe/character/city bibles. Builds on the
+   vendored mesh theme + the reader ("Aa") menu variables (--reading-width, --reading-lh).
+   Loaded after styles.css, so these single-class rules intentionally win over .wrap. */
+
+/* ── Reading typography (book-like: serif, comfortable measure) ──────────── */
+.reading{max-width:var(--reading-width);margin-inline:auto;padding-inline:var(--gutter)}
+.chapter-body,.blueprint-body,.codex-body,.bible-body,.book-about{
+  font-family:var(--display);font-size:1.12rem;line-height:var(--reading-lh);color:var(--text)}
+.chapter-body p,.blueprint-body p,.codex-body p,.bible-body p,.book-about p{margin:0 0 1.15em}
+.chapter-body em,.book-about em{font-style:italic}
+
+/* ── Book home (cover + meta + chapter index) ───────────────────────────── */
+.book-home{max-width:980px;margin-inline:auto;padding-inline:var(--gutter);
+  padding-block:clamp(1.6rem,4vw,2.6rem)}
+.book-hero{display:grid;grid-template-columns:210px 1fr;gap:clamp(1.2rem,3vw,2.2rem);align-items:start}
+@media(max-width:620px){.book-hero{grid-template-columns:1fr}.book-cover-lg{max-width:210px}}
+.book-cover-lg{aspect-ratio:3/4;border-radius:var(--radius-sm);overflow:hidden;
+  border:1px solid var(--line);box-shadow:var(--shadow)}
+.book-cover-lg img{width:100%;height:100%;object-fit:cover;display:block}
+.book-title{font-family:var(--display);font-weight:600;font-size:clamp(1.7rem,4vw,2.35rem);
+  line-height:1.08;letter-spacing:-.01em;margin:.1rem 0 .4rem}
+.logline{color:var(--text-soft);font-size:1.05rem;font-style:italic;margin:0 0 1rem}
+.prog-label{font-size:.85rem;color:var(--text-faint);margin:.45rem 0 1rem;font-variant-numeric:tabular-nums}
+.book-links{display:flex;gap:.6rem;flex-wrap:wrap;margin-bottom:1rem}
+.book-links .btn{background:var(--violet-deep);color:#fff;border:none;
+  box-shadow:0 10px 26px -12px var(--glow)}
+.book-links .btn:hover{background:var(--violet);color:#fff}
+.book-links .btn.ghost{background:transparent;color:var(--accent-ink);
+  border:1px solid var(--line-2);box-shadow:none}
+.content-note{font-size:.9rem;color:var(--text-soft);background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius-xs);padding:.6rem .8rem;margin:.2rem 0 0}
+
+.mesh-links{max-width:980px;margin:1.6rem auto;padding:.9rem 1rem;border:1px solid var(--line);
+  border-radius:var(--radius-sm);background:var(--panel);font-size:.94rem}
+.mesh-links p{margin:.25rem 0}
+.ml-label{display:inline-block;min-width:6rem;color:var(--text-faint);font-size:.72rem;
+  text-transform:uppercase;letter-spacing:.06em;font-family:var(--sans)}
+
+.chapter-index{max-width:var(--reading-width);margin:2rem auto 0;padding-inline:var(--gutter)}
+.chapter-index h2{font-family:var(--display);font-size:1.2rem;margin:0 0 .6rem}
+.chapter-list{list-style:none;padding:0;margin:0;display:grid;gap:.1rem}
+.chapter-list li a{display:flex;gap:.6rem;padding:.5rem .6rem;border-radius:var(--radius-xs);
+  text-decoration:none;color:var(--text)}
+.chapter-list li a:hover{background:var(--panel)}
+.ci-n{color:var(--text-faint);font-variant-numeric:tabular-nums;min-width:1.4rem;text-align:right}
+.chapter-list .pending{color:var(--text-faint);font-style:italic;padding:.5rem .6rem}
+
+/* ── The immersive chapter reader ───────────────────────────────────────── */
+.chapter-topbar{max-width:var(--reading-width);margin:0 auto;padding:1rem var(--gutter) 0;
+  display:flex;justify-content:space-between;align-items:center;gap:1rem;font-size:.85rem;
+  font-family:var(--sans)}
+.chapter-topbar a{color:var(--text-soft);text-decoration:none}
+.chapter-topbar a:hover{color:var(--link-hover)}
+.ct-pos{color:var(--text-faint);font-variant-numeric:tabular-nums}
+.chapter-hero{margin:1.3rem auto;max-width:var(--reading-width);padding-inline:var(--gutter)}
+.chapter-hero img{width:100%;height:auto;border-radius:var(--radius-sm);border:1px solid var(--line);display:block}
+.chapter-head{max-width:var(--reading-width);margin:1.6rem auto .2rem;padding-inline:var(--gutter)}
+.ch-eyebrow{font-family:var(--sans);font-size:.76rem;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--text-faint);margin:0 0 .35rem}
+.ch-title{font-family:var(--display);font-weight:600;font-size:clamp(1.55rem,4vw,2.1rem);
+  line-height:1.12;margin:0;display:flex;gap:.55rem;align-items:baseline}
+.ch-num{color:var(--accent);font-size:.78em;font-variant-numeric:tabular-nums}
+.chapter-body{margin-top:1.5rem}
+/* The drop cap — the "first letter" flourish that makes it read like a book. */
+.chapter-body>p:first-of-type::first-letter{
+  font-family:var(--display);float:left;font-size:3.5em;line-height:.72;
+  padding:.06em .1em 0 0;color:var(--accent);font-weight:600}
+
+.chapter-nav{max-width:var(--reading-width);margin:2.6rem auto;padding:1.2rem var(--gutter) 0;
+  border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:1rem;font-family:var(--sans)}
+.cn{color:var(--text-soft);text-decoration:none;font-size:.92rem;max-width:48%}
+.cn.next{text-align:right;margin-left:auto}
+.cn:hover{color:var(--link-hover)}
+
+/* ── Blueprint (public spoiler plan) & bibles ───────────────────────────── */
+.blueprint,.codex,.bible{padding-block:1.2rem}
+.spoiler-banner{background:color-mix(in srgb,var(--amber) 15%,var(--panel));
+  border:1px solid var(--line-2);border-radius:var(--radius-sm);padding:.8rem 1rem;
+  font-size:.92rem;color:var(--text-soft);margin:.6rem 0 1.5rem;font-family:var(--sans)}
+.blueprint-body h2,.codex-body h2,.bible-body h2{font-family:var(--display);margin:1.6rem 0 .5rem;font-size:1.3rem}
+.blueprint-body h3,.codex-body h3,.bible-body h3{font-family:var(--display);margin:1.1rem 0 .4rem;font-size:1.08rem}
+.blueprint-body ul,.codex-body ul,.bible-body ul{padding-left:1.2rem}
+.blueprint-body li,.codex-body li,.bible-body li{margin:.3rem 0}

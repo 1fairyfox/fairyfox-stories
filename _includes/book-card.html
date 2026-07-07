@@ -1,0 +1,42 @@
+{%- comment -%}
+  A single book on the shelf. Books stand individually (library-style), never binned by
+  universe — the universe is quiet context. Expects: include.book
+{%- endcomment -%}
+{%- assign b = include.book -%}
+{%- assign planned = b.chaptersPlanned | default: 1 -%}
+{%- assign written = site.chapters | where: "book", b.slug | size -%}
+{%- assign pct = 0 -%}
+{%- if planned > 0 -%}{%- assign pct = written | times: 100 | divided_by: planned -%}{%- endif -%}
+<a class="card book-card proj-card" href="{{ b.url | relative_url }}" data-updated="{{ b.updated | default: b.date | date: '%Y-%m-%d' }}">
+  <div class="book-cover">
+    {%- if b.cover -%}
+      <img src="{{ b.cover | relative_url }}" alt="Cover of {{ b.title }}" loading="lazy">
+    {%- else -%}
+      <div class="cover-fallback" aria-hidden="true"><span>{{ b.title }}</span></div>
+    {%- endif -%}
+  </div>
+  <div class="book-body">
+    <div class="tags">
+      <span class="tag">{{ b.form }}</span>
+      {%- if b.genre %}<span class="tag">{{ b.genre }}</span>{% endif -%}
+    </div>
+    <h3>{{ b.title }}</h3>
+    {%- if b.logline %}<p class="blurb">{{ b.logline }}</p>{% endif -%}
+    <div class="progress" role="img" aria-label="{{ written }} of {{ planned }} chapters written">
+      <div class="progress-bar" style="width: {{ pct }}%"></div>
+    </div>
+    <div class="book-meta">
+      {%- if b.state == 'complete-no-sequel' -%}
+        <span class="mark mark-final" title="A complete, standalone story">✦ Complete · no sequel</span>
+      {%- elsif written >= planned and planned > 0 -%}
+        <span class="mark mark-done">Complete</span>
+      {%- else -%}
+        <span class="chap-count">{{ written }} / {{ planned }} chapters</span>
+      {%- endif -%}
+      {%- if b.universe -%}
+        {%- assign uni = site.universes | where: "slug", b.universe | first -%}
+        {%- if uni %}<span class="uni-tag">{{ uni.title }}</span>{% endif -%}
+      {%- endif -%}
+    </div>
+  </div>
+</a>

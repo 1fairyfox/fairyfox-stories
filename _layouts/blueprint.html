@@ -1,0 +1,20 @@
+---
+layout: default
+---
+{%- assign book = site.books | where: "slug", page.book | first -%}
+<article class="blueprint wrap reading">
+  <nav class="chapter-topbar">
+    <a class="ct-book" href="{{ book.url | relative_url }}">‹ {{ book.title }}</a>
+    <span class="ct-pos">Blueprint</span>
+  </nav>
+  <p class="eyebrow">The Blueprint — full plan &amp; spoilers</p>
+  <h1>{{ book.title }} — the blueprint</h1>
+  <div class="spoiler-banner">
+    This is the <strong>complete plan</strong> for the book — premise, arc, and every planned
+    chapter. It spoils everything, on purpose: open it to know exactly what you're getting into.
+    To read unspoiled, head back to <a href="{{ book.url | relative_url }}">the book</a>.
+  </div>
+  <div class="blueprint-body">
+    {{ content }}
+  </div>
+</article>

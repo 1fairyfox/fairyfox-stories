@@ -1,0 +1,40 @@
+---
+layout: default
+---
+{%- assign book = site.books | where: "slug", page.book | first -%}
+{%- assign chapters = site.chapters | where: "book", page.book | sort: "order" -%}
+{%- assign planned = book.chaptersPlanned | default: chapters.size -%}
+{%- comment -%} prev / next by walking the ordered chapters {%- endcomment -%}
+{%- assign prev = nil -%}{%- assign next = nil -%}{%- assign found = false -%}
+{%- for ch in chapters -%}
+  {%- if found and next == nil and ch.order != page.order -%}{%- assign next = ch -%}{%- endif -%}
+  {%- if ch.order == page.order -%}{%- assign found = true -%}
+  {%- elsif found == false -%}{%- assign prev = ch -%}{%- endif -%}
+{%- endfor -%}
+
+<article class="chapter">
+  <nav class="chapter-topbar wrap">
+    <a class="ct-book" href="{{ book.url | relative_url }}">‹ {{ book.title }}</a>
+    <span class="ct-pos">Chapter {{ page.order }}{% if planned %} of {{ planned }}{% endif %}</span>
+  </nav>
+
+  {%- if page.header_image -%}
+    <figure class="chapter-hero"><img src="{{ page.header_image | relative_url }}" alt="" loading="lazy"></figure>
+  {%- endif -%}
+
+  <header class="chapter-head wrap">
+    <p class="ch-eyebrow">{{ book.title }}{% if book.form %} · {{ book.form }}{% endif %}</p>
+    <h1 class="ch-title"><span class="ch-num">{{ page.order }}</span>{{ page.title }}</h1>
+  </header>
+
+  <div class="chapter-body reading wrap">
+    {{ content }}
+  </div>
+
+  <nav class="chapter-nav wrap">
+    {%- if prev -%}<a class="cn prev" href="{{ prev.url | relative_url }}">‹ {{ prev.order }}. {{ prev.title }}</a>
+    {%- else -%}<a class="cn prev" href="{{ book.url | relative_url }}">‹ Cover</a>{%- endif -%}
+    {%- if next -%}<a class="cn next" href="{{ next.url | relative_url }}">{{ next.order }}. {{ next.title }} ›</a>
+    {%- else -%}<a class="cn next" href="{{ book.url | relative_url }}">Back to the book ›</a>{%- endif -%}
+  </nav>
+</article>

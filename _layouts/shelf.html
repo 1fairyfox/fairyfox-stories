@@ -1,0 +1,37 @@
+---
+layout: default
+---
+<section class="masthead">
+  <div class="wrap">
+    <div class="mast-id">
+      <div>
+        <div class="mast-name">Fairy Fox Stories</div>
+        <p class="mast-tag">An ever-growing library of short interactive <em>books</em> —
+          planted in living universes, tended by AI.</p>
+        <div class="mast-meta" style="margin-top:.9rem">
+          <span class="mchip">Books <b>{{ site.books | size }}</b></span>
+          <span class="mchip">Universes <b>{{ site.universes | size }}</b></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band" id="library">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="label"><h2>The library</h2></div>
+    </div>
+
+    {%- assign books = site.books | sort: 'updated' | reverse -%}
+    {%- if books.size == 0 -%}
+      <p class="empty">The first books are being planted. Check back soon.</p>
+    {%- else -%}
+      <div class="grid cols-3 shelf" id="shelf">
+        {%- for b in books -%}{% include book-card.html book=b %}{%- endfor -%}
+      </div>
+    {%- endif -%}
+  </div>
+</section>
+
+{{ content }}

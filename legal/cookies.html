@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#ef6149" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#191116" media="(prefers-color-scheme: dark)">
+<meta name="robots" content="noindex">
+
+<!-- Reader ("Aa") menu: apply the saved theme / accent / text size before first paint
+     (no flash). Deliberately inline — an external file would defeat the no-FOUC point.
+     Versioned origin-wide key (fairyfox:reader:b); kept in sync with assets/reader.js. -->
+<script>
+(function(){try{var p=JSON.parse(localStorage.getItem("fairyfox:reader:b")||"{}"),r=document.documentElement,
+S=[15,16.5,18,20,22],L={tight:1.5,normal:1.65,relaxed:1.9},W={narrow:"38rem",normal:"46rem",wide:"58rem"};
+if(p.theme&&p.theme!=="system")r.setAttribute("data-theme",p.theme);
+r.style.background=({light:"#efe4d1",sepia:"#f1e3c2",dark:"#181017"})[(p.theme&&p.theme!=="system")?p.theme:(matchMedia("(prefers-color-scheme: light)").matches?"light":"dark")]||"#181017";
+if(p.size!=null)r.style.fontSize=S[Math.max(0,Math.min(S.length-1,p.size|0))]+"px";
+if(p.lh)r.style.setProperty("--reading-lh",String(L[p.lh]||L.normal));
+if(p.width)r.style.setProperty("--reading-width",W[p.width]||W.normal);
+if(p.accent){var h=p.accent,ink="color-mix(in srgb, "+h+", var(--text) 42%)";
+r.style.setProperty("--accent",h);r.style.setProperty("--violet",h);
+r.style.setProperty("--violet-deep","color-mix(in srgb, "+h+", #000 12%)");
+r.style.setProperty("--accent-ink",ink);r.style.setProperty("--link",ink);
+r.style.setProperty("--link-hover","color-mix(in srgb, "+h+", var(--text) 26%)");
+r.style.setProperty("--glow","color-mix(in srgb, "+h+" 40%, transparent)");}}catch(e){}})();
+</script>
+
+<title>Cookies Policy — Fairy Fox Stories</title>
+
+<link rel="icon" type="image/png" href="https://fairyfox.io/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/svg+xml" href="https://fairyfox.io/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="https://fairyfox.io/apple-touch-icon.png">
+
+<link rel="stylesheet" href="../assets/fonts/fonts.css">
+<link rel="stylesheet" href="../assets/styles.css">
+<link rel="stylesheet" href="../assets/legal.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap">
+    <a class="brand" href="https://fairyfox.io/">
+      <img class="brand-logo" src="https://fairyfox.io/assets/icons/fox.png" alt="" aria-hidden="true">
+      <span class="brand-name">Fairy&nbsp;Fox</span>
+    </a>
+    <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav class="nav" aria-label="Primary">
+      <a href="https://fairyfox.io/">Home</a>
+      <a href="https://fairyfox.io/projects/">Projects</a>
+      <a href="../" class="active">Games</a>
+      <a href="https://fairyfox.io/docs/">Docs</a>
+      <a href="https://fairyfox.io/blog/">Updates</a>
+      <a href="https://fairyfox.io/about/">About</a>
+    </nav>
+  </div>
+</header>
+
+<nav class="subnav" aria-label="Fairy Fox Stories section">
+  <div class="wrap">
+    <a class="sub-brand" href="../">Fairy Fox Stories</a>
+    <a href="../">Overview</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a href="privacy.html">Privacy</a>
+    <a href="terms.html">Terms</a>
+    <a href="cookies.html" class="active">Cookies</a>
+    <span class="sep" aria-hidden="true"></span>
+    <a class="ext" href="https://github.com/junebug12851/fairyfox-stories">Source ↗</a>
+  </div>
+</nav>
+
+<main class="legal-main">
+  <p class="eyebrow">Fairy Fox Stories · Legal</p>
+  <h1>Cookies Policy</h1>
+  <p class="updated">Last updated: July 6, 2026</p>
+
+  <div class="tldr">
+    <p><strong>The short version.</strong> The <strong>Fairy Fox Stories</strong> collection does not
+      use cookies — none at all, and no tracking. It saves your reading progress and reading/display
+      preferences in your browser&rsquo;s local storage so the games can remember them. That data
+      stays on your device and is never sent to us.</p>
+  </div>
+
+  <p>This Cookies Policy explains how <strong>Fairy Fox Stories</strong> (&ldquo;the Service&rdquo;) uses
+    cookies and similar storage technologies. It applies to the games collection at
+    <a href="https://fairyfox.io/fairyfox-stories/">fairyfox.io/fairyfox-stories/</a>, one project within
+    the wider <a href="https://fairyfox.io/">Fairy Fox</a> site.</p>
+
+  <h2>We do not use cookies</h2>
+  <p>The Service sets <strong>no cookies</strong>. We use no analytics cookies, no advertising or
+    remarketing cookies, no third-party tracking cookies, and no session cookies. Because there are no
+    non-essential cookies, there is nothing to consent to and no cookie banner to click through.</p>
+
+  <h2>What we use instead: local storage</h2>
+  <p>To remember your <strong>reading progress</strong> and your <strong>reading and display
+    preferences</strong> (the &ldquo;Aa&rdquo; reading menu&rsquo;s theme, accent colour, text size,
+    line spacing, and width), the games use your browser&rsquo;s <strong>local storage</strong>. This
+    is similar to a cookie in that it is saved in your browser, but unlike a cookie it is
+    <strong>never automatically sent to any server</strong> — it simply lets a game show your best
+    score, and the site remember how you like to read, the next time you visit. The reading
+    preferences are saved under a shared key so one choice carries across the wider
+    <a href="https://fairyfox.io/">fairyfox.io</a> site in the same browser. This information stays on
+    your device. We never receive it. For more, see our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Third-party requests</h2>
+  <p>The Service serves its own fonts and does not load them from Google Fonts or any other
+    third-party font service, so no font-related request leaves to a third party. The games embed no
+    ad networks, analytics scripts, or social widgets. The only third party involved is our hosting
+    provider (GitHub Pages), which processes basic request data to deliver the site, as
+    described in our <a href="privacy.html">Privacy Policy</a>.</p>
+
+  <h2>Managing local storage</h2>
+  <p>You can clear the data the Service stores at any time by clearing your browser&rsquo;s site data /
+    local storage for the Service. Your browser&rsquo;s help pages explain how (for example,
+    <a href="https://support.google.com/chrome/answer/2392709">Chrome</a>,
+    <a href="https://support.mozilla.org/en-US/kb/cookies-and-site-data-firefox">Firefox</a>,
+    <a href="https://support.apple.com/guide/safari/manage-cookies-and-website-data-sfri11471/mac">Safari</a>,
+    and
+    <a href="https://support.microsoft.com/microsoft-edge/view-and-delete-browser-history-in-microsoft-edge-00cf7943-a9e1-975a-a33d-ac10ce454ca4">Edge</a>).
+    Note that clearing it also resets your saved reading progress and preferences.</p>
+
+  <h2>Changes to this policy</h2>
+  <p>We may update this Cookies Policy as the Service changes. When we do, we will revise the
+    &ldquo;Last updated&rdquo; date above. If we ever introduce cookies or analytics, we will update
+    this page first and obtain consent where the law requires it.</p>
+
+  <h2>Contact us</h2>
+  <p>If you have any questions about this Cookies Policy, contact us at
+    <a href="mailto:fairy@fairyfox.io">fairy@fairyfox.io</a>.</p>
+
+  <p class="legal-scope">Legal for the <strong>Fairy Fox Stories</strong> collection — one project
+    within the wider Fairy Fox site. Fairy Fox Stories is free, open-source software released under
+    the MIT license.</p>
+</main>
+
+<!-- Shared fairyfox.io site footer (copied so the page reads as one site). -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <a class="brand" href="https://fairyfox.io/">
+        <img class="brand-logo" src="https://fairyfox.io/assets/icons/fox.png" alt="" aria-hidden="true">
+        <span class="brand-name">Fairy Fox</span>
+      </a>
+      <p>The project hub and documentation library for Fairy Fox's software work.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Explore</h4>
+      <a href="https://fairyfox.io/projects/">Projects</a>
+      <a href="https://fairyfox.io/docs/">Documentation</a>
+      <a href="https://fairyfox.io/blog/">Updates</a>
+      <a href="https://fairyfox.io/about/">About</a>
+    </div>
+    <div class="footer-col">
+      <h4>Projects</h4>
+      <a href="https://fairyfox.io/pokered-save-editor-2/">Pokered Save Editor 2</a>
+      <a href="https://fairyfox.io/random-ai-prompt/">Random AI Prompt</a>
+      <a href="https://github.com/junebug12851/pokered-save-editor">Pokered Save Editor</a>
+      <a href="https://fairyfox.io/fairyfox-stories/">Fairy Fox Stories</a>
+      <a href="https://fairyfox.io/docs/">fairyfox.io</a>
+    </div>
+    <div class="footer-col">
+      <h4>Elsewhere</h4>
+      <a href="https://github.com/junebug12851">GitHub ↗</a>
+      <a href="https://fairyfox.io/feed.xml">Atom feed</a>
+    </div>
+  </div>
+  <div class="footer-bar">
+    <div class="wrap">
+      <span>© 2026 Fairy Fox</span>
+      <span>Built with Jekyll · deployed on GitHub Pages</span>
+      <span class="spacer"></span>
+      <a href="https://github.com/junebug12851">@junebug12851</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Chrome behaviour + reader menu (shared, browser-imported). -->
+<script src="../assets/nav.js" defer></script>
+<script src="../assets/reader.js" defer></script>
+</body>
+</html>

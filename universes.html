@@ -1,0 +1,26 @@
+---
+layout: default
+title: Universes
+permalink: /universes/
+---
+<section class="band">
+  <div class="wrap">
+    <div class="section-head"><div class="label"><h2>Universes</h2></div></div>
+    <p class="section-note">The realms the books live in. The book is always the focus — a
+      universe is the context and canon behind it. A realm may span many times and places.</p>
+    {%- if site.universes.size == 0 -%}
+      <p class="empty">No universes yet.</p>
+    {%- else -%}
+      <ul class="universe-index">
+        {%- for u in site.universes -%}
+          {%- assign n = site.books | where: "universe", u.slug | size -%}
+          <li>
+            <a href="{{ u.url | relative_url }}">{{ u.title }}</a>
+            {%- if u.tagline %} — {{ u.tagline }}{% endif -%}
+            <span class="ui-count">{{ n }} book{% if n != 1 %}s{% endif %}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</section>
