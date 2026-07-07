@@ -21,6 +21,8 @@
       {%- if b.genre %}<span class="tag">{{ b.genre }}</span>{% endif -%}
     </div>
     <h3>{{ b.title }}</h3>
+    {%- assign cardauthor = site.authors | where: "slug", b.author | first -%}
+    {%- if cardauthor %}<p class="card-byline">by {{ cardauthor.title }}</p>{% endif -%}
     {%- if b.logline %}<p class="blurb">{{ b.logline }}</p>{% endif -%}
     <div class="progress" role="img" aria-label="{{ written }} of {{ planned }} chapters written">
       <div class="progress-bar" style="width: {{ pct }}%"></div>

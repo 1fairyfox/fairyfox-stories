@@ -2,6 +2,16 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-06 — Pseudo-authors as a first-class, meshed collection
+
+Author-personas are a real `_authors` collection (like universes/characters/cities), not just
+notes. On planting, **roll new-vs-existing author** (parallel to the universe roll): invent a fresh
+persona or reuse one to build a body of work. Books tag `author: <slug>`; the reader + shelf show a
+**byline**; author pages auto-list their books. **Why:** the owner wants the shelf to feel like a
+collaboration of many passionate authors, meshed even between pseudo-authors (a returning author is
+an author-level thread between universes). Byline is now live (was flagged future). Integrity check
+validates the `author` link.
+
 ## 2026-07-06 — Content bar: dark but broadly accessible (no explicit)
 
 Books may be dark, tense, sad, and frightening, but the shelf stays **broadly accessible and

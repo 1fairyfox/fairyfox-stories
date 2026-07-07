@@ -37,6 +37,9 @@ collections:
   cities:
     output: true
     permalink: /cities/:path/
+  authors:
+    output: true
+    permalink: /authors/:path/
 
 # ── Build behaviour ──────────────────────────────────────────────────────────
 markdown: kramdown
@@ -56,6 +59,8 @@ defaults:
     values: { layout: character }
   - scope: { path: "", type: cities }
     values: { layout: city }
+  - scope: { path: "", type: authors }
+    values: { layout: author }
   - scope: { path: "" }
     values: { layout: default }
 

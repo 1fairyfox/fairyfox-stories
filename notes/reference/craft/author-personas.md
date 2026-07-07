@@ -52,25 +52,35 @@ Seeds, not a cage — vary temperament + obsession + style so no two feel alike:
 
 Each new author should feel like a *person* with a life and taste, not a style label.
 
-## How the farm uses personas
+## Authors are a first-class, meshed collection
 
-- **Roll/invent a persona on planting** (`operating-model.md`), paired with a style and coherent
-  with the genre — and **deliberately unlike the last few books' authors**. Two consecutive books
-  should feel written by two different people.
+Personas aren't just notes — each is a real page in the **`_authors`** collection
+(`_authors/<slug>.md`), exactly like universes, characters, and cities. An author page carries the
+pen name, a short in-world bio, their `style` and `obsessions`, and **auto-lists every book they've
+written**. A book tags its author with `author: <slug>` in its manifest; the reader shows a
+**byline** ("by …") linking to the author page, and the shelf card shows it in small. This makes
+the "collaboration of many authors" *literal and browseable* — a shelf you can read by author, a
+mesh even between pseudo-authors.
+
+## The author roll (parallel to the universe roll)
+
+**On planting, roll new-vs-existing author** — just like the universe roll (`operating-model.md`):
+
+- **New author** (default while the roster is small): invent a fresh persona, write the
+  `_authors/<slug>.md` page, and write the book as them. Seeds variety.
+- **Existing author** (more likely as the roster grows): reuse one of the pseudo-authors, giving
+  them a **body of work** — a second book in their voice, sometimes in the same universe, sometimes
+  in a wholly different one (an author, like a real one, can range). Deliberate, not a rut.
+
+Skew: lean **new** early (build the roster), lean toward **reuse** as it fills — but a fresh
+author should stay common, and two consecutive books should feel written by two different people.
+Record the choice + the persona sheet in `notes/books/<slug>/book-notes.md`; summarize the author
+in the public blueprint.
+
 - **Write the whole book as that author.** The persona drives the style setting, the thematic
   obsessions, the narrator choice, and the signature moves — held chapter to chapter.
-- **Record it** in `notes/books/<slug>/book-notes.md` (persona sheet) and summarize in the public
-  blueprint (so a reader senses the authorial personality behind the book).
-- **Reuse sparingly, on purpose.** Mostly a fresh author per book. *Occasionally* a persona
-  recurs across books — a deliberate "same author, new book" — which can even tie into a universe.
-  Recurrence is a choice, never a rut.
-
-## Optional future surface: the byline
-
-To make the "collaboration of many authors" literal on the shelf, a book could carry its
-fictional author's **pen name** as a byline ("by …"), with a tiny author blurb. Not built yet —
-flagged in `plans/future.md`. For now the persona lives in the craft + book-notes and shows up as
-the book's distinct feel.
+- **Reuse ties the mesh together.** A returning author across two universes is a quiet thread
+  between them — an author-level crossing, distinct from a character or universe crossing.
 
 ## Guardrails
 

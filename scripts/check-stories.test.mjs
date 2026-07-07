@@ -41,6 +41,7 @@ const books = slugsIn('_books').map(slug => ({ slug, fm: frontMatter(join(ROOT, 
 const universes = new Set(slugsIn('_universes'));
 const characters = new Set(slugsIn('_characters'));
 const cities = new Set(slugsIn('_cities'));
+const authors = new Set(slugsIn('_authors'));
 
 function chaptersFor(slug) {
   const p = join(ROOT, '_chapters', slug);
@@ -60,9 +61,10 @@ test('every book has valid, complete front-matter', () => {
   }
 });
 
-test('book universe / character / city tags resolve', () => {
+test('book universe / author / character / city tags resolve', () => {
   for (const { slug, fm } of books) {
     if (fm.universe) assert.ok(universes.has(fm.universe), `${slug}: universe "${fm.universe}" has no _universes entry`);
+    if (fm.author) assert.ok(authors.has(fm.author), `${slug}: author "${fm.author}" has no _authors entry`);
     for (const c of fm.characters || []) assert.ok(characters.has(c), `${slug}: character "${c}" has no _characters entry`);
     for (const c of fm.cities || []) assert.ok(cities.has(c), `${slug}: city "${c}" has no _cities entry`);
   }

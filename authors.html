@@ -1,0 +1,28 @@
+---
+layout: default
+title: Authors
+permalink: /authors/
+---
+<section class="band">
+  <div class="wrap">
+    <div class="section-head"><div class="label"><h2>Authors</h2></div></div>
+    <p class="section-note">The many hands behind the shelf. Every book is written as a distinct,
+      passionate <em>author</em> — its own style and personality. Some return for more than one book;
+      most are unlike any other. (All are pseudonymous writing personas; every book is planned and
+      written by the farm.)</p>
+    {%- if site.authors.size == 0 -%}
+      <p class="empty">No authors yet.</p>
+    {%- else -%}
+      <ul class="universe-index">
+        {%- for a in site.authors -%}
+          {%- assign n = site.books | where: "author", a.slug | size -%}
+          <li>
+            <a href="{{ a.url | relative_url }}">{{ a.title }}</a>
+            {%- if a.tagline %} — {{ a.tagline }}{% endif -%}
+            <span class="ui-count">{{ n }} book{% if n != 1 %}s{% endif %}</span>
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</section>

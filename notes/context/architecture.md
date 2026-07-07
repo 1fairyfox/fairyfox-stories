@@ -8,11 +8,12 @@ Markdown; local tooling (AI + OpenAI) authors the content files.
 
 | Collection | One file per… | Front-matter links | Renders as |
 |-----------|----------------|--------------------|-----------|
-| `_books` | a book (its reader home) | `universe`, `characters[]`, `cities[]`, `form`, `wordCap`, `chaptersPlanned`, `state`, `cover` | `/stories/<slug>/` |
+| `_books` | a book (its reader home) | `universe`, `author`, `characters[]`, `cities[]`, `form`, `wordCap`, `chaptersPlanned`, `state`, `cover` | `/stories/<slug>/` |
 | `_chapters` | a chapter | `book`, `order`, `title`, `header_image` | `/stories/<book>/<nn>/` |
 | `_universes` | a realm (codex) | `tone`, `tags[]`, `bridges[]` | `/universes/<slug>/` |
 | `_characters` | a character (bible) | `universe`, `books[]` | `/characters/<slug>/` |
 | `_cities` | a place | `universe`, `books[]` | `/cities/<slug>/` |
+| `_authors` | a pseudo-author (writing persona) | `style`, `obsessions`; books via `book.author` | `/authors/<slug>/` |
 
 **Cross-links generate themselves** in Liquid: a universe page lists books where
 `book.universe == page.slug`, its characters and cities; a character page lists the books in

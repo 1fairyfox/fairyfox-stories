@@ -82,3 +82,10 @@
 .blueprint-body h3,.codex-body h3,.bible-body h3{font-family:var(--display);margin:1.1rem 0 .4rem;font-size:1.08rem}
 .blueprint-body ul,.codex-body ul,.bible-body ul{padding-left:1.2rem}
 .blueprint-body li,.codex-body li,.bible-body li{margin:.3rem 0}
+
+/* author byline + persona pages */
+.byline{font-family:var(--sans);font-size:.92rem;color:var(--text-faint);margin:0 0 .8rem}
+.byline a{color:var(--accent-ink)}
+.author-signature{font-family:var(--sans);font-size:.9rem;color:var(--text-soft);margin:.3rem 0 1.2rem;line-height:1.7}
+.persona-note{margin-top:2rem;padding-top:1rem;border-top:1px solid var(--line);font-size:.82rem;color:var(--text-faint);font-style:italic;font-family:var(--sans)}
+

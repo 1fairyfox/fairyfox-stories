@@ -1,0 +1,32 @@
+---
+layout: default
+---
+{%- assign books = site.books | where: "author", page.slug | sort: "updated" | reverse -%}
+<article class="bible wrap reading">
+  <p class="eyebrow">Author · a writing persona of Fairy Fox Stories</p>
+  <h1>{{ page.title }}</h1>
+  {%- if page.tagline %}<p class="logline">{{ page.tagline }}</p>{% endif -%}
+
+  {%- if page.style or page.obsessions -%}
+  <p class="author-signature">
+    {%- if page.style %}<span class="ml-label">Style</span> {{ page.style }}{% endif -%}
+    {%- if page.obsessions %}<br><span class="ml-label">Obsessed with</span> {{ page.obsessions }}{% endif -%}
+  </p>
+  {%- endif -%}
+
+  <div class="bible-body">
+    {{ content }}
+  </div>
+
+  <section class="mesh-index">
+    <h2>Books by {{ page.title }}</h2>
+    {%- if books.size == 0 -%}<p class="empty">No books yet.</p>{%- else -%}
+      <ul class="mesh-list">
+        {%- for b in books -%}<li><a href="{{ b.url | relative_url }}">{{ b.title }}</a> <span class="ml-form">{{ b.form }}</span></li>{%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </section>
+
+  <p class="persona-note">A pseudonymous writing persona — one of the many “authors” whose
+    distinct styles make up Fairy Fox Stories. All books are planned and written by the farm.</p>
+</article>

@@ -6,6 +6,7 @@ genre: Caper
 wordCap: 13200
 chaptersPlanned: 7
 universe: the-gaslight-reach
+author: del-marsh
 characters: [juno-vale, magister-crane]
 cities: [cinderwick]
 state: growing

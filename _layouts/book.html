@@ -20,6 +20,8 @@ layout: default
     <div class="book-hero-text">
       <p class="eyebrow">{{ page.form }}{% if page.genre %} · {{ page.genre }}{% endif %}</p>
       <h1 class="book-title">{{ page.title }}</h1>
+      {%- assign author = site.authors | where: "slug", page.author | first -%}
+      {%- if author %}<p class="byline">by <a href="{{ author.url | relative_url }}">{{ author.title }}</a></p>{% endif -%}
       {%- if page.logline %}<p class="logline">{{ page.logline }}</p>{% endif -%}
 
       <div class="progress big" role="img" aria-label="{{ written }} of {{ planned }} chapters written">

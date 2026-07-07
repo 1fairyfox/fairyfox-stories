@@ -57,3 +57,7 @@
 .mesh-list{list-style:none;padding:0;margin:0;display:grid;gap:.35rem}
 .mesh-list li{display:flex;gap:.5rem;align-items:baseline}
 .ml-form{font-size:.76rem;color:var(--text-faint);font-style:italic}
+
+/* author byline on shelf cards (plain text — card is already a link) */
+.card-byline{font-family:var(--sans);font-size:.78rem;color:var(--text-faint);margin:-.15rem 0 0}
+
