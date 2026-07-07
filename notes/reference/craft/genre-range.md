@@ -52,3 +52,10 @@ behind a maturity gate**, so keep it out of the explicit:
 - The **blueprint** (open, spoiler-forward) and a quiet **content note** still give informed
   consent for the darker books — they signal tone; they don't wall the story off. Intensity must
   always serve the story, never decorate it.
+
+**Dark should be *entertaining*, not *bleak*.** The darkness we want is the *Carmen Sandiego*
+kind — danger, villainy, mystery, heists, chases, high stakes, moral tension — the sort that
+pulls a reader *forward*. Steer away from mournful, depressing, grief-soaked, or downer subject
+matter (a book meditating on a death in the family, say) as a default register. A story may still
+carry loss or sorrow, but across the shelf the feeling should be **alive and propulsive**, not a
+row of sad, heavy pieces. When in doubt, make it **gripping before it's sad.**

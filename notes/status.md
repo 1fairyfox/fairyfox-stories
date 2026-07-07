@@ -40,11 +40,11 @@ comprehensive sub-note collections). The full build plan is `plans/farm-build-pl
 
 | Area | Status |
 |------|--------|
-| Repo + branches (dev/main) | ⏳ not yet initialised (greenfield build in progress) |
+| Repo + branches (dev/main) | ✅ public repo on GitHub, `dev` pushed; `main` pending release |
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
-| Jekyll scaffold (collections/layouts/reader) | ⏳ in progress |
-| Book #1 (blueprint + chapter 1) | ⏳ pending scaffold |
+| Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
+| Book #1 (blueprint + chapter 1) | ✅ "The Cinderwick Job" (caper, Gaslight Reach) — ch.1 of 7 |
 | Integrity check + CI | ⏳ pending |
 | GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ⛔ enable after first release (owner step) |
 | Hub registration | ⛔ pending (hub-side edit) |
