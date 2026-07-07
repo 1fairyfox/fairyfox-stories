@@ -80,22 +80,31 @@ async function main() {
   const key = loadEnv().OPENAI_API_KEY || process.env.OPENAI_API_KEY;
   if (!key) { console.error('  No OPENAI_API_KEY in .env — cannot generate.'); process.exit(1); }
 
-  const model = loadEnv().IMAGE_MODEL || 'dall-e-3';
+  const env = loadEnv();
+  const model = env.IMAGE_MODEL || 'gpt-image-1';
+  // Params differ by model: gpt-image-1 uses quality low|medium|high (no response_format,
+  // always returns b64_json); dall-e-3 uses quality standard|hd and can return a URL.
+  const body = { model, prompt, size, n: 1 };
+  if (model === 'gpt-image-1') body.quality = env.IMAGE_QUALITY || 'medium';
+  else { body.response_format = 'b64_json'; body.quality = env.IMAGE_QUALITY || 'standard'; }
+
   const res = await fetch('https://api.openai.com/v1/images/generations', {
     method: 'POST',
     headers: { 'Authorization': `Bearer ${key}`, 'Content-Type': 'application/json' },
-    body: JSON.stringify({ model, prompt, size, n: 1, response_format: 'b64_json', quality: 'standard' }),
+    body: JSON.stringify(body),
   });
   if (!res.ok) {
-    console.error(`  OpenAI error ${res.status}: ${(await res.text()).slice(0, 400)}`);
-    process.exit(1);
+    console.error(`  OpenAI error ${res.status}: ${(await res.text()).slice(0, 500)}`);
+    process.exitCode = 1; return;
   }
-  const data = await res.json();
-  const b64 = data?.data?.[0]?.b64_json;
-  if (!b64) { console.error('  No image returned.'); process.exit(1); }
+  const d0 = (await res.json())?.data?.[0];
+  let buf;
+  if (d0?.b64_json) buf = Buffer.from(d0.b64_json, 'base64');
+  else if (d0?.url) buf = Buffer.from(await (await fetch(d0.url)).arrayBuffer());
+  else { console.error('  No image returned.'); process.exitCode = 1; return; }
 
   mkdirSync(dirname(out), { recursive: true });
-  writeFileSync(out, Buffer.from(b64, 'base64'));
+  writeFileSync(out, buf);
   console.log(`  ✓ saved ${rel}`);
   console.log(`  Next: set ${kind === 'cover' ? '`cover:`' : '`header_image:`'} in the ${kind === 'cover' ? 'book manifest' : 'chapter'} to /${rel.replace(/^\//, '')}`);
 }
