@@ -2,6 +2,21 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-09 — Automated daily farm job (grow 2, plant every 3 days, auto-publish)
+
+The farm loop now runs unattended via a scheduled job (Claude scheduled task `Fairy Fox Stories —
+daily farm run`), firing **daily at midnight America/Denver** (cron `0 6 * * *`, UTC). Each run
+**grows exactly 2** books and **plants one new book only when 3+ days have passed** since the last
+planting, then **auto-publishes to `main`**. Grow count moved from *up to 5* to **exactly 2**
+(tunable). **Why:** nothing was executing the documented cadence — the shelf hadn't moved since
+v0.2.0 (2026-07-06) because grow/plant were policy-on-paper with no runner. Fairy Fox set the
+cadence (2 daily, new book every 3 days) and **pre-authorized this job to release to `main`** so
+the live site updates daily without manual approval. **Rules in/out:** the pre-authorization covers
+*only* the scheduled job; manual/interactive runs still ask before releasing. The job needs the PC
+on + desktop app open at midnight; if the device or OpenAI key is unreachable it **skips and
+reports** rather than half-finishing. Grow and plant remain **separate cadences** (daily vs 3-day)
+inside one daily runner — deliberately not welded into an every-3-days run.
+
 ## 2026-07-06 — Pseudo-authors as a first-class, meshed collection
 
 Author-personas are a real `_authors` collection (like universes/characters/cities), not just
