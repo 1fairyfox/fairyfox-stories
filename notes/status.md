@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.3.0` (single source of truth: repo-root `VERSION`).
+**Version:** `0.3.1` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -54,7 +54,7 @@ its **daily grow** phase — advancing real chapters on the least-tended books. 
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
 | Books on the shelf | ✅ **6 planted + growing** (caper · cosy magical-realism · SF · gothic · fable · night-city magical-realism novella); ch.1–2 apiece |
 | Authors / universes | ✅ 5 author-personas (Del Marsh now spans 2 universes), 5 universes (Hollow Hours now holds 2 books) — meshed + bylined |
-| Cover & chapter art | ✅ generated for all 5 (gpt-image-1 via `scripts/generate-art.mjs`) |
+| Cover & chapter art | ✅ covers generated for all 6 (gpt-image-1 via `scripts/generate-art.mjs`); ch.1 header art on the first 5, new grow chapters text-only (budget) |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (5 checks), runs on push/PR |
 | GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`) |
 | Hub registration | ⛔ pending (hub-side edit) |
