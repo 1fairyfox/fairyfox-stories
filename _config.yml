@@ -20,6 +20,10 @@ author:
   name: Fairy Fox
   github: junebug12851
 
+# Site emblem (the Stories mark). Feeds jekyll-seo-tag: publisher logo in JSON-LD,
+# and the default social share card (see the image default under `defaults`).
+logo: /assets/icon.png
+
 # ── Collections — the meshed world ───────────────────────────────────────────
 collections:
   books:
@@ -62,7 +66,7 @@ defaults:
   - scope: { path: "", type: authors }
     values: { layout: author }
   - scope: { path: "" }
-    values: { layout: default }
+    values: { layout: default, image: /assets/icon.png }
 
 plugins:
   - jekyll-feed

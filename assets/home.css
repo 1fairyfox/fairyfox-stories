@@ -5,6 +5,15 @@
 .section-note{color:var(--text-soft);max-width:46rem;margin:.2rem 0 1.4rem}
 .empty{color:var(--text-faint);font-style:italic}
 
+/* ── Masthead emblem ──────────────────────────────────────────────────────
+   The Stories mark beside the title. The vendored theme's .mast-logo is a
+   round 56px avatar (object-fit:cover) — wrong for this tall, transparent
+   illustration, so `.emblem` shows it whole and uncropped, a touch larger. */
+.mast-logo.emblem{width:clamp(64px,9vw,88px);height:auto;flex:none;
+  border:0;border-radius:0;background:none;object-fit:contain;
+  filter:drop-shadow(0 4px 14px rgba(0,0,0,.28))}
+@media(max-width:560px){.mast-logo.emblem{width:60px}}
+
 /* ── The shelf grid ─────────────────────────────────────────────────────── */
 .shelf{display:grid;grid-template-columns:repeat(auto-fill,minmax(208px,232px));
   gap:clamp(1.1rem,2.5vw,1.7rem);justify-content:start;align-items:stretch}
