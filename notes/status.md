@@ -2,7 +2,11 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.2.0` (single source of truth: repo-root `VERSION`).
+**Version:** `0.2.1` (single source of truth: repo-root `VERSION`).
+
+**Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
+America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
+See `reference/operating-model.md` → *Automation* and `decisions/architecture.md` (2026-07-09).
 
 ## Current state (read this first)
 
