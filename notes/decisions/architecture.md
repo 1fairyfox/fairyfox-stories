@@ -2,6 +2,21 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-10 — Reading the join/reuse rolls as a craft brief, not a shortcut
+
+Planting *Every Lock but Hers* rolled **join an existing universe** (0.95) **+ reuse an existing
+author** (0.93) — the combination most at risk of producing a re-skin. Decision: when both rolls
+point at existing assets, treat them as a brief to find the *least* re-skin-prone pairing, not the
+laziest. Here that meant deliberately **crossing an author against the grain of a universe** — Del
+Marsh's hard-boiled caper voice writing the gentle Hollow Hours — rather than reusing that
+universe's own author (Posy Fell) or a genre-matched voice. **Why:** it satisfies the mesh intent of
+reuse (an author now spans two universes; the thinnest realm deepens to a tonally different pair)
+while keeping the hard distinctness bar (new premise, voice, shape; unlike both the Hollow Hours'
+other book and Marsh's own). **Rules in/out:** genre may repeat when a universe-join forces it (each
+realm ≈ one genre), but the *book* must still feel unlike its shelfmates — carried by author-voice ×
+form × premise, not by inventing a new realm to dodge the roll. The rolls stay honoured, never
+re-rolled to avoid a hard combination.
+
 ## 2026-07-09 — Automated daily farm job (grow 2, plant every 3 days, auto-publish)
 
 The farm loop now runs unattended via a scheduled job (Claude scheduled task `Fairy Fox Stories —

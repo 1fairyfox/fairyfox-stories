@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.2.3` (single source of truth: repo-root `VERSION`).
+**Version:** `0.3.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -21,7 +21,7 @@ automation are all shipped; the site has had two live releases (v0.2.0, v0.2.2).
 its **daily grow** phase — advancing real chapters on the least-tended books. The full build plan is
 `plans/farm-build-plan.md`; the daily loop is `reference/operating-model.md`.
 
-## The shelf (as of v0.2.3)
+## The shelf (as of v0.3.0)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
@@ -30,8 +30,11 @@ its **daily grow** phase — advancing real chapters on the least-tended books. 
 | The Cartographer of Decks (SF) | novelette | 2 / 6 | 2026-07-10 |
 | The Cinderwick Job (caper) | novelette | 1 / 7 | 2026-07-06 |
 | The Two-O'Clock Launderette (magical realism) | short story | 1 / 3 | 2026-07-05 |
+| **Every Lock but Hers** (magical realism) | novella | 1 / 11 | 2026-07-10 (planted) |
 
-All five are `growing`; none complete, so no sequel roll is live yet.
+**Six books, all `growing`;** none complete, so no sequel roll is live yet. *Every Lock but Hers*
+(planted 2026-07-10) is a Del Marsh × Hollow Hours novella — see `version/2026-07.md` 0.3.0 and
+`decisions/architecture.md`. Next plant eligible **2026-07-13** (3-day cadence).
 
 ## Next
 
@@ -49,8 +52,8 @@ All five are `growing`; none complete, so no sequel roll is live yet.
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
-| Books on the shelf | ✅ **5 planted + growing** (caper · cosy magical-realism · SF · gothic · fable); 3 now at ch.2, 2 at ch.1 |
-| Authors / universes | ✅ 5 distinct author-personas, 5 universes — meshed + bylined |
+| Books on the shelf | ✅ **6 planted + growing** (caper · cosy magical-realism · SF · gothic · fable · night-city magical-realism novella); ch.1–2 apiece |
+| Authors / universes | ✅ 5 author-personas (Del Marsh now spans 2 universes), 5 universes (Hollow Hours now holds 2 books) — meshed + bylined |
 | Cover & chapter art | ✅ generated for all 5 (gpt-image-1 via `scripts/generate-art.mjs`) |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (5 checks), runs on push/PR |
 | GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`) |
