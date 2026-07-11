@@ -18,6 +18,21 @@ Each chapter must **stand and connect**:
   directly into the next chapter's opening tension. Not every ending is a cliffhanger, but
   every ending is a reason to come back.
 
+## End on a *paid* turn, not a stall (learned 2026-07-11)
+
+The cheap serial ending withholds — it stops mid-motion and calls the reader's frustration a hook.
+The good one **charges the narrator something** on the last beat, and the pull comes from what it
+cost. Best test: *is the chapter's ending driven by the character's flaw?* If the turn is the flaw
+doing what the flaw does, the chapter stands on its own **and** pulls, because the reader now wants
+to watch the bill come due.
+
+- Juno names the trap out loud, in detail — and takes the job anyway (*Cinderwick* ch.2).
+- Nadia is handed the exact rescue she gives everyone else, and puts it back in her pockets out of
+  habit while we watch (*Launderette* ch.2).
+- Nell works out precisely what the magic costs and refuses to pay it (*Every Lock* ch.2).
+
+None of the three withholds a single fact. All three end on a door the character shut themselves.
+
 ## Because it's blueprinted first
 
 - **No pantsing drift.** The blueprint already knows the arc and each chapter's job, so serial

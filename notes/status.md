@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.3.2` (single source of truth: repo-root `VERSION`).
+**Version:** `0.3.3` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -21,28 +21,37 @@ automation are all shipped; the site has had two live releases (v0.2.0, v0.2.2).
 its **daily grow** phase — advancing real chapters on the least-tended books. The full build plan is
 `plans/farm-build-plan.md`; the daily loop is `reference/operating-model.md`.
 
-## The shelf (as of v0.3.0)
+## The shelf (as of v0.3.3)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
+| **The Two-O'Clock Launderette** (magical realism) | short story | 2 / 3 | 2026-07-11 |
+| **The Cinderwick Job** (caper) | novelette | 2 / 7 | 2026-07-11 |
+| **Every Lock but Hers** (magical realism) | novella | 2 / 11 | 2026-07-11 |
 | The Wintering House (gothic) | novella | 2 / 11 | 2026-07-10 |
 | The Girl Who Sold the Wind (fable) | novelette | 2 / 5 | 2026-07-10 |
 | The Cartographer of Decks (SF) | novelette | 2 / 6 | 2026-07-10 |
-| The Cinderwick Job (caper) | novelette | 1 / 7 | 2026-07-06 |
-| The Two-O'Clock Launderette (magical realism) | short story | 1 / 3 | 2026-07-05 |
-| **Every Lock but Hers** (magical realism) | novella | 1 / 11 | 2026-07-10 (planted) |
 
-**Six books, all `growing`;** none complete, so no sequel roll is live yet. *Every Lock but Hers*
-(planted 2026-07-10) is a Del Marsh × Hollow Hours novella — see `version/2026-07.md` 0.3.0 and
-`decisions/architecture.md`. Next plant eligible **2026-07-13** (3-day cadence).
+**Six books, all `growing`, all at chapter 2;** none complete, so no sequel roll is live yet. The
+2026-07-11 grow advanced the three least-tended (blend picks; random-override roll 50/100 → no
+override) — see `sessions/2026-07/2026-07-11.md` for the audit. Next plant eligible **2026-07-13**
+(3-day cadence); *The Two-O'Clock Launderette* is **one chapter from finishing** and will be the
+shelf's first completed book, which starts the sequel clock.
 
 ## Next
 
-- **Keep growing** — next runs pick up Cinderwick + Launderette (deferred this run) and continue the
-  blend. See `plans/next-steps.md`.
-- **Needs Fairy Fox:** reconcile the grow-count (`operating-model.md` says 2/day; task + CLAUDE.md
-  say up to 5) into `decisions/`; review + merge the five Dependabot Actions PRs (#2–#6, deploy
-  workflow) — held so an unattended grow release never rides an untested workflow change.
+- **Keep growing** — the blend now favours the four books last grown 07-10 (Wintering House and Every
+  Lock but Hers are least complete at 2/11). Finishing the Launderette (ch.3) turns on the weekly
+  sequel roll for the first time. See `plans/next-steps.md`.
+- **Needs Fairy Fox:** reconcile the grow-count — `operating-model.md` says **exactly 2/day**, while
+  `CLAUDE.md`, `craft/serialization.md`, and the scheduled task say **up to 5**. The 07-11 run grew
+  **3** (inside "up to 5", above "exactly 2") and flagged it rather than silently picking a side; one
+  number should win, recorded in `decisions/`.
+- **Needs Fairy Fox:** review + merge the five Dependabot Actions PRs (#2–#6, deploy workflow) — held
+  so an unattended grow release never rides an untested workflow change.
+- **Deferred eyeball:** Chrome wasn't connected on the 07-11 run, so the three new chapter pages were
+  verified in the built HTML but not read in a browser. Prose-only change, no template edits — worth
+  a hard-reload pass next time Chrome is up.
 
 ## Health
 
@@ -52,7 +61,7 @@ its **daily grow** phase — advancing real chapters on the least-tended books. 
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
-| Books on the shelf | ✅ **6 planted + growing** (caper · cosy magical-realism · SF · gothic · fable · night-city magical-realism novella); ch.1–2 apiece |
+| Books on the shelf | ✅ **6 planted + growing** (caper · cosy magical-realism · SF · gothic · fable · night-city magical-realism novella); **ch.2 written on all six** |
 | Authors / universes | ✅ 5 author-personas (Del Marsh now spans 2 universes), 5 universes (Hollow Hours now holds 2 books) — meshed + bylined |
 | Cover & chapter art | ✅ covers generated for all 6 (gpt-image-1 via `scripts/generate-art.mjs`); ch.1 header art on the first 5, new grow chapters text-only (budget) |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (5 checks), runs on push/PR |
