@@ -31,6 +31,25 @@ Private continuity + voice bible. Not published (under `notes/`, excluded from t
 - Juno's flaw: **can't refuse a door she's told she can't open.** The card in Ch.1 ("A door only you
   can open. Ask at the Cage.") weaponizes it. She knows it's a trap and goes anyway.
 
+## Added in ch.2 (2026-07-11) — locked
+
+- **Asking at the Cage** = the **consignment window** on **Coldharbour Lane** (north wall). The
+  clerk hands out a numbered chit; hers is **214**.
+- **Pell** — the go-between. Damp, apologetic, a good coat that isn't his; soft hands; speaks only
+  as "my principal" and plainly doesn't want to know what he's carrying. His one honest line:
+  *"I'd have run."* (He is Crane's instrument and does not know the whole of it.)
+- **The fee: 400 guineas.** The lever: a **ledger page** of the Cage's own, eleven years old —
+  *"Wren, Junia. Delivered."* — a night-mail ticket and a sum. Somebody was **paid** for her. Pell:
+  *there are other pages, and other drawers, and they keep.* One page comes back to her on delivery
+  of the bird.
+- **The Nightingale has sat in the Cage's vault forty years** — the room where the Ordinal does its
+  business. So it has heard everything said there, including, eleven years ago, the voice of the man
+  who sold Junia Wren. **This is Juno's private motive** and the reason she'd take the job for
+  nothing. Pays off in ch.5 (the bird sings back a sound that exposes Crane) and in ch.7 — she wins
+  by trusting a person, *not* by finally hearing that voice.
+- Timeline: **nine nights** to the night auction; the **viewing** (lot 41, under glass in the long
+  gallery, open to the trade) is **three nights before** — that's ch.3's way in to the Cage.
+
 ## Arc reminders
 
 - Want: the score that frees her from the Ordinal. Need: to trust one ally out loud instead of
@@ -40,6 +59,8 @@ Private continuity + voice bible. Not published (under `notes/`, excluded from t
 
 ## Status
 
-Chapter 1 of 7 written (hand-drafted; replaces the retired grief-themed book #1 per owner feedback).
-Chapters 2–7 to be drafted one whole chapter at a time, re-reading the prior chapter + these notes
-for continuity and voice. Art (cover + headers) pending an OpenAI generation pass.
+2 of 7 chapters written (hand-drafted; replaces the retired grief-themed book #1 per owner feedback).
+Chapters 3–7 to be drafted one whole chapter at a time, re-reading the prior chapter + these notes
+for continuity and voice. Next: **ch.3 "The Cage"** — the viewing, three nights on; Magister Crane
+greets her by name and *invites her in*. Cover + ch.1 header art generated; grow chapters text-only
+(budget).
