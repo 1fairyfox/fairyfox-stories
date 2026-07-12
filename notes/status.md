@@ -41,6 +41,9 @@ finishing** and will be the shelf's first completed book, which starts the seque
 
 ## Next
 
+- **Plant: skipped 2026-07-12 (cadence gate).** The plant job ran and stopped at the gate — the last
+  new book was *Every Lock but Hers* on **07-10**, so today was day 2 of the 3-day cadence. Nothing
+  was rolled, designed, or written; no `stories/` files touched. **Next plant eligible 2026-07-13.**
 - **Keep growing** — *The Girl Who Sold the Wind* is now the longest-untended book (last grown 07-10)
   and is the blend's clear next pick; *Every Lock but Hers* is least complete at 2/11. Finishing the
   Launderette (ch.3) turns on the weekly sequel roll for the first time. See `plans/next-steps.md`.
