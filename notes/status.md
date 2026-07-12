@@ -50,6 +50,11 @@ finishing** and will be the shelf's first completed book, which starts the seque
   rather than silently picking a side; one number should win, recorded in `decisions/`.
 - **Needs Fairy Fox:** review + merge the five Dependabot Actions PRs (#2–#6, deploy workflow) — held
   so an unattended grow release never rides an untested workflow change.
+- **On `dev`, awaiting the next release:** a CI fix to `branch-sync`, which was failing on *every*
+  release. It triggers on push to `main` and checked `dev` instantly, but the back-merge lands
+  seconds later by design, so it always ran while `dev` was legitimately one commit behind (v0.3.4's
+  run failed, then passed on re-run — a race, not drift). It now retries 6×/30s before failing. The
+  fixed workflow takes effect the next time `main` advances.
 - **Deferred eyeball (07-11 and 07-12):** Chrome wasn't connected on either run, so the new chapter
   pages were verified in the built Jekyll HTML but not read in a browser. Both are prose-only changes
   with no template edits — worth one hard-reload pass over the six chapter pages next time Chrome is
