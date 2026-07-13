@@ -24,12 +24,21 @@ jobs:
         with:
           fetch-depth: 0
       - name: dev must contain every commit on main
+        # The back-merge legitimately lands a few seconds AFTER the merge to main, so on a
+        # push trigger this job starts while `dev` is still one commit behind by design.
+        # Retry with backoff before failing; a genuinely skipped back-merge is still caught
+        # (it just takes ~2.5 min to say so), and the scheduled run is unaffected.
         run: |
-          git fetch origin main dev
-          behind="$(git rev-list --count origin/dev..origin/main)"
-          if [ "$behind" -ne 0 ]; then
-            echo "::error::dev is missing $behind commit(s) that are on main — the release back-merge was skipped."
-            git log --oneline origin/dev..origin/main
-            exit 1
-          fi
-          echo "dev contains main (0 commits behind). OK."
+          for attempt in 1 2 3 4 5 6; do
+            git fetch --quiet origin main dev
+            behind="$(git rev-list --count origin/dev..origin/main)"
+            if [ "$behind" -eq 0 ]; then
+              echo "dev contains main (0 commits behind). OK."
+              exit 0
+            fi
+            echo "attempt $attempt/6: dev is $behind commit(s) behind main; waiting for the back-merge…"
+            [ "$attempt" -lt 6 ] && sleep 30
+          done
+          echo "::error::dev is missing $behind commit(s) that are on main — the release back-merge was skipped."
+          git log --oneline origin/dev..origin/main
+          exit 1
