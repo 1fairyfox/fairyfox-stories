@@ -7,13 +7,13 @@ wordCap: 9200
 chaptersPlanned: 5
 universe: the-salt-road
 author: amara-okri
-characters: [zari]
+characters: [zari, rafiq]
 cities: []
 state: growing
 cover: /stories/the-girl-who-sold-the-wind/art/cover.png
 logline: The best wind-seller on the Salt Road sells a homesick wind to a stranger who should never have it — and must chase the bargain across a thousand days of desert to put it right.
 content_note: A bright folk-fable — adventure, mischief, and a bargain with a hook. Nothing dark or graphic.
-updated: 2026-07-10
+updated: 2026-07-13
 date: 2026-07-02
 ---
 

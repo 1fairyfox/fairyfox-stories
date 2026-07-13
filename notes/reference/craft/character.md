@@ -41,6 +41,25 @@ their choices; each decision should ratchet the tension up, not reset it
 [Spines](https://spines.com/short-story-elements/)). Danger the lead always shrugs off is
 the Mary Sue trap in slow motion.
 
+## The complicity beat (learned 2026-07-13)
+
+The most disquieting thing a flawed narrator can do is not be *fooled*. It is to see clearly, and
+choose the comfortable thing anyway, and find that choosing it **cost them nothing**. A guilty
+character argues with themselves; that argument is the reader's escape hatch, because it says *she's
+still fighting.* Take the argument away and the reader has nowhere to stand.
+
+- Agnes stands in front of the portrait at 2 a.m., counts the three companions painted in behind the
+  chair, sees the blank primed patch waiting — and at breakfast says yes, and cries with *happiness*
+  (*Wintering House* ch.4).
+- Sela gives a dying woman a distance her ship did not travel, does the arithmetic out loud, rounds it
+  honestly to three places so the old woman won't catch her — and reports, flatly, that there was no
+  struggle: *"I did not hesitate. That is the whole of it."* (*Cartographer* ch.4).
+
+Two rules make it land. **The character must have the facts** — if they're merely ignorant, it's plot,
+not character. And **the reward must be real**: the shawl is warm, the old woman dies content. Written
+this way the horror needs no monster and no gore — it's just a person preferring the shawl — which is
+exactly the restraint the shelf is built on (`genre-range.md`).
+
 ## The supporting cast
 
 - **Everyone wants something.** Even a one-scene character has an agenda; that's what makes
