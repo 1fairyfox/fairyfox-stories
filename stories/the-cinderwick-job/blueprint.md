@@ -37,11 +37,12 @@ world solo. The job breaks the first want to force the second need.
    lifts a minor curio, nearly gets pinched, escapes through the Understair. Ends when a stranger who
    watched the whole thing leaves a card with her own real name on it — the name she buried. *(written)*
 2. **The Commission.** The client (a go-between) makes the offer: steal the Nightingale from the Cage.
-   Impossible; that's the hook she can't refuse. She takes it, seeing the trap, planning to rob the trap.
+   Impossible; that's the hook she can't refuse. She takes it, seeing the trap, planning to rob the trap. *(written)*
 3. **The Cage.** Casing the auction house. We meet **Magister Crane**, who greets her by name and
-   invites her to bid — he *wants* her inside. Juno realizes the Ordinal set the client on her.
-4. **The Second Thief.** She's not the only finder hired. A rival — reckless, charming, better than
-   he should be — is after the Nightingale too. Forced alliance; neither trusts the other (rightly).
+   invites her to bid — he *wants* her inside. Juno realizes the Ordinal set the client on her. *(written)*
+4. **The Second Thief.** She's not the only finder hired. **Kit Sorrel** — reckless, charming, better
+   than he should be — is after the Nightingale too, and was hired *two days before she was*. Forced
+   alliance; neither trusts the other (rightly). Their bidder's chits are consecutive. *(written)*
 5. **The Auction.** The heist proper, during the Cage's night auction. It goes beautifully, then
    wrong: the Nightingale sings back a sound that proves the whole job was Crane's design.
 6. **The Double-Cross.** Betrayals resolve — the rival's true loyalty, the client's identity, Crane's

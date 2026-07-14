@@ -79,7 +79,7 @@ the same thing in different keys.
    opens, for one impossible second, onto a place from her past. She slams it. The rule, glimpsed.
 3. **Sully's Keys.** The recurring client: the old man locked out nightly because he hides his own
    keys from himself. Warmth and comedy and ache. He tells her, plainly, the difference between
-   *losing* a key and *hiding* one — and doesn't know he's describing her.
+   *losing* a key and *hiding* one — and doesn't know he's describing her. *(written)*
 4. **The Bolt.** The wound named. Who Theo is; the night three years ago he came owing the wrong
    people and she turned the lock; the story she's told since. The hollow hour tests her: a door
    offers him. She refuses — won't pay the truth.

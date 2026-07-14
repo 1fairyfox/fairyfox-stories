@@ -7,13 +7,13 @@ wordCap: 13200
 chaptersPlanned: 7
 universe: the-gaslight-reach
 author: del-marsh
-characters: [juno-vale, magister-crane]
+characters: [juno-vale, magister-crane, kit-sorrel]
 cities: [cinderwick]
 state: growing
 cover: /stories/the-cinderwick-job/art/cover.png
 logline: Cinderwick's best thief takes the one job she should have refused — steal a curio from the Ordinal's own vault, for a client who knows far too much about her.
 content_note: Adventure-thriller peril — chases, cons, and a very polite villain. No gore; dark like a heist, not like a nightmare.
-updated: 2026-07-12
+updated: 2026-07-14
 date: 2026-07-06
 ---
 
