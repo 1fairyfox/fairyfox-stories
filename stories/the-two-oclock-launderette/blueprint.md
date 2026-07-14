@@ -6,8 +6,8 @@ permalink: /stories/the-two-oclock-launderette/blueprint/
 ---
 
 **Form:** short story (~6,200-word cap) · **Genre:** magical realism · **POV:** first person,
-past tense · **Universe:** the Hollow Hours · **Status:** growing. The whole gentle plan, ending
-included.
+past tense · **Universe:** the Hollow Hours · **Status:** **complete** (all three chapters written,
+2026-07-14). The whole gentle plan, ending included.
 
 ## Why a short story
 
@@ -34,10 +34,10 @@ helps. The machine offering to wash *her* worry forces the gap.
    she finds her own coat has been loaded into machine 7, running, though she never put it there. *(written)*
 2. **What Comes Out.** She lets it run — barely. What the launderette rinses out of her coat is the
    folded-away grief for her mother and the un-made phone call to her father. She nearly puts it
-   all back in her pockets, out of habit.
+   all back in her pockets, out of habit. *(written)*
 3. **Fenn Street, 2 a.m.** She keeps one small thing washed clean — makes the call, at last — and
    leaves the rest of the mending to daylight and her own two hands. The hollow hour ends; the
-   kettle is just a kettle. She's a little warmer, and so, for once, is she.
+   kettle is just a kettle. She's a little warmer, and so, for once, is she. *(written)*
 
 ## Ending
 

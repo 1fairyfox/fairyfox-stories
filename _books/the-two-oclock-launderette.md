@@ -9,11 +9,11 @@ universe: the-hollow-hours
 author: posy-fell
 characters: [nadia-okafor]
 cities: []
-state: growing
+state: complete
 cover: /stories/the-two-oclock-launderette/art/cover.png
 logline: A launderette that rinses the worry out of your clothes — and the night-shift attendant who'll do it for anyone but herself.
 content_note: Warm and gentle. A little loneliness and quiet grief; cosy, never heavy.
-updated: 2026-07-11
+updated: 2026-07-14
 date: 2026-07-05
 ---
 
