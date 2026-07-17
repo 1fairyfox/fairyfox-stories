@@ -9,11 +9,11 @@ universe: the-long-quiet
 author: idris-okonkwo-vance
 characters: [sela-renn, ilkka-vosse]
 cities: []
-state: growing
+state: complete
 cover: /stories/the-cartographer-of-decks/art/cover.png
 logline: A ship-born mapmaker charts a deck that appears on no chart — and begins to suspect the Ark Meridian isn't going where four centuries of the faithful believe.
 content_note: Quiet dread and existential unease aboard a sealed ship. Cerebral, not gory.
-updated: 2026-07-15
+updated: 2026-07-17
 date: 2026-07-04
 ---
 

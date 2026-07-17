@@ -93,6 +93,34 @@ test('chapters reference a real book, are ordered, and do not exceed the plan', 
   }
 });
 
+// The shelf's progress bar, the least-tended-first pick, and the sequel roll all read `state`.
+// A book that quietly stays `growing` after its last chapter lands would sit in the grow pool
+// forever and never reach the sequel pool — so derive the truth from the chapters on disk and
+// assert the manifest agrees. This also enforces the sequel-lock's consuming half: a locked book
+// does not get to finish as a plain `complete`, because `complete` is what the weekly roll reads.
+test('book state matches chapters written, and sequel-lock is honoured at completion', () => {
+  for (const { slug, fm } of books) {
+    const written = chaptersFor(slug).length;
+    const planned = Number(fm.chaptersPlanned);
+    const locked = String(fm.sequelLock) === 'true';
+
+    if (written === 0) {
+      assert.equal(fm.state, 'planned', `${slug}: 0/${planned} chapters written but state is "${fm.state}"`);
+    } else if (written < planned) {
+      assert.equal(fm.state, 'growing', `${slug}: ${written}/${planned} chapters written but state is "${fm.state}"`);
+    } else {
+      const expected = locked ? 'complete-no-sequel' : 'complete';
+      assert.equal(fm.state, expected,
+        `${slug}: ${written}/${planned} chapters written and sequelLock ${locked} — state must be "${expected}", found "${fm.state}"`);
+    }
+
+    // `complete-no-sequel` is the sequel-lock's marking; it must never appear without the lock.
+    if (fm.state === 'complete-no-sequel') {
+      assert.ok(locked, `${slug}: state "complete-no-sequel" but sequelLock is not true`);
+    }
+  }
+});
+
 test('every book has a public blueprint', () => {
   for (const { slug } of books) {
     const bp = join(ROOT, 'stories', slug, 'blueprint.md');
