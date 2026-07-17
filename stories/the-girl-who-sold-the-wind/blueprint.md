@@ -6,7 +6,12 @@ permalink: /stories/the-girl-who-sold-the-wind/blueprint/
 ---
 
 **Form:** novelette (~9,200-word cap) · **Genre:** fantasy / fable · **POV:** first person, past
-tense · **Universe:** the Salt Road · **Status:** growing. The whole tale, moral included.
+tense · **Universe:** the Salt Road · **Status:** complete. The whole tale, moral included.
+
+_Finished 2026-07-17 at roughly **10,200 words** against a planned ~9,200 cap — the finale ran long
+because a told-aloud fable has to land the turn **and** close the frame it opened in chapter one. Well
+inside the novelette band (7,500–17,500); recorded here rather than trimmed, because the plan is a
+promise about shape, not a promise about the exact count._
 
 ## Why a novelette (as a fable)
 

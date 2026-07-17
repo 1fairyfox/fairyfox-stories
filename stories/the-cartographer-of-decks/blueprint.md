@@ -6,7 +6,7 @@ permalink: /stories/the-cartographer-of-decks/blueprint/
 ---
 
 **Form:** novelette (~11,800-word cap) · **Genre:** science fiction · **POV:** first person, past
-tense · **Universe:** the Long Quiet · **Status:** growing. The whole plan, including the ship's
+tense · **Universe:** the Long Quiet · **Status:** complete. The whole plan, including the ship's
 secret and the ending.
 
 ## Why a novelette

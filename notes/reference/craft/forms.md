@@ -72,6 +72,31 @@ recorded in the book's `manifest.json` (`form`, `wordCap`) and drives the whole 
 
 ---
 
+## Budget the finale, not just the chapters (learned 2026-07-17)
+
+Two novelettes finished on the same run and taught the same lesson from opposite directions: **the
+last chapter is not an average chapter, and the word-pick should say so at planting.**
+
+*The Girl Who Sold the Wind* landed its five chapters at ~10,200 against a ~9,200 pick — the whole
+overrun in ch.5, because a **framed** book (a narrator telling this aloud to someone) owes two
+endings: the tale's and the telling's. The turn, the payment, and the moral all land — and *then* the
+frame still has to close, and the frame-close is where the moral goes sideways and stops being a
+lecture. That is not padding; it is the form. *The Cartographer of Decks* came in at ~11,200 against
+~11,800 with the same shape of finale and no strain, because the pick had room in it.
+
+The rule, going forward: at planting, **draw the word-pick with the last chapter costed at ~1.5× a
+middle chapter** — more if the book is framed, has a coda, or resolves through understanding rather
+than event (all three make the ending a scene, not a beat). If the pick can't carry that, the pick is
+too tight for the chapter count, not the finale too long.
+
+And when a finished book does run past its pick: it is **inside the band or it isn't.** Inside — keep
+the prose, record the delivered length honestly in the blueprint, and leave `wordCap` as the planted
+record of the roll (never edit the roll to match the result; the audit trail is worth more than the
+tidy number). Outside the band — the *form* was wrong, which is a real finding and belongs in
+`decisions/`.
+
+---
+
 ## Planting checklist (form fit)
 
 1. Can the premise's engine actually fill the rolled form — or is it a short story wearing a

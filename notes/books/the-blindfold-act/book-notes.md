@@ -89,8 +89,8 @@ bleak.
 
 1. **The Pay-Wagon** *(written)* — discovery, locked wagon, missing take, sheriff, the show's pull, the
    voice + act established. Ends on Sonora deciding she'll read her own to keep them safe.
-2. **A Cold Reading** — sheriff fixes on Bruno; the code; Sonora starts the circle; Lark introduced
-   with her planted tell.
+2. **A Cold Reading** *(written 2026-07-17)* — sheriff fixes on Bruno; the code; Sonora starts the
+   circle; Lark introduced with her planted tell.
 3. **The Tells** — deepen; false lead (fire-eater's debt / fortune-teller's grudge); money half-surfaces;
    easy answers cleared.
 4. **The Understudy** — breath, then the turn: the relock-trick + Lark's tell. She knows. The
@@ -99,6 +99,57 @@ bleak.
 6. **The Blindfold Act** — she refuses the easy thing; clears Bruno, squares it as accident without
    hanging Lark, buses her north with the stake; burns her standing, breaks the code, loses her place
    and the girl. Takes the blindfold off. Poorer, seen, larger. Complete · no sequel.
+
+## Ch.2 — new canon (2026-07-17)
+
+- **Cold vs. hot reading** opens the chapter and is the book's thesis in trade terms: a *hot* reading
+  is a purchase (pay the ticket-seller a nickel); a **cold** reading is looking at what is actually in
+  front of you with no story of your own in the way, and saying the true thing **before you have
+  decided whether you want it to be true.** Sonora is the best cold reader alive and the chapter is
+  about the one time she declines to do it. ("A woman who is good at a thing and then does not do it
+  has to be asked why, and I would rather be the one asking.")
+- **Names fixed:** the patch is **Dell** (small, pink, never says a sentence he can't take back);
+  **Sallow** the cook (cleared — shaking hands are exactly what they look like); **Perro** the
+  fire-eater (owes money in three towns, letter kept in the inside pocket over the heart, asked the
+  Colonel to pay and was refused — the false lead ch.3 will spend); **Ynez** the fortune-teller
+  (crosses herself for weather; hates him *out loud*, which is the tell that it's nothing — "the hate
+  people hand you across a table is never the hate that kills"; alibi'd at cards till grey).
+- **The Bruno mechanism — nobody sells him.** The sheriff walks him to the fender at **nine in the
+  morning, in front of everybody, which was the point.** Bruno answers everything truthfully; the
+  sheriff writes down nothing, because *he is not gathering, he is fitting.* Dell never says "take the
+  strongman" — he says *the show is clean and the show is leaving*, and a man who needs a name and is
+  told warmly the name isn't in **here** looks at the man who isn't quite in here either. **"Nobody
+  sold Bruno. We simply all stood in a circle and left him outside it, which is the same, and costs
+  less, and lets you sleep."** Keep this — ch.6's clearing of Bruno must cost *Sonora*, not indict a
+  villain; there isn't one.
+- **The code's underside:** *with it and for it* is a real love with no counterfeit in it — **and** a
+  wall, and "a wall does not know what it is keeping out." The line to carry: every good thing about
+  the show was, that week, **a machine for not looking** — and Sonora is "the finest instrument the
+  machine had ever grown… being the eye of a thing that refuses to see is a very comfortable place to
+  hide."
+- **THE TELL, planted (pays in ch.4):** at the cook-house, Dell says *"He'd want us to roll"* — the
+  first time the Colonel's name is in the air. **Lark's hands stop; her thumb lifts off the loaf; she
+  looks at the cold stove — not the door, not Dell — for a second and a half, then goes back to the
+  bread with her face on straight.** Deliberately tiny. Sonora clocks it *and* supplies the innocent
+  reading herself (the stove is where they found him; a child grieving) — **both readings are true;
+  "that is the trouble with a good reading: it does not come with a receipt."** ch.4 doesn't need a
+  new clue, only the courage to stop crediting the alibi she wrote for the girl.
+- **THE PAID TURN — the door Sonora shut herself.** Lark comes to her wagon that night: *"Sonora. If a
+  person —"* Six words. *If a person* = the oldest way in the world to say **I**. Sonora **knows**
+  what's coming (not suspects — knows), is terrified, and **does the act**: takes the sentence off her
+  and puts a lesson in her hands. Verbatim, and quotable in later chapters: *"Don't stand in a
+  doorway, child, it reads guilty… whatever you're about to tell me: don't… The tip pays for the
+  mystery, and the mystery is the part you never say out loud. You keep your own gaff, Lark. That's
+  the whole wall, and I built you a good one."* Lark's wall goes up in two seconds — **"She said, 'No.
+  It's nothing.' She said it in my voice."** — and Sonora counts a full minute of the girl being six
+  feet away and does not open her mouth.
+- **The cost, stated, for ch.3–6 to collect:** she will spend four days of brilliant expensive
+  detective work to find out **the thing she was offered for free in a doorway**, and by the time she
+  has it, it will cost Lark everything — "and I would still call myself the one who sees." The ch.5
+  confrontation must land against *this*: Lark already tried once.
+- **Sonora's given name, in the wild:** she calls herself **Ada Prewitt** once, in self-reproach
+  ("you are a sick woman, Ada Prewitt") — first use in the prose. Ration it; the name coming off the
+  act is a ch.6 move.
 
 ## Style dials (hold every chapter)
 
