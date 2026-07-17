@@ -82,11 +82,11 @@ work, and a new craft rule in `forms.md`. Full audit in `sessions/2026-07/2026-0
   *The Blindfold Act* (2/6) is the only locked book and is nowhere near completion, so there's room.
 - **Needs Fairy Fox:** review + merge the five Dependabot Actions PRs (#2–#6, deploy workflow) — held
   so an unattended grow release never rides an untested workflow change.
-- **The `branch-sync` CI fix has shipped** (was carried here as "on `dev`, awaiting the next release").
-  It rode v0.4.1 to `main`; `dev` and `main` were verified identical at `6e78be5` at the start of the
-  07-17 run, so the retry (6×/30s, to absorb the by-design race where `branch-sync` checks `dev` in the
-  seconds before the back-merge lands) is now live. Watch this release's run to confirm it goes green
-  on the first attempt rather than on a re-run.
+- **The `branch-sync` CI fix has shipped and is confirmed working** (was carried here as "on `dev`,
+  awaiting the next release"). It rode v0.4.1 to `main`; `dev` and `main` were verified identical at
+  `6e78be5` at the start of the 07-17 run. On the **v0.4.2 release it went green on the first attempt
+  in 42s** — the retry (6×/30s) absorbing the by-design race where `branch-sync` checks `dev` in the
+  seconds before the back-merge lands, exactly as designed. **Closed; no longer watch-listed.**
 - **Deferred eyeball (07-11 → 07-17):** Chrome wasn't connected on any recent run (seven grow runs + the
   07-15 plant), so new pages were verified structurally (`npm test`) and against the built Jekyll HTML
   but not read in a browser. All are prose + front-matter changes with no template or CSS edits — but the
