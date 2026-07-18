@@ -1,7 +1,7 @@
 # Serialization — writing a book a chapter at a time
 
-Books here are **grown a chapter at a time** (up to 5 books advanced per day, one whole
-chapter each). The book is fully blueprinted up front, but it's *revealed* serially — so each
+Books here are **grown a chapter at a time** (exactly 1 book advanced per day, one whole
+chapter). The book is fully blueprinted up front, but it's *revealed* serially — so each
 chapter must satisfy on its own and pull to the next. Sources:
 [MasterClass — serialized](https://www.masterclass.com/articles/how-to-write-a-serialized-story),
 [Wattpad — serialised fiction](https://www.wattpad.com/332437209-how-to-write-serialised-fiction-how-to-structure),

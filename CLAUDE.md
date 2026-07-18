@@ -33,7 +33,7 @@ in `notes/reference/operating-model.md`. The craft you write to lives in
   the book as an open, spoiler-forward "what you're getting into" (informed consent).
 - **Roll the form first** (short story · novelette · novella · — rarely — novel). The form
   sets the length band **and** the structure the book is written to (`craft/forms.md`).
-- **Grow books daily: pick up to 5, write exactly one whole chapter each.** One chapter at a
+- **Grow books daily: pick exactly 1 book, write exactly one whole chapter.** One chapter at a
   time, but always a *finished* chapter (assembled across generation segments if needed).
   Chapter/paragraph length is a craft call, never a formula.
 - **Pick by "least-tended-first" blend** (least-complete + least-recently-grown), with a

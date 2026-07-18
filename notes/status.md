@@ -102,10 +102,11 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   Ch.2 "The Ear of the House" is next: the three laws (the proving law is the finale's hook — plant it
   verbatim), Noor's ear, and the opened town. The chapter map + style dials live in
   `notes/books/the-hundredth-wind/book-notes.md`.
-- **Needs Fairy Fox (still open, 8th run):** reconcile the grow-count — `operating-model.md` says
-  **exactly 2/day**, while `CLAUDE.md`, `craft/serialization.md`, and the scheduled task say **up to
-  5**. Every run 07-11 → 07-18 has grown **3** (inside "up to 5", above "exactly 2") and flagged it
-  rather than silently picking a side; one number should win, recorded in `decisions/`.
+- **Grow-count RESOLVED (07-18, Fairy Fox):** the daily grow rate is now **exactly 1 book/day** (one
+  whole chapter, single least-tended book) — the old 2-vs-5-vs-3 discrepancy is closed, one number
+  wins everywhere (`operating-model.md`, `CLAUDE.md`, `craft/serialization.md`, and the
+  `fairyfox-stories-daily` task prompt all say 1). Plant cadence unchanged (≤1 every 3 days). See
+  `decisions/architecture.md` (2026-07-18).
 - **Needs Fairy Fox — sequel-lock, part (b) only, now on a deadline (07-21):** part (a) is **done as of
   this run** — a book's `state` is now derived from the chapters on disk and enforced by `npm test`, and
   a `sequelLock: true` book at full chapters **must** be `complete-no-sequel`, never a plain `complete`.
@@ -140,7 +141,7 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
 | Books on the shelf | ✅ **8 on the shelf — 3 complete, 5 growing** (caper · cosy magical-realism · SF · gothic · fable ×2 · night-city magical-realism novella · carnival mystery); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Blindfold Act* **planted 07-15** (first mystery + first sequel-lock); *The Hundredth Wind* **planted 07-18** — the first universe-join (the Salt Road) and first author-reuse (Amara Okri) |
 | Authors / universes / characters | ✅ 6 author-personas (**Amara Okri now has two books** — first body-of-work, 07-18), 6 universes (**the Salt Road now holds two books** — first realm to deepen, 07-18), 18 character pages (Basri Yel + Noor + Emir Duqal added 07-18) — meshed + bylined |
-| Cover & chapter art | ✅ covers generated for the first 6 (gpt-image-1 via `scripts/generate-art.mjs`); ch.1 header art on the first 5. *The Blindfold Act* and *The Hundredth Wind* are **text-only (budget-deferred)** — shelf cards degrade to the titled fallback; art can be generated in a later pass |
+| Cover & chapter art | ✅ **all 8 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Blindfold Act* and *The Hundredth Wind* backfilled 07-18. The **PLANT task now auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no more text-only fallbacks |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17), runs on push/PR |
 | GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.4.3**, 2026-07-18 |
 | Hub registration | ⛔ pending (hub-side edit) |

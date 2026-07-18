@@ -8,15 +8,15 @@ it in `decisions/`.
 
 - **Plant** a brand-new book **at most once every 3 days.** Planting = producing a book's
   **complete public blueprint** (no prose yet), per `craft/` and `forms.md`.
-- **Grow** existing books **every day:** pick **exactly 2** books and write **exactly one whole
-  chapter** on each (`craft/serialization.md`). One chapter at a time; always finished, even
+- **Grow** existing books **every day:** pick **exactly 1** book and write **exactly one whole
+  chapter** (`craft/serialization.md`). One chapter at a time; always finished, even
   if assembled across several generation segments.
 
 A day may be pure growth (no new book). Planting never replaces growing — a planted book is
 grown on later days like any other.
 
 **Automation.** A scheduled job runs this loop unattended **daily at midnight (America/Denver)**:
-grow **2** books, and **plant one only when 3+ days have passed** since the last new book. It
+grow **1** book, and **plant one only when 3+ days have passed** since the last new book. It
 **auto-publishes** the result to `main` (pre-authorized by Fairy Fox). See
 `decisions/architecture.md`.
 
@@ -45,12 +45,12 @@ grow **2** books, and **plant one only when 3+ days have passed** since the last
 
 ## Growing — picking which books to advance
 
-Each day choose **2 incomplete** books by a **least-tended-first blend**:
+Each day choose **1 incomplete** book by a **least-tended-first blend**:
 
 - **Blend score** favours books that are both **least complete** (fewest chapters written vs
   planned) **and least recently grown** (longest since last chapter). Either signal alone
   raises priority; both together, more so.
-- **Random override:** independently, **15–20%** of the day's picks are chosen **purely at
+- **Random override:** independently, on **15–20% of days** the pick is chosen **purely at
   random** from all incomplete books — so the shelf never feels mechanical and a
   well-along book still gets surprise attention.
 - Never advance a completed book (grow its *sequel* instead, if one exists).
@@ -89,7 +89,7 @@ Write one whole chapter per picked book, holding continuity and voice (`serializ
 1. If ≥3 days since the last planting **and** it's a good moment → plant one book (sequence
    above), else skip.
 2. Run the weekly sequel roll if 7 days have passed.
-3. Pick 2 incomplete books (blend + random override); write one whole chapter each.
+3. Pick 1 incomplete book (blend + random override); write one whole chapter.
 4. Run `npm test` (integrity), preview any visual change in Chrome, update notes + changelog,
    commit to `dev`. Release to `main` only on Fairy Fox's go-ahead — **except the automated
    daily job, which is pre-authorized to auto-publish** (see *Automation* above).
