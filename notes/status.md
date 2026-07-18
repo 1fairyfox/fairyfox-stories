@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.4.3` (single source of truth: repo-root `VERSION`).
+**Version:** `0.5.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -21,7 +21,7 @@ automation are all shipped; the site has had two live releases (v0.2.0, v0.2.2).
 its **daily grow** phase — advancing real chapters on the least-tended books. The full build plan is
 `plans/farm-build-plan.md`; the daily loop is `reference/operating-model.md`.
 
-## The shelf (as of v0.4.3)
+## The shelf (as of v0.5.0)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
@@ -32,8 +32,17 @@ its **daily grow** phase — advancing real chapters on the least-tended books. 
 | The Wintering House (gothic) | novella | 7 / 11 | 2026-07-18 |
 | The Cinderwick Job (caper) | novelette | 6 / 7 | 2026-07-18 |
 | The Blindfold Act (mystery · sequel-locked) | novelette | 2 / 6 | 2026-07-17 |
+| **The Hundredth Wind** (fable) | novelette | 1 / 7 | 2026-07-18 (planted) |
 
-**Seven books — three `complete`, four `growing`.** Latest run **07-18 (v0.4.3, grow)**: three chapters, a
+**Eight books — three `complete`, five `growing`.** Latest run **07-18 second run (v0.5.0, plant)**:
+*The Hundredth Wind* — fable novelette (wordCap 14,000, 7 chapters), and **two farm-firsts in one
+draw**: the first **universe-join** (roll 79 → existing; pick → **the Salt Road**, now the first realm
+with two books) and the first **author-reuse** (roll 83 → existing; pick → **Amara Okri** returning to
+her realm with a new, unrelated tale — no crossing roll fired, all-new cast). Basri Yel, ninety-nine
+winds caught and a legend built on the one he didn't, hired to bottle the wind that opens shut things —
+which answers only to *the thing you will not say*. Full blueprint public; ch.1 "The Ninety-Ninth"
+written; skew thresholds stepped down (new-≤50 universe / ≤55 author) per `decisions/`. Earlier the
+same day, **07-18 (v0.4.3, grow)**: three chapters, a
 quiet middle-of-the-book run (nothing finished, nothing one chapter from done) — *Every Lock but Hers* ch.5
 "What It Costs" (5/11), *The Wintering House* ch.7 "The Hand at the Fire" (7/11), *The Cinderwick Job* ch.6
 "The Double-Cross" (6/7). **No override** (rolls `32`/`77`/`71` vs. the ≤18 threshold) — a clean mechanical
@@ -70,10 +79,13 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   family keeps warm and that they mean her to become the next who tends it. *Every Lock but Hers* (5/11)
   next hits **ch.6 "The Job She Can't Do"** — the Dani eviction that breaks Nell's no-questions rule. Both
   are mid-book and will stay in the blend's rotation for several runs yet.
-- **Next plant** eligible on or after **2026-07-18** (`fairyfox-stories-new`, ~every 3 days; last plant
-  *The Blindfold Act* 07-15) — but that's the sibling `-new` job's call, not this grow job's. Planting
-  note still standing: **cost the finale at ~1.5× a middle chapter** when drawing the word-pick
-  (`craft/forms.md`).
+- **Next plant** eligible on or after **2026-07-21** (last plant *The Hundredth Wind* **07-18**). The
+  finale-at-~1.5× word-pick costing was applied on this plant and stays standing for the next.
+- **The Hundredth Wind enters the grow pool at 1/7** — the second-highest incompleteness on the shelf
+  (0.857) behind nothing; it and *The Blindfold Act* (2/6) will dominate the blend's next few runs.
+  Ch.2 "The Ear of the House" is next: the three laws (the proving law is the finale's hook — plant it
+  verbatim), Noor's ear, and the opened town. The chapter map + style dials live in
+  `notes/books/the-hundredth-wind/book-notes.md`.
 - **Needs Fairy Fox (still open, 8th run):** reconcile the grow-count — `operating-model.md` says
   **exactly 2/day**, while `CLAUDE.md`, `craft/serialization.md`, and the scheduled task say **up to
   5**. Every run 07-11 → 07-18 has grown **3** (inside "up to 5", above "exactly 2") and flagged it
@@ -92,7 +104,8 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   in 42s** — the retry (6×/30s) absorbing the by-design race where `branch-sync` checks `dev` in the
   seconds before the back-merge lands, exactly as designed. **Closed; no longer watch-listed.**
 - **Deferred eyeball (07-11 → 07-18):** Chrome wasn't connected on any recent run (eight grow runs + the
-  07-15 plant), so new pages were verified structurally (`npm test`) and against the built Jekyll HTML
+  07-15 and 07-18 plants — the 07-18 plant adds the *Hundredth Wind* card/landing/blueprint/ch.1 to the
+  debt), so new pages were verified structurally (`npm test`) and against the built Jekyll HTML
   but not read in a browser. All are prose + front-matter changes with no template or CSS edits — but the
   debt is now **twenty-four grown chapter pages + the *Blindfold Act* card/ch.1 + the three completed-book
   cards** deep, worth one hard-reload pass over the shelf and the new pages next time a browser is up
@@ -109,9 +122,9 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
-| Books on the shelf | ✅ **7 on the shelf — 3 complete, 4 growing** (caper · cosy magical-realism · SF · gothic · fable · night-city magical-realism novella · carnival mystery); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17** — first time two books completed on one run; *The Blindfold Act* **planted 07-15**, the first mystery + first sequel-locked book |
-| Authors / universes / characters | ✅ 6 author-personas (Roan Cassady added 07-15), 6 universes (The Sawdust Circuit — a grounded, non-magical realm — added 07-15), 15 character pages (Madame Sonora + Lark + Colonel Aurelio added 07-15) — meshed + bylined |
-| Cover & chapter art | ✅ covers generated for the first 6 (gpt-image-1 via `scripts/generate-art.mjs`); ch.1 header art on the first 5. *The Blindfold Act* is **text-only (budget-deferred)** — the shelf card degrades to the titled fallback; cover/header art can be generated in a later pass |
+| Books on the shelf | ✅ **8 on the shelf — 3 complete, 5 growing** (caper · cosy magical-realism · SF · gothic · fable ×2 · night-city magical-realism novella · carnival mystery); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Blindfold Act* **planted 07-15** (first mystery + first sequel-lock); *The Hundredth Wind* **planted 07-18** — the first universe-join (the Salt Road) and first author-reuse (Amara Okri) |
+| Authors / universes / characters | ✅ 6 author-personas (**Amara Okri now has two books** — first body-of-work, 07-18), 6 universes (**the Salt Road now holds two books** — first realm to deepen, 07-18), 18 character pages (Basri Yel + Noor + Emir Duqal added 07-18) — meshed + bylined |
+| Cover & chapter art | ✅ covers generated for the first 6 (gpt-image-1 via `scripts/generate-art.mjs`); ch.1 header art on the first 5. *The Blindfold Act* and *The Hundredth Wind* are **text-only (budget-deferred)** — shelf cards degrade to the titled fallback; art can be generated in a later pass |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17), runs on push/PR |
 | GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.4.3**, 2026-07-18 |
 | Hub registration | ⛔ pending (hub-side edit) |

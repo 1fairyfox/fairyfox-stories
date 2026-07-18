@@ -2,6 +2,24 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-18 — First universe-join + first author-reuse; the skew steps down
+
+Planting *The Hundredth Wind*, both parallel new-vs-existing rolls came up **existing** for the first
+time in the farm's life (universe `79`, author `83`), and the picks landed on **the Salt Road** and
+**Amara Okri** — *The Girl Who Sold the Wind*'s own pair. Decisions: **(1) honour the rolls as they
+fell** — no re-roll because the pairing "felt samey"; the honesty rule (`operating-model.md`,
+"reproducible, honest") outranks aesthetic second-guessing, and distinctness is enforced where it
+belongs, in the design (new cast, new engine, new shape; no crossing — no crossing roll fired). An
+author returning to their realm is the body-of-work move `author-personas.md` explicitly wants. **(2)
+Step the skew thresholds down one notch** now both counts sit at 6: universe new-≤**50** (was 55 at 5
+realms), author new-≤**55** (was 60 at 5). **Why:** `universe-system.md` and `author-personas.md` both
+mandate a drift from lean-new toward reuse as the rosters fill; stepping ~5 points per count-increase
+is gradual, auditable, and keeps fresh realms/authors common. **Rules in/out:** joins deepen a realm
+via the codex (canon respected, seeds grown/tended) — never via plot dependence; a joined book still
+stands alone and needs no other book to be read. Existing-picks draw uniformly over the alphabetical
+roster (out-of-range draws re-rolled, recorded). The thresholds continue stepping down as counts grow;
+the constants' home remains `operating-model.md` (`UNIVERSE_NEW_SKEW`).
+
 ## 2026-07-15 — Sequel-lock: first exercise, and recording it at planting
 
 Planting *The Blindfold Act*, the **sequel-lock roll came up locked** (`5` ≤ ~10%) — the first time

@@ -41,5 +41,5 @@ cloth. The winds themselves — dawn-cool, grief-heavy, homesick-sweet — corke
 ## Seeds
 
 - A wind-seller who sells the wrong wind to the wrong buyer.
-- The wind no one will bottle, and the child sent to catch it.
 - Three travellers, three bottles, and only one true wind among them.
+- A waystation where the winds themselves come to trade, one night a year.
