@@ -2,6 +2,33 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-18 — Grow slows to 1 book/day (grow-count resolved); plant now auto-generates art
+
+Two owner-directed changes (Fairy Fox).
+
+**(1) The daily grow rate is now EXACTLY 1 book per day** — one whole finished chapter, on the single
+least-tended book. This **resolves the long-standing grow-count discrepancy**: `operating-model.md`
+had said "exactly 2", `CLAUDE.md` and `craft/serialization.md` and the scheduled task said "up to 5",
+and every run 07-11→07-18 actually grew 3. One number now wins everywhere: **1**. **Why:** the owner
+asked to slow the pace; a single book/day is calmer, keeps each day's craft focused, and matches the
+games farm (which already grows one/day). The **15–20% random override** is retained as a per-day
+probability (on ~1 day in 5–6 the single pick is purely random). Updated in step: `operating-model.md`
+(single source of truth for the constant), `CLAUDE.md`, `craft/serialization.md`, and the
+`fairyfox-stories-daily` scheduled-task prompt. **Plant cadence is unchanged — still ≤1 new book every
+3 days.** Rules in/out: the least-tended-first blend and sequel/plant machinery are otherwise
+unchanged; only the daily pick count drops 2→1.
+
+**(2) The PLANT job now generates cover + opening-chapter art automatically.** `operating-model.md`
+step 7 always specified "Cover/header art is generated (budget-aware)", but the `fairyfox-stories-new`
+automation never actually ran `scripts/generate-art.mjs`, so every book it planted (*The Blindfold
+Act* 07-15, *The Hundredth Wind* 07-18) shipped text-only against the titled fallback. Fixed the
+automation to match the spec: the plant prompt now runs the art tool for a cover (1024x1024) and a
+ch.1 header (**1536x1024** — gpt-image-1 rejects dall-e-3's 1792x1024), views the cover to confirm no
+garbled lettering, and sets `cover:`/`header_image:`. The two art-less books were **backfilled** this
+run. **Why:** a new book should look finished on the shelf, not degrade to fallback. Rules in/out: art
+stays budget-aware and local-only (never at read time); on an image-API failure the plant job
+BAIL-OUTs (records the skip) rather than shipping art-less.
+
 ## 2026-07-18 — First universe-join + first author-reuse; the skew steps down
 
 Planting *The Hundredth Wind*, both parallel new-vs-existing rolls came up **existing** for the first
