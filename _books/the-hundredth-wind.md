@@ -13,7 +13,7 @@ state: growing
 cover: /stories/the-hundredth-wind/art/cover.png
 logline: The Salt Road's most famous wind-catcher is hired to bottle the one wind no catcher has ever taken — the wind that opens shut things — and it stops running from him and starts opening him instead.
 content_note: A bright desert fable with real weight under it — an old betrayal told plainly (never depicted), a grieving man who cages winds, a public reckoning with a long lie. Mischief, bargains with hooks, a sly sweet ending. Nothing graphic or bleak.
-updated: 2026-07-18
+updated: 2026-07-20
 date: 2026-07-18
 ---
 
