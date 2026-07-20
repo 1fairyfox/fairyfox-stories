@@ -124,6 +124,42 @@ Carmen-Sandiego danger; the darkest thing in the book is a sentence a man won't 
    vault opened; the Emir answered; Nuru credited; Noor in weather; the moral sideways. ~2,800 (finale
    at ~1.5×).
 
+## Ch.2 — new canon (written 2026-07-20, book at 2/7)
+
+Written to the map: the three laws in showman's patter, Noor's ear, the opened town, the wind's
+doubleness. ~1,930 words. Canon to honour going forward:
+
+- **The three laws, as taught (verbatim seeds):** (1) *naming* — restated from ch.1, clean.
+  (2) **The proving law — the ch.7 hook, planted verbatim:** "A bottled wind is proved once, and once
+  only, at the buyer's own threshold … so that he sees the wind stir in the glass and knows for certain
+  it is live before ever a coin changes hands." Tied explicitly to the contract phrase **"bottled and
+  delivered … the proving is the delivering. No threshold, no sale."** Ch.4 paperwork can cite it;
+  ch.7 springs it at the House's own threshold. (3) *flavour* — "Never sell a wind you would miss,"
+  which Noor flatly re-reads as **"That is not a law of the craft. That is a law about you."** (the
+  foil landing her first true blow; seeds the stopper/Nuru theme without naming it).
+- **Noor's ear, made concrete + trained (not magic):** raised in the vault; learned the ninety-nine by
+  the sound they knock against glass at night. Her private names for Basri's winds — **the Sigher**
+  (dawn wind off the Kessa dunes, turns 3×/hour), **the Presser** (grief wind out of Talibar, never
+  moves, only presses like a hand on a given-up door), **the Little Heresy** (ch.1's lamp-snuffer, now
+  knocking west with the rest). Her line **"They want out. All of them. All the time … now they only
+  ever knock."** — arms the vault-as-wrong and the finale's release. Her want planted plainly: **"I
+  have never once been outside in weather, until this road. I did not know it would feel like a hand."**
+  Physical tell: **two fingers pressed to her throat** where the first gust touched her — carry it.
+- **The opened town (the wind's doubleness, taught by example):** read the Unbottled's passage by
+  *openness*, not wreckage — a whole town standing ajar. Two specifics now canon: **(mischief)** a
+  nine-year marriage broken by a blown-open letter; **(judgment)** the **grain-factor's** filed
+  short-weight salt-scale beam aired on the cobbles, and with it the proof clearing **a long-dead girl
+  blamed for his theft** — her name given back in the square. Thesis line to keep true: **"It doesn't
+  choose … It only opens. What comes out is the town's, not the wind's."**
+- **Stopper beats (ch.2):** his hand goes to the cracked horn twice, unbidden — once at the fire on
+  Noor's "feel like a hand," once in the opened town ("every shut thing but the one I carried had been
+  opened"). Dramatic irony deepened, name still unspoken. The flourish-clustering rule held: he
+  deflects/withholds exactly where the buried thing sits.
+- **Escalation set up for ch.3:** the wind is west, running its own circuit, **does not yet know his
+  scent** — ch.3's failed mastery-try is what turns it onto his road. Close line points straight at it.
+- **Not yet revealed (guard):** Emir's grief (ch.5), Nuru's name/kinship (ch.6). The vault, the ear,
+  the laws, and the doubleness are all now in play fair.
+
 ## Style dials (hold every chapter)
 
 Diction: fable-formal with desert concreteness (salt, glass, cork, canvas, camel-bell); trade terms
