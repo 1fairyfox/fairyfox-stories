@@ -78,7 +78,7 @@ r.style.setProperty("--glow","color-mix(in srgb, "+h+" 40%, transparent)");}}cat
 <main class="legal-main">
   <p class="eyebrow">Fairy Fox Stories · Legal</p>
   <h1>Privacy Policy</h1>
-  <p class="updated">Last updated: July 6, 2026</p>
+  <p class="updated">Last updated: July 20, 2026</p>
 
   <div class="tldr">
     <p><strong>The short version.</strong> This policy is for the <strong>Fairy Fox Stories</strong>
@@ -109,15 +109,20 @@ r.style.setProperty("--glow","color-mix(in srgb, "+h+" 40%, transparent)");}}cat
   </ul>
 
   <h2>Information stored on your own device</h2>
-  <p>To make the games nicer to play, the Service saves a little information in your browser — not on
-    our servers. This is your <strong>reading progress</strong> for each game and your
-    <strong>reading and display preferences</strong> (the &ldquo;Aa&rdquo; reading menu&rsquo;s theme,
-    accent colour, text size, line spacing, and width). It is stored using your browser&rsquo;s
-    <strong>local storage</strong> and stays on your device; it is never transmitted to us. The
-    reading preferences are saved under a shared key so a single choice carries across the wider
-    <a href="https://fairyfox.io/">fairyfox.io</a> site in the same browser — this is still local to
-    your device only. You can delete any of it at any time by clearing your browser&rsquo;s site data
-    for the Service, which simply resets your saved reading progress and preferences.</p>
+  <p>To make reading nicer, the Service saves a little information in your browser — not on
+    our servers. This is your <strong>reading progress</strong>, your <strong>reading and display
+    preferences</strong> (the &ldquo;Aa&rdquo; reading menu&rsquo;s theme, accent colour, text size,
+    line spacing, and width), and a small <strong>Fairy Fox coins</strong> counter — a for-fun
+    reading-engagement count shown next to the &ldquo;Aa&rdquo; button that ticks up as you open
+    pages across Fairy Fox. It is stored using your browser&rsquo;s <strong>local storage</strong>
+    and stays on your device; it is never transmitted to us. The reading preferences and the coins
+    counter are saved under shared origin-wide keys so a single choice — and your coin balance —
+    carries across the wider <a href="https://fairyfox.io/">fairyfox.io</a> site in the same browser;
+    this is still local to your device only. <strong>Coins have no monetary value</strong>, cannot be
+    bought, sold, or redeemed, and are purely for fun — see
+    <a href="https://fairyfox.io/legal/coins/">how coins work</a>. You can delete any of it at any time
+    by clearing your browser&rsquo;s site data for the Service, or with the reading menu&rsquo;s
+    <strong>Reset</strong> and the coins panel&rsquo;s <strong>Clear my data</strong> controls.</p>
 
   <h2>Hosting and server logs</h2>
   <p>The site is served as static files by GitHub Pages. Like virtually all web hosting, the
@@ -226,5 +231,6 @@ r.style.setProperty("--glow","color-mix(in srgb, "+h+" 40%, transparent)");}}cat
 <!-- Chrome behaviour + reader menu (shared, browser-imported). -->
 <script src="../assets/nav.js" defer></script>
 <script src="../assets/reader.js" defer></script>
+<script src="../assets/coins.js" defer></script>
 </body>
 </html>

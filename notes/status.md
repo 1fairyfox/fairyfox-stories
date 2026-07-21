@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.5.6` (single source of truth: repo-root `VERSION`).
+**Version:** `0.6.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -21,7 +21,14 @@ automation are all shipped; the site has had two live releases (v0.2.0, v0.2.2).
 its **daily grow** phase — advancing real chapters on the least-tended books. The full build plan is
 `plans/farm-build-plan.md`; the daily loop is `reference/operating-model.md`.
 
-## The shelf (as of v0.5.6)
+**Reader chrome (v0.6.0):** the shared **coins** engagement layer is now in the reader chrome — a coin
+counter beside the "Aa" button (first-view-today earns; reading pages add a read-time chip, a read-through
+bonus, and a rare hidden coin), vendored verbatim from the shared-chrome master (`assets/coins.js`) with the
+coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in Privacy/Cookies, no-value
+clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
+= the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
+
+## The shelf (as of v0.6.0)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|

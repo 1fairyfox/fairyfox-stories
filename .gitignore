@@ -24,6 +24,7 @@ _site/
 vendor/
 
 
-# local jekyll serve log
+# local jekyll serve log (preview workflow)
 _site_serve.log
+serve.log
 

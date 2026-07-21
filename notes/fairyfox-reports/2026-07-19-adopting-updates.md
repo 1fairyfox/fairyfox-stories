@@ -2,7 +2,7 @@
 date: 2026-07-19
 procedure: adopting-updates
 node: fairyfox-stories
-outcome: partial
+outcome: completed
 hub_version: 0.20.2
 hub_commit: 697bc5c
 ---
@@ -115,3 +115,33 @@ is why the coins/reader/chrome adoption is a re-apply-of-intent (Phase 2), not a
 model on arrival: clean `dev`, in sync with `origin/dev`, released through v0.5.4. Standing
 deferred-eyeball debt already present (Chrome unconnected across recent unattended runs); Phase 2 adds
 to it.
+
+## Phase 2 — completed 2026-07-20 (coins into the reader chrome)
+
+Done the same day, in a connected-Chrome session — the visual gate Phase 2 was held for. This node
+reimplements the shared chrome in its own `assets/`, so adoption was a re-apply-of-intent, not a file copy:
+
+- Vendored `assets/coins.js` verbatim from the shared-chrome master; loaded after `reader.js` in the footer
+  include + the three legal pages. Ported the coin CSS from the master `main.css` into the node's
+  `assets/reader.css` (the coin panel reuses the reader-panel chrome, so only button / "+1" pop / balance
+  panel / read-time / hidden-coin were net-new). Every colour is an existing themed token.
+- Two node-specific fixes the master doesn't need: (1) the chapter's reading column is a nested
+  `.chapter-body` inside a full-width `<article>`, so coins.js's `main article` fallback dropped the
+  read-time chip at the page edge — fixed by adding coins.js's preferred `.content` hook to the centered
+  column; (2) the injected `.ff-readtime` `<p>` became the drop-cap's `:first-of-type`, killing the
+  first-letter flourish — hardened the selector to target the first real paragraph with or without the chip.
+- Legal: disclosed `fairyfox:coins:a` in Privacy + Cookies, added the no-value clause to Terms, linked the
+  hub `/legal/coins/` (not re-hosted). Fixed a stale "Fairy Fox Games" product name in Terms.
+- Verified in Chrome over HTTP (button beside "Aa", +1 earn across pages, panel, read-time in-column, drop
+  cap intact, no clutter); `npm test` 6 + 46 links green; build + tidy clean. Released as **v0.6.0**.
+
+### Extra feedback from Phase 2
+
+- **coins.js's read-time chip placement is layout-fragile.** The `contentEl()` selector chain
+  (`main .content` → `.prose` → `article` → `main`) silently mis-targets when a node's readable column is a
+  nested element under a full-width `<article>` — the chip lands at the page edge with no error. Worth a line
+  in `coins.md` / the chrome README: "the readable column should be `main .content` / `.prose` / `article`,
+  or the read-time chip mis-anchors."
+- **Injecting a leading `.ff-readtime` node breaks any `:first-child` / `:first-of-type` drop-cap.** A
+  one-line caution in the standard (drop caps must exclude `.ff-readtime`) would save the next
+  fiction / long-read node the same regression this run hit and fixed.
