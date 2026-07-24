@@ -2,6 +2,22 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-07-24 — Second sequel plant: a sequel can be told by a NEW author (roll-driven)
+
+Planting *The Wind She Would Not Keep* (the *Girl Who Sold the Wind* sequel) put the 07-21 semantics to
+work for the first time in the direction that matters most for range: **the byline roll returned a
+genuinely NEW author-persona (Yusra Adem), not the parent's author (Amara Okri).** The 07-21 note had
+ruled that a sequel's author roll runs normally and "the byline question flagged for the *Girl* sequel is
+the roll's to answer" — this is that answer, honoured (roll `100`, well past the ≤70 return-skew). So a
+realm can hold books by **different fabulists**: the Salt Road now has two (Okri × 2, Adem × 1). **Why
+it's the right call, not just the rolled one:** it keeps consecutive books feeling written by different
+people (`operating-model.md` §3b), avoids a third-in-a-row Okri fable, and is folklorically natural —
+many tellers tell the tales of one road. The narrator (first-person Zari, three years older) is shared
+with the parent; the *authorial* voice is deliberately different (Adem spare/ledger-eyed vs Okri
+exuberant/fireside), and the age gap makes the drier narration read as growth, not inconsistency. Rules
+in: sequels as fresh tales in a realm under whatever author the roll gives; a realm as an open commons of
+tellers, never one author's property. Rules out: pinning a sequel's byline to its parent.
+
 ## 2026-07-21 — First sequel plant: sequel semantics + the `sequelTo` manifest field
 
 Planting *The One-O'Clock Bus* (the *Launderette* sequel — the first sequel in farm history) fixed

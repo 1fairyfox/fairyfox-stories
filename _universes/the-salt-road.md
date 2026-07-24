@@ -40,6 +40,8 @@ cloth. The winds themselves — dawn-cool, grief-heavy, homesick-sweet — corke
 
 ## Seeds
 
-- A wind-seller who sells the wrong wind to the wrong buyer.
+- A wind-seller who sells the wrong wind to the wrong buyer. *(grew into* The Girl Who Sold the Wind*)*
+- A broker who buys every wind to keep the sky still, and the seller who breaks a binding bargain to keep
+  the road a road. *(grew into* The Wind She Would Not Keep*)*
 - Three travellers, three bottles, and only one true wind among them.
 - A waystation where the winds themselves come to trade, one night a year.

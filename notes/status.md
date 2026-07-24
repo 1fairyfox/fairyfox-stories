@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.7.3` (single source of truth: repo-root `VERSION`).
+**Version:** `0.8.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -28,12 +28,12 @@ coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in 
 clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
 = the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
 
-## The shelf (as of v0.7.3)
+## The shelf (as of v0.8.0)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
 | ✅ **The Two-O'Clock Launderette** (magical realism · sequel: *The One-O'Clock Bus*) | short story | **3 / 3 — complete** | 2026-07-14 |
-| ✅ **The Girl Who Sold the Wind** (fable · **sequel pending**) | novelette | **5 / 5 — complete** | 2026-07-17 |
+| ✅ **The Girl Who Sold the Wind** (fable · **sequel: *The Wind She Would Not Keep***) | novelette | **5 / 5 — complete** | 2026-07-17 |
 | ✅ **The Cartographer of Decks** (SF) | novelette | **6 / 6 — complete** | 2026-07-17 |
 | **Every Lock but Hers** (magical realism) | novella | 6 / 11 | 2026-07-21 |
 | **The Wintering House** (gothic) | novella | 8 / 11 | 2026-07-23 |
@@ -41,8 +41,25 @@ clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfo
 | The Blindfold Act (mystery · sequel-locked) | novelette | 4 / 6 | 2026-07-24 |
 | The Hundredth Wind (fable) | novelette | 2 / 7 | 2026-07-20 |
 | **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 2 / 10 | 2026-07-22 |
+| **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 1 / 3 | 2026-07-24 |
 
-**Nine books — three `complete`, six `growing`.** Latest run **07-24 (v0.7.3, grow)**: *The Blindfold
+**Ten books — three `complete`, seven `growing`.** Latest run **07-24 second (v0.8.0, plant)**: **The
+Wind She Would Not Keep** — the farm's **second sequel plant**, taking the window queued since 07-21 for
+the *Girl Who Sold the Wind* sequel (last brand-new book *One-O'Clock Bus* 07-21; 07-21 + 3 = 07-24
+eligible). A Salt Road **short story** (form roll `5`; word-pick `89` → wordCap 6,800; 3 chapters,
+finale ~1.5×), the realm's **third** book and its **first short story**, by a **new author-persona,
+Yusra Adem** (byline roll `100` → new; a second, deliberately drier fabulist for the Salt Road rather
+than a third Okri book). Sequel-lock `34`… `18` → not locked. Zari, seventeen now and finally keeping
+the Ninth Waystation old Bostan left her, signs a **fair, square standing order** with wind-broker
+**Hadi Sarraf** of the still city — every wind at triple price, forever, sold to no one else, the whole
+stall forfeit for one bottle sold elsewhere — out of fear of losing the one good thing she holds; then a
+girl walks a hundred days for the one bottle now promised away. **Book one: shouldn't *sell*. This one:
+shouldn't *keep*** — a genuine inversion (single-situation moral trap vs a chase; clinging/fear vs
+greed; the stall itself vs a fortune), distinct from *Hundredth Wind* too. Ch.1 "The Standing Order"
+written to Adem's spare voice; cover + ch.1 header generated (gpt-image-1, header 1536×1024) and viewed
+clean (blue bottles, striped noon cloth, dead-still caravan, no stray lettering). `npm test` green (6 +
+check-links, 51 files). Chrome not connected — rides the eyeball debt. Full audit in
+`sessions/2026-07/2026-07-24.md`. Earlier the same day, **07-24 (v0.7.3, grow)**: *The Blindfold
 Act* **ch.4 "The Understudy"** (4/6) — and **the random override fired for the second time in the
 farm's history** (roll `9` vs ≤18; random pick `2` of 6 alphabetically → the Blindfold Act, which sat
 **second** on the blend at 0.667 behind *Hundredth Wind* 0.690). A *modest* override this time — the
@@ -173,14 +190,17 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   re-verify the domain; the durable structural fix is renaming the user-site repo `junebug12851.github.io` →
   `1fairyfox.github.io`.
 
-- **Sequel queue: 1 of 2 planted.** The 07-21 double-fired roll queued two sequel plants. The
-  **Launderette sequel is now planted** (*The One-O'Clock Bus*, v0.7.0 — this run); **the *Girl Who
-  Sold the Wind* sequel takes the next planting window, eligible on or after 2026-07-24.** It stays
-  a **new tale in her realm (the Salt Road), not a continuation** — Amara Okri's call whether the
-  byline returns (note the realm+author pair already recurred once, in *The Hundredth Wind*; the
-  design should be distinct from both). While its sequel is growing, the *Launderette* series stays
-  out of the weekly roll (as does *Girl* while pending), leaving *Cartographer* the only roller.
-  **Next weekly roll due on or after 2026-07-28.**
+- **Sequel queue: DRAINED — both planted.** The 07-21 double-fired roll queued two sequel plants;
+  both are now in the ground. The **Launderette sequel** is *The One-O'Clock Bus* (v0.7.0, 07-21);
+  the **Girl Who Sold the Wind sequel** is now planted as **The Wind She Would Not Keep** (v0.8.0,
+  07-24 — this run). The byline-return question the queue raised was **settled by the roll**
+  (`100` → new author): rather than a third Okri book, the Salt Road gained a *second* fabulist,
+  **Yusra Adem** — a genuinely new tale in the realm, not a continuation, and distinct from both
+  earlier Salt Road books. With the queue empty, the **next plant rolls a fresh universe + form**
+  (no pre-owed window). Weekly sequel-roll eligibility now: *Launderette*, *Girl*, and *Cartographer*
+  are the completed series — *Launderette* and *Girl* each now have a growing sequel (out of the
+  roll until it completes/settles), leaving **Cartographer the only roller** still. **Next weekly
+  roll due on or after 2026-07-28.**
 - **The One-O'Clock Bus is at 2/10 (grown 07-22) — ch.3 "The Rules of the Hour" is next**: training
   nights; Abel's covenant *drive the route as printed* and the trade behind it; **Priya spots the
   hour on her second night and Abel denies it to her face** — his first lie to someone he respects,
@@ -226,9 +246,20 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   bolt left undrawn, keys-on-the-dash, the refused Marsh Lane job passing to a worse firm (Dani's
   clock runs toward ch.11). Ch.7 brief in `notes/books/every-lock-but-hers/book-notes.md`. Both
   novellas are mid-book and will stay in the blend's rotation for several runs yet.
-- **Next plant** eligible on or after **2026-07-24** (last plant *The One-O'Clock Bus* **07-21**) —
-  and it belongs to the queued *Girl Who Sold the Wind* sequel (above). The finale-at-~1.5×
-  word-pick costing was applied again this plant and stays standing.
+- **Next plant** eligible on or after **2026-07-27** (last plant *The Wind She Would Not Keep*
+  **07-24**). The sequel queue is drained, so the next plant rolls a **fresh universe + form** with
+  no pre-owed window. The finale-at-~1.5× word-pick costing was applied again this plant and stays
+  standing.
+- **The Wind She Would Not Keep is at 1/3 (planted 07-24) — ch.2 "The Sea-Wind" is next**: a quiet
+  day, then **Naima** (eleven, a hundred days across the waste with the exact fare) and her dying
+  fisherman grandfather come for the one bottle of **sea-wind** — now promised to Sabr under the
+  standing order. Zari refuses, correctly, by contract: the **complicity beat** — every fact in hand,
+  a real reward (full safe shelf), and it costs her *nothing*, and she can't unsee it. Ch.1 canon to
+  honour is in the book-notes ledger: the bequest from old **Bostan**; the **forfeit clause exact
+  wording** (one bottle sold elsewhere → the whole stall reverts to Sabr); the **sea-wind** is the
+  third bottle on the high shelf (planted in ch.1); Hadi's fair manner + his grief-tell; Zari's fear
+  and her signing "prudence"; Naima arrives **three days** after the signing. Ch.3 "The Whole Stall
+  for One Bottle" (the forfeit + moral + frame-close, ~1.5×) closes it.
 - **The Hundredth Wind is at 2/7 (grown 07-20) — ch.3 "The First Try" is next.** Mastery fails: the
   perfect stand, the grandest name Basri knows spoken into the glass — and the wind opens his coat
   instead, taking **the cracked stopper** from his breast pocket (planted ch.1, hand-beats held ch.2).
@@ -293,11 +324,11 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
-| Books on the shelf | ✅ **9 on the shelf — 3 complete, 6 growing** (caper · cosy magical-realism · SF · gothic · fable ×2 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm) |
-| Authors / universes / characters | ✅ 6 author-personas (Amara Okri and **Idris Okonkwo-Vance** each have two books; Idris is the second author to span realms, 07-21), 6 universes (the Salt Road two books; **the Hollow Hours three** — first three-book realm, 07-21), 21 character pages (Abel Mensah + Vera Brandt + Priya Nair added 07-21) — meshed + bylined |
-| Cover & chapter art | ✅ **all 9 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Blindfold Act* and *The Hundredth Wind* backfilled 07-18. The **PLANT task now auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no more text-only fallbacks |
-| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.7.3**, 2026-07-24 |
+| Books on the shelf | ✅ **10 on the shelf — 3 complete, 7 growing** (caper · cosy magical-realism · SF · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story** (the realm now three books) |
+| Authors / universes / characters | ✅ **7 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** added 07-24 as the Salt Road's second fabulist), 6 universes (**the Salt Road three books** as of 07-24; the Hollow Hours three — first three-book realm, 07-21), **23 character pages** (Hadi Sarraf + Naima added 07-24; Zari reused) — meshed + bylined |
+| Cover & chapter art | ✅ **all 10 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Wind She Would Not Keep* generated + viewed clean 07-24. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
+| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (51 files), runs on push/PR |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.8.0**, 2026-07-24 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |
