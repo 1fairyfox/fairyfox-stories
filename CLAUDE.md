@@ -116,10 +116,19 @@ bundle exec jekyll serve        # open http://localhost:4000/fairyfox-stories/
 npm test                        # runs check-stories + any *.test.mjs, from repo root
 ```
 
+**Docker (`notes/reference/docker.md`):** currently **N-A** for this node — build/test are
+cross-platform (Jekyll/Ruby + Node's built-in runner), with no Linux-only step to containerize.
+Recorded in `notes/reference/adoption-manifest.md`; flip to a containerized local preview if
+that ever changes.
+
 ## Default Workflow — Do These By Default (a standing instruction)
 
 **Plan before you execute (`notes/reference/planning.md`).** For non-trivial work write a
-short plan in `notes/plans/` first. A book's blueprint *is* its plan.
+short plan in `notes/plans/` first, and **phase it by default** — decompose across research →
+planning → implementation into as many shippable phases as it needs. A book's blueprint *is*
+its plan. Every checklist / `## Verify` item is a **contract**
+(`notes/reference/checklists-are-contracts.md`): record each item's outcome, disclose the
+not-done list, never a bare ✅ over a set.
 
 After changes, run this loop **without being asked**:
 
@@ -131,7 +140,10 @@ After changes, run this loop **without being asked**:
    entry rides inside the commit** (top of `notes/version/YYYY-MM.md`), and **bump `VERSION`**
    when warranted (PATCH default, MINOR for a milestone like a new book, never MAJOR).
 3. **Release by default once green — through the CI-gated PR** (mesh brand posture, adopted
-   2026-07-19; replaces the old "get Fairy Fox's approval first" stance). Commit/push to `dev`
+   2026-07-19; replaces the old "get Fairy Fox's approval first" stance). **Pre-release manifest
+   gate:** first read `notes/reference/adoption-manifest.md` — an **overdue `gap` on a mandatory
+   standard** (supply-chain-hardening, git-workflow, testing, ship-contract) holds the release
+   like a red build. Commit/push to `dev`
    freely; when the suite is green and it's worth shipping, release the git-flow way: `main`
    advances only by a `--no-ff`, **tagged** merge via **PR** (`main` is branch-protected):
    `gh pr create --base main --head dev` → **`gh pr checks --watch`** (wait for CI — this is the

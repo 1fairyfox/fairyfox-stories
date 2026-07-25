@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.8.1` (single source of truth: repo-root `VERSION`).
+**Version:** `0.9.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -181,6 +181,19 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 ## Next
 
+- **fairyfox adoption 0.20.2→1.6.1 — Phase 1 adopted (v0.9.0, 07-25); Phase 2 owed (browser +
+  owner-gated services).** Ran the full check-for-updates flow. Mirror ff `77e9e2c → 2d614f0`
+  (hub `0.20.4 → 1.6.1`). Phase 1 (this run): 20 standards refreshed + 5 new
+  (checklists-are-contracts, mandate-ledger, docker, ci-secrets, readme→`readme-cross-links.md`);
+  the new **`adoption-manifest.md`** stood up (the per-standard record the release gate now reads);
+  a **CodeQL/SAST** workflow added; README **Get it** + mesh footer; CLAUDE.md ported
+  (phase-by-default, manifest gate, Docker N-A); legal cookies clear/reset + three stale-"games"
+  fixes. `npm test` + `jekyll build` green. **Phase 2 (in the manifest, due 2026-08-08, none
+  overdue):** Codecov/SonarCloud/CodeFactor/Scorecard + the full 20-badge block (owner creates the
+  SaaS accounts + repo secrets — `ci-secrets`); CodeQL into `main` required checks +
+  `attest-build-provenance` in `release.yml`; a coverage-floor decision for `scripts/*.mjs`; the
+  docs-site chrome browser pass (folds into the standing eyeball debt); Docker N-A confirm. Report:
+  `notes/fairyfox-reports/2026-07-25-adopting-updates.md` (hub_version 1.6.1).
 - **fairyfox adoption 0.16.1→0.20.2 — Phase 1 released to `main` (rode v0.5.6, 07-20); Phase 2 owed
   (browser).** Adopted the
   headless batch: 10 new standard notes + 3 refreshed (compliance/process-reports/legal-docs), the
@@ -340,7 +353,7 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 | Area | Status |
 |------|--------|
-| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through v0.5.6 |
+| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through v0.9.0 |
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
@@ -348,7 +361,7 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Authors / universes / characters | ✅ **7 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** added 07-24 as the Salt Road's second fabulist), 6 universes (**the Salt Road three books** as of 07-24; the Hollow Hours three — first three-book realm, 07-21), **23 character pages** (Hadi Sarraf + Naima added 07-24; Zari reused) — meshed + bylined |
 | Cover & chapter art | ✅ **all 10 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Wind She Would Not Keep* generated + viewed clean 07-24. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (52 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.8.1**, 2026-07-25 |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.9.0**, 2026-07-25 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |

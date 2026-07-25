@@ -78,7 +78,7 @@ the rename.
 ```sh
 mkdir -p assets/references
 git -C assets/references clone --branch dev --single-branch \
-    https://github.com/junebug12851/junebug12851.github.io fairyfox.io
+    https://github.com/1fairyfox/1fairyfox.github.io fairyfox.io
 ```
 
 An ordinary single-branch clone refreshes by fast-forward every time.
@@ -98,7 +98,8 @@ Fold each template in around what's there — never a straight overwrite:
 | `notes/` skeleton | Drop the skeleton in and seed `status.md` from reality. | Add the skeleton *alongside* existing docs; migrate them in over time, not big-bang. |
 | `SECURITY.md`, `dependabot.yml`, `branch-sync.yml` | Copy in; enable branch protection on `main` (solo config) + signed releases ([supply-chain-hardening](supply-chain-hardening.md)). | Reconcile with existing workflows/policy; add least-privilege `permissions:` + SHA-pins to existing workflows. |
 | `legal/` pages | Copy the templates in and **rewrite to match the code** ([legal-docs](legal-docs.md)). | Replace any third-party generator links with self-hosted, accurate pages. |
-| README badges | Paste the applicable block from `README-badges.md` ([badges](badges.md)). | Reconcile with any existing badges; show all that apply, drop stale ones. |
+| README badges | Paste the **full ordered block** from `README-badges.md` ([badges](badges.md)); swap the per-project equivalents (version tag/package-json; deploy Pages/Netlify). | Reconcile with existing badges toward the full required 20, in order; **swap** equivalents, don't drop — a slot is omitted only on a **user-granted** exception recorded in the manifest, never the AI's own call. |
+| README cross-links | Add the worded links the chrome can't carry off-site from `README-links.md` ([readme](readme.md)): a docs link near the top, a grouped "Get it" section (live app · download · each store/registry · source), and a fairyfox mesh footer near the bottom. | Fold them into the existing README (reconcile, don't clobber); ensure every **real** publish/deploy destination has a labelled row, plus the always-required docs link + mesh footer. |
 
 > **The mesh-awareness block is required — and it's the easiest thing to skip when
 > reconciling an existing `CLAUDE.md`.** The project's `CLAUDE.md` must carry the
@@ -160,7 +161,13 @@ A commit **in the hub repo**, not the project:
   normal for an existing repo; mark what's actually true today. **Never pre-set them
   `true` before the project-side work exists** — an optimistic flag seeds exactly the
   false "registered = done" signal this runbook warns against.
-- Add the companion row to the site's `_data/projects.yml`.
+- Add the companion row to the site's `_data/projects.yml`, **with its project details
+  filled in by default** — `name`, `blurb` (description), `tags`, `lifecycle`, `version`,
+  `activity`, `updated`, `color`, `icon`, `docs`, `notes`, and the rest of the schema at the
+  top of that file. **Complete-by-default, same governance as the badges:** a detail is left
+  blank only when the **user** grants that exception at onboarding (recorded), never on the
+  AI's own call. **The one automatic exemption is the social/preview image** — it can't be
+  generated automatically, so its absence is never a gap; everything else is filled.
 
 ### 8. Write the onboarding process report
 
@@ -193,6 +200,29 @@ git checkout dev && git merge --ff-only main && git push origin dev   # back-mer
 branch-protected, release via the
 [PR-based path](git-workflow.md#releasing-when-main-is-branch-protected-pr-based).)
 
+## JVM / Gradle (and other non-web) projects
+
+The runbook's examples are web/npm-shaped (npm, JSDoc/Doxygen, Netlify, a `package.json`
+version badge). A JVM server plugin or CLI translates each one — don't read the npm example
+as the requirement:
+
+- **Build/version:** Maven → **Gradle** (Kotlin DSL); `VERSION` seeded from the project's
+  **real** number (a `gradle` property or the latest tag), never a `package.json` field and
+  never reset to `0.1.0`.
+- **Docs generator:** **Dokka** (Kotlin) or **Javadoc** is the "generator *is* the site" case —
+  see [`docs-site/chrome/adapters/dokka.md`](docs-site/chrome/adapters/dokka.md).
+- **"Deploy" analogue:** a `.jar` published to **Hangar/Modrinth** (or a server's `plugins/`),
+  not Pages/Netlify — a server plugin has no web deploy target. The badge/deploy standards read
+  accordingly (version badge → `github/v/tag`, not `package-json/v`; distribution badges enabled
+  once published).
+- **Templates:** `dependabot.yml` defaults to the **`gradle`** ecosystem (the template ships
+  commented ecosystem variants); the README version badge uses `github/v/tag`.
+- **Who owns the live publish:** per the mesh model a project only writes its **own** repo, so
+  the actual Pages/domain wiring at `fairyfox.io/<key>/` is a **hub-side** act. The project's
+  docs-site duty ends at "themed generator output, verified locally"; the live-served-page check
+  (onboarding Row 6) is met after the hub-side publish. Don't mark it a project-side gap when it's
+  a hub step that hasn't run yet.
+
 ## Registered ≠ integrated (read before declaring "done")
 
 **Hub-side registration is the easy half and proves almost nothing about whether
@@ -217,9 +247,18 @@ An established repo rarely adopts everything on day one — it might take the no
 system now and the full git model later. That's expected: onboard incrementally
 and tighten over subsequent passes via [`adopting-updates.md`](adopting-updates.md).
 But "partial" is only acceptable when it is **reported as partial, with the
-specific gaps named.** Mark the registry flags honestly, and never round a
-partially-integrated project up to "done." Joining the mesh is a direction, not a
-single switch — say where on the path it actually is.
+specific gaps named — in the manifest, not just in prose.** Mark the registry flags
+honestly, and never round a partially-integrated project up to "done." Joining the mesh
+is a direction, not a single switch — say where on the path it actually is.
+
+**Every skipped standard lands in [`notes/reference/adoption-manifest.md`](../templates/notes-skeleton/reference/adoption-manifest.md)
+as a dated `gap` row.** A narrative "we did 6 of 27" evaporates the moment the report is
+filed; the manifest is the artifact that carries the remainder, owned and due. Onboarding
+seeds the manifest (every standard as `copied-only`/`gap`/`N-A`) and **runs the full
+[compliance matrix](compliance.md) once** so the day-one state is a recorded pass/gap per
+standard, not an unbacked ✅. Copying a standard's file in is `copied-only`; it becomes
+`implemented` only when its `## Verify` has been run and recorded. Full rule:
+[`checklists-are-contracts`](checklists-are-contracts.md).
 
 ## Verify — the completeness audit
 
@@ -242,11 +281,14 @@ gate; the recurring whole-set check (every standard, re-runnable anytime) is the
 | 3 | Branch model | Stable branch is **`main`** (a repo on `master` has been renamed — mandatory; Pages/CI/URL refs fixed). Registry `branch` is the **sync-tracking work branch** (`dev` by default), honest — it is *not* the repo's default branch. |
 | 4 | Notes system | The `notes/` tree exists with a real `status.md`; existing docs mapped in, not duplicated. |
 | 5 | **Mesh-awareness in `CLAUDE.md`** | The project's `CLAUDE.md` **actually contains** the "Cross-project standards & checking the fairyfox system for updates" standing instruction. **Open the file and confirm the text is there** — don't infer it from the project being registered. |
-| 6 | **Docs site is a page of fairyfox** | `fairyfox.io/<key>/` serves a site **wearing the shared fairyfox chrome** (header, nav + submenu, footer) so it reads as a page of the site, with the **brand/Home link as the way home** and **no separate back-button** (project-forward branding is fine). **Look at the actual page.** Default-theme JSDoc/Doxygen output, or a `docs:` URL that merely resolves, is `missing` — not `partial`. Deploy target matches the project's kind ([deployment](deployment.md)). Bar: [`docs-site/08-compliance-checklist.md`](docs-site/08-compliance-checklist.md). |
-| 7 | Hub registration | Resolves in **both** registries with honest `adopts_hub` / `notes_system` flags; node + docs pages present. |
+| 6 | **Docs site is a page of fairyfox** | `fairyfox.io/<key>/` serves a site **wearing the shared fairyfox chrome** (header, nav + submenu, footer) so it reads as a page of the site, with the **brand/Home link as the way home** and **no separate back-button** (project-forward branding is fine). **Look at the actual page.** Default-theme JSDoc/Doxygen output — **or any stack's default theme with only cosmetic changes (a couple recoloured variables + one footer mention)** — or a `docs:` URL that merely resolves, is `missing`, not `partial`; the tool's own default chrome must be removed, not left meshing with the fairyfox chrome. Deploy target matches the project's kind ([deployment](deployment.md)). Bar: [`docs-site/08-compliance-checklist.md`](docs-site/08-compliance-checklist.md). |
+| 7 | Hub registration | Resolves in **both** registries with honest `adopts_hub` / `notes_system` flags; node + docs pages present. The `_data/projects.yml` row has its **project details filled by default** (blurb/tags/lifecycle/version/activity/links/accent/icon) — blanks only on a recorded user exception; social/preview image exempt. |
+| 7b | README badges | README opens with the **full 20-badge set in the canonical order** ([badges](badges.md)), each slot the right per-project source; any omission carries a recorded user exception (not an AI call). |
+| 7c | README cross-links | The README carries the worded mesh links the chrome can't provide off-site ([readme](readme.md)): a docs link to `fairyfox.io/<key>/` near the top, a grouped/labelled "Get it" section covering every real publish/deploy destination, and a fairyfox mesh footer near the bottom. Missing links for destinations that exist need a recorded user exception. |
 | 8 | Process report | `notes/fairyfox-reports/` holds this onboarding's report, committed, with the reconcile friction and an honest outcome — [process-reports](process-reports.md). |
+| 9 | **Adoption manifest seeded + first compliance pass** | `notes/reference/adoption-manifest.md` exists with a row per hub standard (`implemented`/`copied-only`/`gap(due)`/`N-A(reason)`), and the full [compliance matrix](compliance.md) was run once — so the day-one state is a recorded per-standard result, and every not-yet-adopted standard is a **dated `gap`**, not prose. No `Standards adopted ✅` without backing rows ([checklists-are-contracts](checklists-are-contracts.md)). |
 
-**Reporting rule:** only call a project **"fully onboarded" when rows 1–8 are all
+**Reporting rule:** only call a project **"fully onboarded" when rows 1–9 are all
 `done`.** If any row is `partial` or `missing`, say exactly which — e.g. "registered
 and noted, but the docs site is unthemed JSDoc and the `CLAUDE.md` mesh block is
 missing." A clean hub-side registration is **not** a green light.
