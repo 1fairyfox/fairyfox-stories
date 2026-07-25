@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `0.8.0` (single source of truth: repo-root `VERSION`).
+**Version:** `0.8.1` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -28,7 +28,7 @@ coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in 
 clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
 = the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
 
-## The shelf (as of v0.8.0)
+## The shelf (as of v0.8.1)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
@@ -39,12 +39,28 @@ clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfo
 | **The Wintering House** (gothic) | novella | 8 / 11 | 2026-07-23 |
 | The Cinderwick Job (caper) | novelette | 6 / 7 | 2026-07-18 |
 | The Blindfold Act (mystery · sequel-locked) | novelette | 4 / 6 | 2026-07-24 |
-| The Hundredth Wind (fable) | novelette | 2 / 7 | 2026-07-20 |
+| The Hundredth Wind (fable) | novelette | 3 / 7 | 2026-07-25 |
 | **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 2 / 10 | 2026-07-22 |
 | **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 1 / 3 | 2026-07-24 |
 
-**Ten books — three `complete`, seven `growing`.** Latest run **07-24 second (v0.8.0, plant)**: **The
-Wind She Would Not Keep** — the farm's **second sequel plant**, taking the window queued since 07-21 for
+**Ten books — three `complete`, seven `growing`.** Latest run **07-25 (v0.8.1, grow)**: *The Hundredth
+Wind* **ch.3 "The First Try"** (3/7) — the fable's **first of three tries, by mastery, failing with
+teeth**. No override (roll `57` vs ≤18); the blend's clear leader at **0.714** (shelf's highest
+incompleteness 5/7 **and** five days stale), returning to the front exactly as the 07-20 note forecast
+after four runs out. Basri reasons his life's stand (be the most interesting *shut* thing) is wrong for
+a wind that opens shut things, so he out-thinks it with a *name* — reads what the wind does and builds
+it the grandest true-name forty years can raise, **"Opener"** — and Noor warns him flat it is "a good
+name, not a true one." At the town of **Sarab** the stand is beautiful work and the wind considers him
+and **does not go into the glass: it opens his coat** and takes the cracked horn **stopper** (planted
+ch.1) west with it, laughing. First rung of the escalation (**coats → pages → milestone → him →
+vault**); Basri scrambles in the dust after it and **will not yet say what the stopper is** (Nuru's
+name/kinship held for ch.6 — a first-draft leak was caught and cut). The wind then **breaks its
+hundred-year circuit** and runs *his* road, toward the towns of his young years, and he understands the
+name "was never out there — it was in the pocket," setting ch.4's trickery-try. Noor's trained ear kept
+consistent (she can't hear a wind that was never in glass), throat-tell carried, "it doesn't choose"
+paid back. `npm test` green (6 + check-links, 52 files). Chrome not connected — prose-only, rides the
+eyeball debt. Full audit in `sessions/2026-07/2026-07-25.md`. Before that, **07-24 second (v0.8.0,
+plant)**: **The Wind She Would Not Keep** — the farm's **second sequel plant**, taking the window queued since 07-21 for
 the *Girl Who Sold the Wind* sequel (last brand-new book *One-O'Clock Bus* 07-21; 07-21 + 3 = 07-24
 eligible). A Salt Road **short story** (form roll `5`; word-pick `89` → wordCap 6,800; 3 chapters,
 finale ~1.5×), the realm's **third** book and its **first short story**, by a **new author-persona,
@@ -260,16 +276,20 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   third bottle on the high shelf (planted in ch.1); Hadi's fair manner + his grief-tell; Zari's fear
   and her signing "prudence"; Naima arrives **three days** after the signing. Ch.3 "The Whole Stall
   for One Bottle" (the forfeit + moral + frame-close, ~1.5×) closes it.
-- **The Hundredth Wind is at 2/7 (grown 07-20) — ch.3 "The First Try" is next.** Mastery fails: the
-  perfect stand, the grandest name Basri knows spoken into the glass — and the wind opens his coat
-  instead, taking **the cracked stopper** from his breast pocket (planted ch.1, hand-beats held ch.2).
-  Failure with teeth: the wind now has his scent and **stops running its own circuit to run his**,
-  toward the towns of his young years. Canon from ch.2 to honour: the **proving law is on the page
-  verbatim** (spring it at the House's threshold in ch.7); Noor's **trained ear + wind-names**
-  (Sigher/Presser/Little Heresy) and her **want** ("feel like a hand"); the town's **doubleness**
-  ("it only opens"). Still guarded: Emir's grief (ch.5), Nuru's kinship (ch.6). It remains the shelf's
-  highest incompleteness — it and *Every Lock* (0.773) lead the blend's next runs. Chapter map + style
-  dials + "Ch.2 — new canon" in `notes/books/the-hundredth-wind/book-notes.md`.
+- **The Hundredth Wind is at 3/7 (grown 07-25) — ch.4 "The Second Try" is next.** By **trickery**:
+  Basri writes a confession that is *almost* true (Nuru died in the storm; he took the bottle after),
+  rehearses it like an act, and performs it to the wind with the glass ready. The wind **flips the
+  pages out of his hands mid-performance and posts one page each on the doors of the next three towns**
+  (escalation: pages). **Noor — who heard the false note before the wind did — stops trusting him** and
+  quietly writes to the Emir that the catch is failing; the reply comes by fast rider: the Emir is
+  coming with vault-wagons and iron nets (sets ch.5). New ch.3 canon to honour is in the book-notes
+  ledger: the mastery-name **"Opener"** already spent and refused; the **stopper is now in the wind's
+  keeping** (can surface "on a doorstep among the wind's airings" in ch.4); the wind now runs **Basri's
+  road**, not its circuit; his half-seen knowledge that the name "is in the pocket" — but the ch.4
+  trick is the *almost*-truth, **not** the truth. Still guarded: the **proving law** (verbatim, ch.2)
+  springs at the House's threshold in **ch.7**; **Emir's grief is ch.5**; **Nuru's name/kinship + the
+  full truth are ch.6**. It stays the shelf's highest incompleteness — leads the blend's next runs.
+  Chapter map + style dials + "Ch.3 — new canon" in `notes/books/the-hundredth-wind/book-notes.md`.
 - **Grow-count RESOLVED (07-18, Fairy Fox):** the daily grow rate is now **exactly 1 book/day** (one
   whole chapter, single least-tended book) — the old 2-vs-5-vs-3 discrepancy is closed, one number
   wins everywhere (`operating-model.md`, `CLAUDE.md`, `craft/serialization.md`, and the
@@ -327,8 +347,8 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Books on the shelf | ✅ **10 on the shelf — 3 complete, 7 growing** (caper · cosy magical-realism · SF · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story** (the realm now three books) |
 | Authors / universes / characters | ✅ **7 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** added 07-24 as the Salt Road's second fabulist), 6 universes (**the Salt Road three books** as of 07-24; the Hollow Hours three — first three-book realm, 07-21), **23 character pages** (Hadi Sarraf + Naima added 07-24; Zari reused) — meshed + bylined |
 | Cover & chapter art | ✅ **all 10 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Wind She Would Not Keep* generated + viewed clean 07-24. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
-| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (51 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.8.0**, 2026-07-24 |
+| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (52 files), runs on push/PR |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v0.8.1**, 2026-07-25 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |

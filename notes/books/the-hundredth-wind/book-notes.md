@@ -160,6 +160,39 @@ doubleness. ~1,930 words. Canon to honour going forward:
 - **Not yet revealed (guard):** Emir's grief (ch.5), Nuru's name/kinship (ch.6). The vault, the ear,
   the laws, and the doubleness are all now in play fair.
 
+## Ch.3 — new canon (written 2026-07-25, book at 3/7)
+
+Written to the map: mastery fails; the coat opened; the stopper taken; the wind turns onto his road.
+~1,760 words. Canon to honour going forward:
+
+- **The mastery-name is spent: "Opener."** Basri built the Unbottled the grandest true-name his forty
+  years could raise, by reading what it *does* — *"Opener, opener of the shut, unlatcher of the world,
+  the wind before which no keeping keeps,"* spoken full-voice into the glass at **Sarab** (a nothing
+  town, sweet well, small market). It **failed** — the wind considered him and did not go into the
+  glass. That name is now used up; do not reuse it as if fresh. Its failure is the fair-play proof that
+  the true name is *not* out in the weather to be listened for (arms ch.6's "the name was in the pocket
+  all along").
+- **The stopper is now in the wind's keeping.** The wind **opened his coat** (no violence — "a hand
+  going into a coat it has every right to"), passed the purse and the estate-worth contract, and lifted
+  the **cracked horn stopper** from the breast pocket, then went west with it. Per the stopper ledger
+  this is the "taken by the wind (ch.3)" beat; ch.4's "on a doorstep among the wind's airings" is now
+  live and available. **Still unnamed** — Basri refuses to say what it is ("I will not tell you yet…
+  I have not told the Road in forty years"). Motif inverted: the catcher's-hand-goes-to-the-true-thing
+  tell now finds the **pocket empty**.
+- **The wind broke its circuit.** After Sarab it **stops running its hundred-year seasonal circuit**
+  and runs **Basri's road** instead — west, toward the low salt country and the towns of his young
+  years ("the years I have kept the tidiest and told the least"). The escalation is now *what it
+  opens*: **coats (ch.3) → pages (ch.4) → a milestone (ch.6) → him → the vault (ch.7).** Noor names the
+  change aloud ("it is going ahead of you, to where you came from").
+- **Noor kept consistent.** She **cannot hear the Unbottled** — it was never in glass, so it never
+  knocked (coheres with ch.2's "they knock… all the time"). Her flat verdict on his name: **"a good
+  name, not a true one … you go quiet where the true one would be."** Throat-tell (two fingers) carried;
+  her ch.2 thesis "it doesn't choose / it only opens" paid back inside Basri's dread.
+- **Guard still down (do NOT reveal early):** Nuru's **name and kinship** and the **full truth of the
+  First Catch** remain a **ch.6** reveal. A first-draft line leaked "a boy and his sister"; it was cut.
+  The Emir's grief is still **ch.5**. Ch.4's confession is the **almost-truth performed as an act**
+  (Nuru died in the storm; he took the bottle after) — not the real thing.
+
 ## Style dials (hold every chapter)
 
 Diction: fable-formal with desert concreteness (salt, glass, cork, canvas, camel-bell); trade terms
