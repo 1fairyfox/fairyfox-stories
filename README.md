@@ -20,6 +20,15 @@ public **blueprint** you can read before you start — no bait-and-switch.
 Part of the [Fairy Fox](https://fairyfox.io) mesh, with the door open: **contributions
 welcome** — see [CONTRIBUTING.md](CONTRIBUTING.md).
 
+## Get it
+
+- **📖 Read it live** — <https://fairyfox.io/fairyfox-stories/> (GitHub Pages). Every book
+  at `…/stories/<book>/`, every chapter its own page.
+- **🏷️ Releases** — <https://github.com/1fairyfox/fairyfox-stories/releases> (each tagged
+  release is a live deploy).
+- **🧩 Source & notes** — <https://github.com/1fairyfox/fairyfox-stories>; the living
+  project notes are under [`notes/`](notes/).
+
 ## What's here
 
 A **Jekyll** site whose world lives as data — books, chapters, universes, characters, and
@@ -60,11 +69,18 @@ npm test                      # runs scripts/check-stories.test.mjs
 ## How the farm runs
 
 A new book is **planted** (as a complete blueprint) at most once every three days; existing
-books are **grown** daily — up to five books advance by one whole chapter each. Sequels are
-unplanned (a weekly roll); some books are marked complete with no sequel. The full model is in
+books are **grown** daily — exactly one least-tended book advances by one whole chapter.
+Sequels are unplanned (a weekly roll); some books are marked complete with no sequel. The full model is in
 [`notes/reference/operating-model.md`](notes/reference/operating-model.md); the craft it's held
 to is in [`notes/reference/craft/`](notes/reference/craft/).
 
 ## License
 
 [MIT](LICENSE) © Fairy Fox. Read, fork, learn from, and build on these freely.
+
+## Part of the Fairy Fox mesh
+
+Fairy Fox Stories is one node in the [**Fairy Fox**](https://fairyfox.io) project mesh —
+sibling to [Fairy Fox Games](https://fairyfox.io/fairyfox-games/) and the rest, sharing the
+same disciplined shape (living notes, git-flow, static site, self-hosted fonts) applied to a
+different craft. Browse the whole mesh at [fairyfox.io/projects/](https://fairyfox.io/projects/).

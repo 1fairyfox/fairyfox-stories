@@ -42,8 +42,10 @@ The end state — tick every box before calling a project done:
 | Line endings | A root `.gitattributes` (`* text=auto eol=lf` + `.bat`/`.cmd` CRLF, binaries) — [agent-tooling](agent-tooling.md). |
 | Security | `SECURITY.md`, least-privilege + SHA-pinned workflows, signed releases, `main` branch-protected (solo config), Dependabot — [supply-chain-hardening](supply-chain-hardening.md). |
 | Legal | Self-hosted, code-accurate Privacy/Terms/Cookies — [legal-docs](legal-docs.md). |
-| Badges | The README opens with the applicable badge block — [badges](badges.md). |
-| Standards adopted | The project follows the hub's git, versioning, notes, AI-context, supply-chain, dependencies, legal-docs, agent-tooling, and badges standards (copied in, not linked). |
+| Badges | The README opens with the **full 20-badge set in the canonical order** (swap per-project equivalents; omit only on a recorded user exception) — [badges](badges.md). |
+| README cross-links | The README carries the worded mesh links the chrome can't provide off-site — a docs link near the top, a grouped "Get it" section (live app · download · each store/registry · source), and a fairyfox mesh footer near the bottom — [readme](readme.md). |
+| Project details | The `_data/projects.yml` row is **filled by default** — blurb/tags/lifecycle/version/activity/links/accent/icon; blanks only on a recorded user exception; social/preview image exempt. |
+| Standards adopted | The project follows the hub's git, versioning, notes, AI-context, supply-chain, dependencies, legal-docs, agent-tooling, badges, and readme standards (copied in, not linked). |
 | Registered | The project is listed in the hub's [`registry.yml`](../registry.yml) **and** the site's `_data/projects.yml`. |
 | Docs site | A documentation site published at `fairyfox.io/<key>/`, built to the [docs-site design system](docs-site/) so it **appears as a page of fairyfox.io** (shared chrome; brand/Home is the way home). For a **static** project the published site can double as the docs site — one surface, not two. |
 | Process report | A `notes/fairyfox-reports/` folder exists (from the skeleton) and this setup run is written up in it — see [process-reports](process-reports.md). |
@@ -61,7 +63,7 @@ The end state — tick every box before calling a project done:
 
 ```sh
 # if it doesn't exist yet
-gh repo create junebug12851/<project> --private --source=. --remote=origin
+gh repo create 1fairyfox/<project> --private --source=. --remote=origin
 git checkout -b dev          # all work lives here
 ```
 
@@ -77,7 +79,7 @@ submodule, never a dependency. An ordinary clone refreshes by fast-forward every
 ```sh
 mkdir -p assets/references
 git -C assets/references clone --branch dev --single-branch \
-    https://github.com/junebug12851/junebug12851.github.io fairyfox.io
+    https://github.com/1fairyfox/1fairyfox.github.io fairyfox.io
 ```
 
 ### 3. Copy the templates into the project
@@ -96,12 +98,21 @@ mkdir -p .github/workflows
 cp    $H/dependabot.yml         .github/dependabot.yml            # dependencies + supply-chain
 cp    $H/branch-sync.yml        .github/workflows/branch-sync.yml # git-workflow back-merge guard
 cp -r $H/legal                  ./public/legal       # legal-docs — place per the app's origin
-# README badges: paste the applicable block from $H/README-badges.md into the README (badges standard)
+# README badges: paste the FULL ordered block from $H/README-badges.md (all 20, swap equivalents; badges standard)
+# README cross-links: add the worded links from $H/README-links.md (docs link near top, "Get it" section, mesh footer; readme standard)
 ```
 
 Then, still part of setup: enable **branch protection** on `main` (solo config) and wire
 **signed releases** per [supply-chain-hardening](supply-chain-hardening.md); the release
 flow is the **PR-based** path in [git-workflow](git-workflow.md#releasing-when-main-is-branch-protected-pr-based).
+**Populate `main`'s required-status-check contexts with the full CI suite by job name** —
+branch protection existing is not enough; empty contexts make "full CI before `main`"
+documentation without teeth (a merge slips through while a smoke job is red). Set them per
+this repo's actual job names ([git-workflow → Full CI before `main`](git-workflow.md#full-ci-before-main--platform-enforced-every-job)).
+For a **JVM/Gradle or other non-web** project, translate the npm-shaped template defaults
+(Gradle ecosystem in `dependabot.yml`, `github/v/tag` version badge, Dokka/Javadoc docs, a
+`.jar` + Hangar/Modrinth as the "deploy" — see the aside in
+[onboarding-existing-project.md](onboarding-existing-project.md#jvm--gradle-and-other-non-web-projects)).
 
 ### 4. Fill in the templates for this project
 
@@ -159,7 +170,11 @@ commit **in the hub repo**, not the project:
 - Add an entry to [`hub/registry.yml`](../registry.yml) — `key`, `repo`,
   `branch`, `adopts_hub`, `notes_system`, `last_seen: null`.
 - Add the human-facing companion entry to the site's `_data/projects.yml`
-  (keep the two registries in step).
+  (keep the two registries in step), **with its project details filled in by default** —
+  `name`, `blurb`, `tags`, `lifecycle`, `version`, `activity`, `updated`, `color`, `icon`,
+  `docs`, `notes`, per the schema at the top of that file. Complete-by-default: a field is
+  left blank only on a **user-granted** exception (recorded), never the AI's own call; the
+  **social/preview image is the one automatic exemption**.
 
 ### 8. Write the setup process report
 
@@ -201,12 +216,22 @@ never be committed (committing it nests repos and bloats history).
   instruction** (confirm the text is present, not just that the file exists).
 - `VERSION` reads a sane starting number.
 - The project resolves in **both** registries (`hub/registry.yml` and
-  `_data/projects.yml`) with matching `key` and `branch`.
+  `_data/projects.yml`) with matching `key` and `branch`, and the `_data/projects.yml` row
+  has its **project details filled by default** (blurb/tags/lifecycle/version/activity/links/
+  accent/icon) — blanks only on a recorded user exception; social/preview image exempt.
+- The README opens with the **full 20-badge set in the canonical order** ([badges](badges.md)),
+  each slot the right per-project source; omissions only on a recorded user exception.
+- The README carries the worded mesh cross-links ([readme](readme.md)) — a docs link near the
+  top, a grouped "Get it" section covering every real publish/deploy destination, and a
+  fairyfox mesh footer near the bottom; the always-required docs link + footer present.
 - The docs site loads at `fairyfox.io/<key>/`, **wears the shared fairyfox chrome**
   (header, nav + submenu, footer) so it reads as a page of the site, with the
   **brand/Home link as the way home** and **no separate back-button** — **look at the
-  served page**; default-theme JSDoc/Doxygen output or a merely-resolving `docs:` URL is
-  a miss. If the docs are generator-produced, theme the generator itself
+  served page**; default-theme JSDoc/Doxygen output, **any stack's default theme with only
+  cosmetic changes (a couple colours + a footer mention)**, or a merely-resolving `docs:` URL
+  is a miss. The coin + reader buttons are present, the subnav is not bare, and the tool's own
+  default chrome (footer/header/sidebar/CSS) is removed, not left alongside. If the docs are
+  generator-produced, theme the generator itself
   ([`docs-site/06`](docs-site/06-content-and-organization.md#generated-docs-doxygen-jsdoc-typedoc-sphinx-)).
   Bar: [`docs-site/08-compliance-checklist.md`](docs-site/08-compliance-checklist.md).
 - The deploy target matches the project's kind (static → Pages on the shared domain;
