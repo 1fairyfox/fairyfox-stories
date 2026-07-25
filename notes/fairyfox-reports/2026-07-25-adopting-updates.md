@@ -161,3 +161,43 @@ Parked in `notes/reference/adoption-manifest.md`; each needs a browser, an exter
 3. Coverage-floor decision for `scripts/*.mjs` (wire or honest N-A).
 4. Docs-site chrome browser pass (the standing eyeball debt).
 5. Docker: confirm N-A or containerize a local preview.
+
+## Phase 2 — second pass, same day (2026-07-25), + the 1.0.0 call
+
+The owner asked to push Phase 2 to completion and cut the milestone as **v1.0.0**. As the system
+owner (Fairy Fox), that satisfies the "MAJOR is Fairy Fox's call only" gate — so 1.0.0 is
+authorized. Closed everything doable headless / via `gh`; two items remain genuinely owner-gated.
+
+**Closed:**
+- **`main` branch protection restored** via `gh api` (the solo config from
+  `supply-chain-hardening`: require PR, 0 approvals, strict checks, enforce-admins, no
+  force-push/deletions) with **required status checks `test` + `CodeQL`** — the full CI suite.
+  The classic protection had been absent (account-rename fallout); this re-establishes it and
+  closes both the `git-workflow` full-suite sub-gap and the `supply-chain-hardening` protection gap.
+- **OpenSSF Scorecard wired** — added `.github/workflows/scorecard.yml` (SHA-pinned, resolved the
+  exact SHAs via `gh api`; `publish_results: true` so the badge + the ship-contract Scorecard
+  floor populate after the first `main` run). No secret needed for a public repo.
+- **Badges** — expanded the README from 4 to **16 of 20** in canonical order (all GitHub-native +
+  Scorecard + Docs + Pages). The 4 SaaS-backed slots (Coverage/CodeFactor/SonarCloud) are in as
+  documented, ready-to-uncomment placeholders — they need accounts only the owner can create.
+- **Coverage floor → N-A** with rationale: no shipped server/app code to cover (product is
+  validated Markdown; the only JS is the data-integrity suite that hard-gates the whole corpus,
+  build tooling, an external-API art script, and browser DOM code under CodeQL SAST + browser
+  preview). A line-% gate would measure tooling/IO, not product logic.
+- **Docker → N-A confirmed** (cross-platform build, no Linux-only step).
+- **Provenance** — confirmed already attested in `release.yml`.
+
+**Still owner-gated (recorded, not closed):**
+- Codecov / CodeFactor / SonarCloud accounts + `CODECOV_TOKEN`/`SONAR_TOKEN` secrets → uncomment
+  the 4 quality badges. AI can't create third-party SaaS accounts.
+- Docs-site chrome browser pass — **no Chrome connected this session** (`list_connected_browsers`
+  empty), so the standing eyeball debt carries. No new reader-template/CSS/JS shipped this run, so
+  nothing visual ships unseen.
+
+**Friction worth noting:** the OpenSSF starter Scorecard workflow pins `actions/upload-artifact`
+to **v4**, but `@latest` resolves to **v7** — a node that blindly takes latest would pin an
+incompatible major. Resolving the intended v4 SHA via `gh api` was the fix; worth a line in
+`supply-chain-hardening` that Scorecard expects upload-artifact v4.
+
+Released as **v1.0.0** through a `release/1.0.0` branch → CI-gated PR to the now-protected `main`
+→ hand-tag (release.yml reacts to the tag) → back-merge. `npm test` + `jekyll build` green.
