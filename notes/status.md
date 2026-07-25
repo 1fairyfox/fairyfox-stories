@@ -181,18 +181,20 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 ## Next
 
-- **fairyfox adoption 0.20.2→1.6.1 — Phase 1 adopted (v0.9.0, 07-25); Phase 2 owed (browser +
-  owner-gated services).** Ran the full check-for-updates flow. Mirror ff `77e9e2c → 2d614f0`
-  (hub `0.20.4 → 1.6.1`). Phase 1 (this run): 20 standards refreshed + 5 new
-  (checklists-are-contracts, mandate-ledger, docker, ci-secrets, readme→`readme-cross-links.md`);
-  the new **`adoption-manifest.md`** stood up (the per-standard record the release gate now reads);
-  a **CodeQL/SAST** workflow added; README **Get it** + mesh footer; CLAUDE.md ported
-  (phase-by-default, manifest gate, Docker N-A); legal cookies clear/reset + three stale-"games"
-  fixes. `npm test` + `jekyll build` green. **Phase 2 (in the manifest, due 2026-08-08, none
-  overdue):** Codecov/SonarCloud/CodeFactor/Scorecard + the full 20-badge block (owner creates the
-  SaaS accounts + repo secrets — `ci-secrets`); CodeQL into `main` required checks +
-  `attest-build-provenance` in `release.yml`; a coverage-floor decision for `scripts/*.mjs`; the
-  docs-site chrome browser pass (folds into the standing eyeball debt); Docker N-A confirm. Report:
+- **fairyfox adoption 0.20.2→1.6.1 — DONE to v1.0.0 (07-25), bar two owner-gated items.** Ran the
+  full check-for-updates flow. Mirror ff `77e9e2c → 2d614f0` (hub `0.20.4 → 1.6.1`). **Phase 1
+  (v0.9.0):** 20 standards refreshed + 5 new (checklists-are-contracts, mandate-ledger, docker,
+  ci-secrets, readme→`readme-cross-links.md`); the new **`adoption-manifest.md`** stood up (the
+  per-standard record the release gate reads); **CodeQL/SAST** workflow; README **Get it** + mesh
+  footer; CLAUDE.md ported (phase-by-default, manifest gate, Docker N-A); legal cookies clear/reset
+  + three stale-"games" fixes. **Phase 2 (v1.0.0):** **`main` branch protection restored** (solo
+  config; required checks `test` + `CodeQL`) — was absent post-rename; **OpenSSF Scorecard** wired
+  (`scorecard.yml`); README badges **4 → 16/20** canonical; **coverage-floor N-A** + **Docker N-A**
+  (rationale in the manifest); provenance confirmed already in `release.yml`. `npm test` +
+  `jekyll build` green. **Still owner-gated (manifest, due 2026-08-08, none overdue):** (1) create
+  Codecov/CodeFactor/SonarCloud projects + set `CODECOV_TOKEN`/`SONAR_TOKEN` → uncomment the 4
+  ready-to-enable quality badges; (2) the docs-site chrome browser pass (no Chrome connected this
+  run — folds into the standing eyeball debt). Report:
   `notes/fairyfox-reports/2026-07-25-adopting-updates.md` (hub_version 1.6.1).
 - **fairyfox adoption 0.16.1→0.20.2 — Phase 1 released to `main` (rode v0.5.6, 07-20); Phase 2 owed
   (browser).** Adopted the

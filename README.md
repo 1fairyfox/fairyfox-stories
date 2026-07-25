@@ -1,8 +1,43 @@
 # Fairy Fox Stories
 
-[![CI](https://img.shields.io/github/actions/workflow/status/1fairyfox/fairyfox-stories/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI)](https://github.com/1fairyfox/fairyfox-stories/actions/workflows/ci.yml)
+<!-- Badge block — full canonical set (hub/standards/badges.md). Slots 9–12 (Coverage /
+     Code quality / Quality gate / Tech debt) are commented until their SaaS services are
+     wired — that's owner-gated (create the Codecov / CodeFactor / SonarCloud projects and
+     set the CI secrets), tracked as a dated gap in notes/reference/adoption-manifest.md.
+     Uncomment each line the moment its service is live. -->
+
+<!-- Project / community -->
+[![Contributors](https://img.shields.io/github/contributors/1fairyfox/fairyfox-stories?style=flat-square&logo=github)](https://github.com/1fairyfox/fairyfox-stories/graphs/contributors)
+[![Stars](https://img.shields.io/github/stars/1fairyfox/fairyfox-stories?style=flat-square&logo=github)](https://github.com/1fairyfox/fairyfox-stories/stargazers)
+[![Forks](https://img.shields.io/github/forks/1fairyfox/fairyfox-stories?style=flat-square&logo=github)](https://github.com/1fairyfox/fairyfox-stories/network/members)
+[![Watchers](https://img.shields.io/github/watchers/1fairyfox/fairyfox-stories?style=flat-square&logo=github)](https://github.com/1fairyfox/fairyfox-stories/watchers)
+
+<!-- Activity / release -->
+[![Last commit](https://img.shields.io/github/last-commit/1fairyfox/fairyfox-stories?style=flat-square)](https://github.com/1fairyfox/fairyfox-stories/commits)
+[![Commits](https://img.shields.io/github/commit-activity/t/1fairyfox/fairyfox-stories?style=flat-square&label=commits)](https://github.com/1fairyfox/fairyfox-stories/commits)
 [![Version](https://img.shields.io/github/v/tag/1fairyfox/fairyfox-stories?style=flat-square&label=version)](https://github.com/1fairyfox/fairyfox-stories/releases)
-[![Read](https://img.shields.io/badge/read-fairyfox.io-4c9?style=flat-square)](https://fairyfox.io/fairyfox-stories/)
+
+<!-- Build / quality -->
+[![CI](https://img.shields.io/github/actions/workflow/status/1fairyfox/fairyfox-stories/ci.yml?branch=main&style=flat-square&logo=githubactions&logoColor=white&label=CI)](https://github.com/1fairyfox/fairyfox-stories/actions/workflows/ci.yml)
+<!-- Coverage/CodeFactor/SonarCloud — owner-gated, uncomment once each service is wired:
+[![Coverage](https://img.shields.io/codecov/c/github/1fairyfox/fairyfox-stories?style=flat-square&logo=codecov&logoColor=white)](https://app.codecov.io/gh/1fairyfox/fairyfox-stories)
+[![Code quality](https://img.shields.io/codefactor/grade/github/1fairyfox/fairyfox-stories?style=flat-square&logo=codefactor&logoColor=white&label=code%20quality)](https://www.codefactor.io/repository/github/1fairyfox/fairyfox-stories)
+[![Quality gate](https://img.shields.io/sonar/quality_gate/1fairyfox_fairyfox-stories?server=https%3A%2F%2Fsonarcloud.io&style=flat-square&logo=sonarcloud&logoColor=white&label=quality%20gate)](https://sonarcloud.io/summary/new_code?id=1fairyfox_fairyfox-stories)
+[![Tech debt](https://img.shields.io/sonar/tech_debt/1fairyfox_fairyfox-stories?server=https%3A%2F%2Fsonarcloud.io&style=flat-square&logo=sonarcloud&logoColor=white&label=tech%20debt)](https://sonarcloud.io/summary/new_code?id=1fairyfox_fairyfox-stories)
+-->
+
+<!-- Security -->
+[![OpenSSF Scorecard](https://img.shields.io/ossf-scorecard/github.com/1fairyfox/fairyfox-stories?style=flat-square&label=scorecard)](https://securityscorecards.dev/viewer/?uri=github.com/1fairyfox/fairyfox-stories)
+
+<!-- Docs / deploy -->
+[![Read](https://img.shields.io/badge/read-fairyfox.io-4c9?style=flat-square&logo=readthedocs&logoColor=white)](https://fairyfox.io/fairyfox-stories/)
+[![Pages](https://img.shields.io/github/actions/workflow/status/1fairyfox/fairyfox-stories/pages.yml?branch=main&style=flat-square&logo=githubpages&logoColor=white&label=pages)](https://github.com/1fairyfox/fairyfox-stories/deployments)
+
+<!-- Issues / PRs / license -->
+[![Open issues](https://img.shields.io/github/issues/1fairyfox/fairyfox-stories?style=flat-square)](https://github.com/1fairyfox/fairyfox-stories/issues)
+[![Closed issues](https://img.shields.io/github/issues-closed/1fairyfox/fairyfox-stories?style=flat-square)](https://github.com/1fairyfox/fairyfox-stories/issues?q=is%3Aissue+is%3Aclosed)
+[![Open PRs](https://img.shields.io/github/issues-pr/1fairyfox/fairyfox-stories?style=flat-square)](https://github.com/1fairyfox/fairyfox-stories/pulls)
+[![Closed PRs](https://img.shields.io/github/issues-pr-closed/1fairyfox/fairyfox-stories?style=flat-square)](https://github.com/1fairyfox/fairyfox-stories/pulls?q=is%3Apr+is%3Aclosed)
 [![License](https://img.shields.io/github/license/1fairyfox/fairyfox-stories?style=flat-square)](LICENSE)
 
 An **AI-managed story farm** — a growing library of short interactive **books** (genuine
