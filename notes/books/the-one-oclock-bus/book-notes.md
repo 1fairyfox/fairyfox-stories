@@ -168,7 +168,42 @@ Humor dry, buried in the procedure. White space: section breaks at shift-points 
   Her wrong-right question in ch.2 is the *coach station* one — why stand at a stop nobody uses at
   one in the morning ("There's a stop. So we stand at it.") — the smaller cousin of the Corvus Road
   question the book turns on. **Do not let her ask the Corvus question until ch.3.**
+- **Ch.3 canon (written 08-02):** Training begins **Monday**; the covenant taught verbatim
+  (*drive the route as printed* — "a promise made to strangers who aren't here to see whether you
+  keep it"). **Priya is good at it** — reads the cab and the road like a defect book, doesn't fill
+  silence; wrote the covenant + "you log what's true" on the back of her hand. **First night = nil**
+  (the hour passed through touching nobody; blue book got *nil*) — establishes the four-in-five and
+  that the hour "does not perform on demand." **Ch.3 delivery — Cyril:** seventies, cap, a coat too
+  good for its year; rides the night bus **for the warm**, interchange and back, pays both fares, a
+  named regular ("you don't make him explain it"). The hour takes him **left off the card to the
+  all-night cab office on Bell Street** (private-hire card school, kettle on) instead of the
+  interchange; his true-sentence fare: **"I don't much want to go home yet, if I'm honest."** A
+  *withholding*/company delivery, deliberately unlike ch.1's runaway-home beat. **THE FIRST LIE TO
+  PRIYA:** she sees the deviation clean ("What was that") and Abel deflects with **"discretion …
+  kinder this time of year … the log'll show the interchange."** The book's stated distinction,
+  now canon: the **Vera "nothing there" lie cost nothing** (a professional wall between
+  professionals, it *kept*); **the Priya lie does not keep** — he feels it "land on her," taking a
+  truth she witnessed off her, making her doubt her own eyes; "tasted of tin." Guard this asymmetry
+  going forward.
+- **THE CORVUS ESCALATION (ch.3, first time in eleven years):** at 01:26, odd-numbered side, 17
+  does **not just slow — she stops and opens her doors on an empty wet street**, on nobody, idling/
+  listening outside the door-with-the-light, with **no fare aboard owing a sentence but Abel**. He
+  sits with his hands on nothing, does not rise, does not speak; she takes the offer back and drives
+  on. **This is the bus reaching for its real delivery (Abel himself → ch.10) with a witness in the
+  cab.** Blue-book entry escalated for the first time: *01:26 Corvus Rd. Slowed. **Opened.** Drove
+  on.* (the added word *Opened* is a plot object — the false-book's first crack about Corvus).
+- **Priya asks the Corvus question (ch.3, as the ledger required — not before):** "There's no stop
+  there and she opened the doors. She waited. … Who does she stop for on Corvus Road?" Abel answers
+  with the **same words he gave Vera — "Nothing there"** — and it is worse in the dark than it was
+  in daylight (she watched *nothing* open its doors and knew the word was wrong). The two lies are
+  now rhymed on the page; ch.4 (canteen, 3 a.m., cornered → tells the truth of the hour) collects.
+- **THE CH.3 TURN — Priya finds the blue book:** end of shift, ~05:40, she comes back for gloves and
+  has **the blue notebook open to the last page** in a steady grip (honest, not guilty — she'd
+  clocked its corner since night one, per ch.2). She reads *left against card / said the thing /
+  Opened* and says **"This isn't the route as printed,"** and Abel "found I had nothing printed to
+  say." Direct handoff into ch.4's canteen confession.
 - **Still guarded / unspent:** the blue-book aphorism (*a man who audits himself nightly…*) is
-  still held for ch.8–9. Efua, Ama, and the letter are unnamed on the page through ch.2 — Corvus
-  Road is still only a timing point in the narration, per the voice note. Nadia/the Wishy-Washy
-  remains a passing warm window (ch.1, ch.2 not needed) until her ch.5 scene.
+  still held for ch.8–9. Efua, Ama, and the letter are **still unnamed on the page** — Corvus Road
+  remains "a door I have no professional business being aware of" in the narration through ch.3
+  (ch.5 opens it). Nadia/the Wishy-Washy remains a passing warm window until her ch.5 scene. **Vera's
+  first scheduled ride-along (Friday) is set up but not yet dated on the page** — place it in ch.4.

@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `1.0.0` (single source of truth: repo-root `VERSION`).
+**Version:** `1.0.1` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -28,7 +28,7 @@ coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in 
 clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
 = the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
 
-## The shelf (as of v0.8.1)
+## The shelf (as of v1.0.1)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
@@ -40,10 +40,30 @@ clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfo
 | The Cinderwick Job (caper) | novelette | 6 / 7 | 2026-07-18 |
 | The Blindfold Act (mystery · sequel-locked) | novelette | 4 / 6 | 2026-07-24 |
 | The Hundredth Wind (fable) | novelette | 3 / 7 | 2026-07-25 |
-| **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 2 / 10 | 2026-07-22 |
+| **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 3 / 10 | 2026-08-02 |
 | **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 1 / 3 | 2026-07-24 |
 
-**Ten books — three `complete`, seven `growing`.** Latest run **07-25 (v0.8.1, grow)**: *The Hundredth
+**Ten books — three `complete`, seven `growing`.** Latest run **08-02 (v1.0.1, grow)**: *The
+One-O'Clock Bus* **ch.3 "The Rules of the Hour"** (3/10) — the novella's **first lie to someone he
+respects, and the Corvus escalation**. First run since 07-25 (the scheduled job didn't fire
+07-26→08-01). No override (roll `74` vs ≤18); the blend's clear leader at **0.767** (shelf's highest
+incompleteness 8/10 = 0.800 **and** eleven days stale), exactly the ch.3 the 07-25 note forecast.
+Training nights: Abel teaches Priya the covenant (*drive the route as printed* — kept precisely
+*because* no one is watching); night one is `nil` (the hour touches nobody). Night two she sees it
+clean — 17 takes the regular **Cyril** off the card to the all-night cab office for company (fare:
+"I don't much want to go home yet") — and Abel deflects it to her face as "discretion," his first lie
+to someone he respects. The book's asymmetry made canon: the Vera "nothing there" lie **cost nothing
+and kept**; the Priya lie "lands on her" and "tasted of tin." Then the **Corvus escalation** — for
+the first time in eleven years 17 does not just slow but **stops and opens her doors on an empty
+street**, reaching for the one passenger she's never delivered (Abel) with a witness in the cab; he
+doesn't rise, and the blue book gains its first new Corvus word: *Opened.* Priya asks the Corvus
+question (reserved for ch.3) → the same "Nothing there," the two lies now rhymed. Closes on **Priya
+finding the blue notebook** open in her hand — "This isn't the route as printed" — the direct handoff
+to ch.4. **Weekly sequel roll DUE and RUN** (last 07-21; overdue after the missed week): only
+*Cartographer* eligible, roll `9` (≤25) → **fires** → queues a **pending Cartographer sequel plant**
+for the sibling PLANT task (GROW does not plant). `npm test` green (6 + check-links, 54 files). Chrome
+not connected — prose-only, rides the eyeball debt. Full audit in `sessions/2026-08/2026-08-02.md`.
+Before that, **07-25 (v0.8.1, grow)**: *The Hundredth
 Wind* **ch.3 "The First Try"** (3/7) — the fable's **first of three tries, by mastery, failing with
 teeth**. No override (roll `57` vs ≤18); the blend's clear leader at **0.714** (shelf's highest
 incompleteness 5/7 **and** five days stale), returning to the front exactly as the 07-20 note forecast
@@ -221,29 +241,32 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   re-verify the domain; the durable structural fix is renaming the user-site repo `junebug12851.github.io` →
   `1fairyfox.github.io`.
 
-- **Sequel queue: DRAINED — both planted.** The 07-21 double-fired roll queued two sequel plants;
-  both are now in the ground. The **Launderette sequel** is *The One-O'Clock Bus* (v0.7.0, 07-21);
-  the **Girl Who Sold the Wind sequel** is now planted as **The Wind She Would Not Keep** (v0.8.0,
-  07-24 — this run). The byline-return question the queue raised was **settled by the roll**
-  (`100` → new author): rather than a third Okri book, the Salt Road gained a *second* fabulist,
-  **Yusra Adem** — a genuinely new tale in the realm, not a continuation, and distinct from both
-  earlier Salt Road books. With the queue empty, the **next plant rolls a fresh universe + form**
-  (no pre-owed window). Weekly sequel-roll eligibility now: *Launderette*, *Girl*, and *Cartographer*
-  are the completed series — *Launderette* and *Girl* each now have a growing sequel (out of the
-  roll until it completes/settles), leaving **Cartographer the only roller** still. **Next weekly
-  roll due on or after 2026-07-28.**
-- **The One-O'Clock Bus is at 2/10 (grown 07-22) — ch.3 "The Rules of the Hour" is next**: training
-  nights; Abel's covenant *drive the route as printed* and the trade behind it; **Priya spots the
-  hour on her second night and Abel denies it to her face** — his first lie to someone he respects,
-  and he feels the difference from the ch.2 lie told to Vera (that one was cheap; this one isn't).
-  The bus opens its doors **unasked** on Corvus Road and he drives on. Ends with Priya finding the
-  blue notebook — already set up honestly in ch.2 (she clocked its corner under the duty cards on
-  day one, so the find is observation, not coincidence). New ch.2 canon to honour is in the
-  book-notes ledger: the Corvus lie (**"Nothing there"** — the debt ch.5/ch.8 collect), Marchgate's
-  exactly-right clock vs the depot's fast one, Vera's three telemetry series + the 11.4-mile
-  baseline, her **not driving**, the **three scheduled + one unannounced** ride-alongs, the
-  irregularity-vs-finding amnesty already spent, and Priya's six-week card. Still unspent: the
-  blue-book aphorism (ch.8–9), Efua/Ama/the letter (ch.5), Nadia (ch.5).
+- **Sequel queue: ONE PENDING — *The Cartographer of Decks* sequel (rolled 08-02).** The weekly
+  sequel roll came due (last 07-21; overdue after the scheduled job missed 07-26→08-01) and was run
+  this grow. Only one eligible completed series: **Cartographer** (*Launderette* and *Girl* each
+  already have a growing sequel — *One-O'Clock Bus* and *The Wind She Would Not Keep* — so both are
+  out of the roll until those settle). Roll `9` (≤25) → **fires.** So a **Cartographer sequel is now
+  queued as a pending plant** — the Long Quiet's first sequel, a fresh blueprint into the parent's
+  realm (SF, Idris Okonkwo-Vance's realm; the sequel author rolls new-vs-existing at plant time). The
+  **GROW task does not plant**; the sibling **`fairyfox-stories-new`** task takes the window (plant
+  eligible on/after **2026-07-27**, so the window is already open — this pending sequel is first in
+  line ahead of a fresh-universe plant). Weekly sequel-roll eligibility after this: all three
+  completed series now have a growing-or-pending sequel, so **no eligible rollers remain** until one
+  settles. **Next weekly roll due on or after 2026-08-09** (but it will find nothing eligible until a
+  sequel completes).
+- **The One-O'Clock Bus is at 3/10 (grown 08-02) — ch.4 "The Blue Book" is next**: the canteen at
+  3 a.m. Cornered by the find, Abel tells Priya the **truth of the hour** — and the relief of telling
+  it is its own information; he shows her how it works (the one gentle impossibility, the honest thing
+  it asks of whoever it delivers), then asks her to keep it off the record and **hears what he is
+  doing — making a second forger of the first person to trust him with the truth.** She agrees,
+  uneasily. **Place Vera's first scheduled ride-along (Friday) on the page here** (set up but not yet
+  dated). New ch.3 canon to honour is in the book-notes ledger: the covenant taught verbatim; Priya's
+  aptitude (reads cab + road); the **Cyril** delivery (company/withholding, deliberately unlike ch.1);
+  the **lie asymmetry** (Vera lie kept / Priya lie "tasted of tin" — guard it); the **Corvus
+  escalation** (17 *opened* her doors on an empty street, blue book now reads *Opened* — the false
+  book's first crack about Corvus); the second **"Nothing there"** rhymed with Vera's; Priya holding
+  the blue book open ("This isn't the route as printed"). Still unspent: the blue-book aphorism
+  (ch.8–9), Efua/Ama/the letter (still unnamed on the page; ch.5 opens Corvus), Nadia (ch.5).
 - **The Blindfold Act is past its midpoint (4/6, grown 07-24) — ch.5 "What She Taught Her" is next**,
   the confrontation: **Sonora + Lark alone**, the truth of that night comes out from the girl's own
   mouth (the skim discovered → cornered in the wagon → the threat to send her back → the shove → the
@@ -278,8 +301,9 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   clock runs toward ch.11). Ch.7 brief in `notes/books/every-lock-but-hers/book-notes.md`. Both
   novellas are mid-book and will stay in the blend's rotation for several runs yet.
 - **Next plant** eligible on or after **2026-07-27** (last plant *The Wind She Would Not Keep*
-  **07-24**). The sequel queue is drained, so the next plant rolls a **fresh universe + form** with
-  no pre-owed window. The finale-at-~1.5× word-pick costing was applied again this plant and stays
+  **07-24**) — the window is already open. **A pending Cartographer sequel now sits first in the
+  plant queue** (rolled 08-02, above): the next plant window should blueprint that sequel into the
+  Long Quiet before rolling a fresh universe + form. The finale-at-~1.5× word-pick costing stays
   standing.
 - **The Wind She Would Not Keep is at 1/3 (planted 07-24) — ch.2 "The Sea-Wind" is next**: a quiet
   day, then **Naima** (eleven, a hundred days across the waste with the exact fare) and her dying
@@ -362,8 +386,8 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Books on the shelf | ✅ **10 on the shelf — 3 complete, 7 growing** (caper · cosy magical-realism · SF · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story** (the realm now three books) |
 | Authors / universes / characters | ✅ **7 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** added 07-24 as the Salt Road's second fabulist), 6 universes (**the Salt Road three books** as of 07-24; the Hollow Hours three — first three-book realm, 07-21), **23 character pages** (Hadi Sarraf + Naima added 07-24; Zari reused) — meshed + bylined |
 | Cover & chapter art | ✅ **all 10 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Wind She Would Not Keep* generated + viewed clean 07-24. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
-| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (52 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.0.0**, 2026-07-25 |
+| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (54 files), runs on push/PR |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.0.1**, 2026-08-02 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |
