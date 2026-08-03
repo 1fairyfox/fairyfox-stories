@@ -14,7 +14,7 @@ sequelTo: the-girl-who-sold-the-wind
 cover: /stories/the-wind-she-would-not-keep/art/cover.png
 logline: Three years after she gave up a fortune to do right, Zari finally keeps the stall she always wanted — and signs a fair, honest bargain to keep it forever, promising every wind to one buyer who will never open a single bottle.
 content_note: A bright Salt Road fable with a hard clean edge — a grief-driven hoarder, a dying man's last wish, and a binding bargain that costs the very thing our heroine won. Mischief and warmth; nothing graphic or bleak.
-updated: 2026-07-24
+updated: 2026-08-02
 date: 2026-07-24
 ---
 

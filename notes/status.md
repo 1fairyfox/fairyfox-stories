@@ -2,10 +2,10 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `1.1.0` (single source of truth: repo-root `VERSION`).
+**Version:** `1.1.1` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
-America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
+America/Denver)** — grow 1 book, plant one when 3+ days have passed, **auto-publish to `main`**.
 See `reference/operating-model.md` → *Automation* and `decisions/architecture.md` (2026-07-09).
 
 ## Current state (read this first)
@@ -28,7 +28,7 @@ coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in 
 clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
 = the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
 
-## The shelf (as of v1.1.0)
+## The shelf (as of v1.1.1)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
@@ -42,10 +42,31 @@ clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfo
 | The Blindfold Act (mystery · sequel-locked) | novelette | 4 / 6 | 2026-07-24 |
 | The Hundredth Wind (fable) | novelette | 3 / 7 | 2026-07-25 |
 | **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 3 / 10 | 2026-08-02 |
-| **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 1 / 3 | 2026-07-24 |
+| **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 2 / 3 | 2026-08-02 |
 
-**Eleven books — three `complete`, eight `growing`.** Latest run **08-02 second (v1.1.0, plant)**:
-**The Overcount** — the farm's **third sequel plant** and the **Long Quiet's first sequel**, taking the
+**Eleven books — three `complete`, eight `growing`.** Latest run **08-02 (fourth invocation, v1.1.1,
+grow)**: *The Wind She Would Not Keep* **ch.2 "The Sea-Wind"** (2/3) — the Salt Road short story's
+**complicity beat**. No override (roll `68` vs ≤18); the blend's leader at **0.633** (incompleteness 2/3
+= 0.667, nine days stale since the 07-24 plant; max staleness 15 = Cinderwick), a narrow honest 0.006
+edge over *Every Lock but Hers* (0.627). Three days into her false safety, Zari has traded fear for a
+*tally against a promise* (runs the safe sum "to comfort herself" — the flaw's ch.3 tell) and turned away
+three walk-ups; Rafiq passes westbound in **one line**. Then **Naima** (eleven, a hundred days across the
+waste) lays the **exact fare out coin by coin** and asks for the **sea-wind** — the third bottle on the
+high shelf, the very one ch.1 promised to Sabr. The complicity beat lands to spec: Zari has every fact,
+the refusal costs her **nothing** (no trap, no lie — genuinely not hers to sell under the fair contract),
+the sale would cost the whole stall; she runs "the easiest sum there is" and refuses with words true and
+hollow ("That one is promised … It isn't the money"), **without explaining the contract to the child**.
+Naima doesn't haggle, only re-reckons gravely, and **thanks her for looking**; Zari lets them walk west
+without calling after, and her held-breath safety takes a **hairline** — she can't name the wrong, and
+closes on the sea-wind "I could not look at and could not stop" looking at. Adem's spare ledger voice
+held; grief off-page, bright-before-sad; direct hand-off to ch.3 "The Whole Stall for One Bottle."
+`npm test` green (6 + check-links, 57 files); `jekyll build` clean and the built ch.2 page verified by
+HTML (title, prose, footer nav correct at the true last chapter — prev→ch.1 + back-to-book, no dangling
+next). **Concurrency note:** this run found a live, uncommitted *Overcount* plant in the tree — the
+sibling PLANT task was releasing v1.1.0 **concurrently**; correct call was to wait it out (not
+interleave git writes), then grow on the settled tree. Chrome not connected — prose-only, rides the
+eyeball debt. Full audit in `sessions/2026-08/2026-08-02.md`. Before that, **08-02 second (v1.1.0,
+plant)**: **The Overcount** — the farm's **third sequel plant** and the **Long Quiet's first sequel**, taking the
 window the morning grow's sequel roll queued for *The Cartographer of Decks*. A generation-ship SF
 **novella** (form `86`; word-pick `15` → wordCap 21,000; 11 chapters, finale ~1.5×), a new standalone
 tale in the realm (`sequelTo: the-cartographer-of-decks`), by a **new author-persona, Aster Coyle**, and
@@ -335,16 +356,23 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   plant queue** (rolled 08-02, above): the next plant window should blueprint that sequel into the
   Long Quiet before rolling a fresh universe + form. The finale-at-~1.5× word-pick costing stays
   standing.
-- **The Wind She Would Not Keep is at 1/3 (planted 07-24) — ch.2 "The Sea-Wind" is next**: a quiet
-  day, then **Naima** (eleven, a hundred days across the waste with the exact fare) and her dying
-  fisherman grandfather come for the one bottle of **sea-wind** — now promised to Sabr under the
-  standing order. Zari refuses, correctly, by contract: the **complicity beat** — every fact in hand,
-  a real reward (full safe shelf), and it costs her *nothing*, and she can't unsee it. Ch.1 canon to
-  honour is in the book-notes ledger: the bequest from old **Bostan**; the **forfeit clause exact
-  wording** (one bottle sold elsewhere → the whole stall reverts to Sabr); the **sea-wind** is the
-  third bottle on the high shelf (planted in ch.1); Hadi's fair manner + his grief-tell; Zari's fear
-  and her signing "prudence"; Naima arrives **three days** after the signing. Ch.3 "The Whole Stall
-  for One Bottle" (the forfeit + moral + frame-close, ~1.5×) closes it.
+- **The Wind She Would Not Keep is at 2/3 (grown 08-02) — ch.3 "The Whole Stall for One Bottle" is
+  next** (the finale, ~1.5× ≈ 2,900 words; it closes the book): Zari **breaks the standing order — pays
+  Hadi's fair forfeit herself, not a trick.** She sells Naima the **sea-wind for one coin** and hands the
+  Ninth Waystation — cloth, shelves, deed — entire to Sabr, per the clause read aloud in ch.1. Care over
+  cleverness (book-one's growth at a higher price). The grandfather gets his sea (**gentle, off-page, not
+  shown dying**). The **Salt Road story-logic payoff:** the winds won't *keep* for a man who cages them —
+  Sabr's shelves stand full, silent, worthless (dead air), the point made **without a fight or a wound**.
+  The moral lands sideways in Adem's ledger voice; the told-aloud frame closes; Zari walks out poorer and
+  larger, knowingly this time. **Ch.2 canon to honour is in the book-notes ledger:** the self-soothing
+  *sum* (pay it — the flaw she finally overrules); the three refused walk-ups (the exclusivity draining
+  her trade); Rafiq already spent (do **not** bring him back for a scene); Naima's plainness and her
+  "thank you for looking"; the grandfather asks nothing; the end-state **hairline** in her held-breath
+  safety. Ch.1 canon still live: the **forfeit clause exact wording** (its cloth, its shelves, its deed,
+  revert entire to the buyer — in full, for that one bottle); Hadi's sincere grief (release the storm-that-
+  took-his-people backstory in a small piece here, no dump); Hadi is **not a cartoon miser**; keep the
+  register bright/propulsive, gripping-before-sad. Release it and the book completes (3/3) — the farm's
+  **first completion since 07-17**, and the Salt Road's first completed short story.
 - **The Hundredth Wind is at 3/7 (grown 07-25) — ch.4 "The Second Try" is next.** By **trickery**:
   Basri writes a confession that is *almost* true (Nuru died in the storm; he took the bottle after),
   rehearses it like an act, and performs it to the wind with the glass ready. The wind **flips the
@@ -409,15 +437,15 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 | Area | Status |
 |------|--------|
-| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.1.0**; `main` branch-protected (solo config; required checks `test` + `CodeQL`) |
+| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.1.1**; `main` branch-protected (solo config; required checks `test` + `CodeQL`) |
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
 | Books on the shelf | ✅ **11 on the shelf — 3 complete, 8 growing** (caper · cosy magical-realism · SF ×2 · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella · generation-ship SF thriller); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story**; *The Overcount* **planted 08-02** — the **third sequel** (the Long Quiet's first, now two books) and the shelf's **first present-tense book** |
 | Authors / universes / characters | ✅ **8 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** 07-24; **Aster Coyle** added 08-02 for the Long Quiet's second book), 6 universes (**the Salt Road three books**; the Hollow Hours three; **the Long Quiet two** as of 08-02), **28 character pages** (Wren Astel, Ilex, Ondine Verrine, Provost Halden, Doss added 08-02; Sela Renn reused) — meshed + bylined |
 | Cover & chapter art | ✅ **all 11 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Overcount* generated + viewed clean 08-02. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
-| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (56 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.1.0**, 2026-08-02 |
+| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (57 files), runs on push/PR |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.1.1**, 2026-08-02 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |
