@@ -269,6 +269,9 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   **next weekly roll due on/after 2026-08-09** (will find nothing eligible yet). **Next PLANT** eligible
   on/after **2026-08-05** (last plant *The Overcount* 08-02); with the queue drained it rolls a **fresh
   universe + form** with no pre-owed window.
+  - **PLANT skipped 08-02 (cadence):** a second PLANT run fired the same day; blocked by the ≥3-day
+    floor (*The Overcount* planted 0 days prior). No plant, no version bump — recorded in
+    `sessions/2026-08/2026-08-02.md`. Next plant window opens 2026-08-05.
 - **The Overcount is at 1/11 (planted 08-02) — ch.2 "A Records Error" is next**: Wren rules out every
   ordinary explanation for the overcount (mis-logged death, double-counted share, sensor drift) one by
   one, procedural and tightening; confirms the gap is **~18 years deep**, not Sabine's; and out of pride
