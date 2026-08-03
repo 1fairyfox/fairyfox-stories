@@ -159,6 +159,48 @@ stall itself, to sell a dying man one last sea-wind.
   - **Timing hook into ch.2:** Naima arrives **three days later** ("she had counted her coins so many
     times across the waste that she knew them by their edges in the dark").
 
+- **Ch.2 — canon set (grown 2026-08-02):**
+  - **The three-day settling made concrete:** Zari has spent three days in the false safety, and the
+    counting-of-bottles has changed meaning — from *fear* (patting for a cut purse) to a *tally against a
+    promise*. She now runs the sum "to comfort herself," and notes that the more often it comes out in her
+    favour the more she needs to run it. **This self-soothing arithmetic is the flaw's tell — echo/pay it in
+    ch.3.**
+  - **The exclusivity's cost seeded (ch.3 can widen it):** she has **turned away three walk-ups** in the
+    three days (a drover with a cracked axle wanting a pushing-wind; a widow after a drying-wind for her one
+    good rug; a boy who just wanted to watch her uncork something), telling each "the bottles are spoken
+    for" — true, and each looked at the full shelves and went on. The walk-up trade is already draining away.
+  - **Rafiq spent (one line, done):** book-one caravan boy passed through westbound on the **fourth
+    morning**, alive with air/bells, "lifted a hand … and did not stop." One fond beat, no scene, no
+    subplot. **Do not bring him back for a scene in ch.3.** ("The living move on down the Road. It is the
+    ones who stop at your counter you have to reckon with.")
+  - **Naima + grandfather on the page now:** grandfather is a **dying coast fisherman**, once strong ("a
+    good boat in a wreck"), salt-grained, horizon-eyed, **spending the last of himself on purpose** and
+    chose *where*. He **asks Zari for nothing** — lets the child carry the errand — and gives her one level
+    **fisherman's look** (takes her measure, asks nothing, turns west). Naima is **eleven**, sunburned/thin
+    from the walk, holds the deliberate calm of a child who won't cry till the errand's done. She **laid the
+    coins out in a kept row** (exact fare, worn smooth-edged, "counted in the dark so I would know them by
+    their edges"). **She does not haggle** (no cleverness in her — "the terrible skill of her"); when
+    refused she does not argue, only re-reckons gravely; and **she thanks Zari for looking** ("a thing I
+    have not managed to put down anywhere it stops weighing").
+  - **The complicity beat, exact shape (guard in ch.3):** Zari has **every fact**; the refusal costs her
+    **nothing** (no trap, no cruelty to perform, no lie to tell — the bottle is genuinely not hers to sell
+    under the fair contract; refusing keeps stall + shelves + good name, "exactly as safe at sundown as at
+    noon"); the sale would cost **the whole stall**. She **runs the sum** ("everything to lose on one side,
+    nothing on the other … the easiest sum there is") and **refuses.** The words she uses are true and
+    hollow: **"That one is promised."** / "The money is right … It isn't the money." **She does not explain
+    the contract to the child.**
+  - **She let them go without calling after** (explicitly in the ledger: "a long moment in which I could
+    have … and I did not"). Watches them walk **west** into the glare, the girl on the **seaward side**,
+    shoulder under his arm.
+  - **The end-state for ch.3 to open from:** back under the cloth, full promised shelves, the held-breath
+    safety now has a **hairline** ("fine as the crack that runs a bottle you can still, for a while, keep
+    pouring from"). Zari **cannot name the wrong** (not guilt — she broke no promise; not money) — she has
+    only learned "the difference between a stall that cannot fail and a stall worth keeping." Closes on the
+    sea-wind on the high shelf: "I could not look at it and I could not stop, which is … the exact condition
+    of a person about to do something expensive." **Direct hand-off to the ch.3 breaking.**
+  - **Sea-wind provenance refined:** "bought off a caravan-master who had died owing the sea to no one but
+    himself"; Zari had "thought of it as furniture." Still the **third bottle on the high shelf.**
+
 ## Pitfalls to avoid (this book specifically)
 
 - Don't let Hadi become a cartoon miser — his mercy must be sincere and his contracts genuinely fair.
