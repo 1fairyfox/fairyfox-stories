@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `1.1.1` (single source of truth: repo-root `VERSION`).
+**Version:** `1.1.2` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 1 book, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -437,7 +437,7 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 | Area | Status |
 |------|--------|
-| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.1.1**; `main` branch-protected (solo config; required checks `test` + `CodeQL`) |
+| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.1.2**; `main` branch-protected (solo config; required checks `test` + `CodeQL`); `dev` deletion/force-push-protected; auto-delete-on-merge on |
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
@@ -445,7 +445,7 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 | Authors / universes / characters | ✅ **8 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** 07-24; **Aster Coyle** added 08-02 for the Long Quiet's second book), 6 universes (**the Salt Road three books**; the Hollow Hours three; **the Long Quiet two** as of 08-02), **28 character pages** (Wren Astel, Ilex, Ondine Verrine, Provost Halden, Doss added 08-02; Sela Renn reused) — meshed + bylined |
 | Cover & chapter art | ✅ **all 11 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Overcount* generated + viewed clean 08-02. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
 | Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (57 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.1.1**, 2026-08-02 |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.1.2**, 2026-08-02 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |

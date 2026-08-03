@@ -2,7 +2,8 @@ name: Deploy to GitHub Pages
 
 # Fairy Fox Stories is a Jekyll site. Build it with `bundle exec jekyll build`
 # and publish the generated `_site` to GitHub Pages on push to `main`.
-# Action refs match the hub's own Pages workflow (version tags).
+# Supply-chain hardening: top-level permissions read-only; every `uses:` SHA-pinned
+# with a version comment (Dependabot github-actions keeps them current).
 
 on:
   push:
@@ -20,20 +21,20 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1   # v7
       - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
+        uses: ruby/setup-ruby@95ef2b042f9d7a56d8268cba8559e2842e2ad01b   # v1
         with:
           ruby-version: "3.3"
           bundler-cache: true
       - name: Configure Pages
         id: pages
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d   # v6
       - name: Build with Jekyll
         run: bundle exec jekyll build --baseurl "${{ steps.pages.outputs.base_path }}"
         env:
           JEKYLL_ENV: production
-      - uses: actions/upload-pages-artifact@v3
+      - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9   # v5
         with:
           path: _site
 
@@ -48,4 +49,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@cd2ce8fcbc39b97be8ca5fce6e763baed58fa128   # v5

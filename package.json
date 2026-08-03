@@ -5,7 +5,7 @@
   "type": "module",
   "description": "Fairy Fox Stories — an AI-managed story farm: short interactive books, planted in living universes and grown a chapter at a time.",
   "scripts": {
-    "test": "node --test \"scripts/**/*.test.mjs\" && node scripts/check-links.mjs",
+    "test": "node --test \"scripts/**/*.test.mjs\" && node scripts/check-links.mjs && node scripts/check-standards.mjs",
     "tidy": "node scripts/check-tidy.mjs"
   },
   "license": "MIT",
