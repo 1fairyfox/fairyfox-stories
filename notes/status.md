@@ -2,7 +2,7 @@
 
 _Current state only._ For history see `sessions/`; for the changelog see `version.md`.
 
-**Version:** `1.0.1` (single source of truth: repo-root `VERSION`).
+**Version:** `1.1.0` (single source of truth: repo-root `VERSION`).
 
 **Automation:** the farm loop now runs unattended via a **daily scheduled job (midnight,
 America/Denver)** — grow 2 books, plant one when 3+ days have passed, **auto-publish to `main`**.
@@ -28,10 +28,11 @@ coin CSS ported into `assets/reader.css`. Local `fairyfox:coins:a` disclosed in 
 clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfox-standards adoption (Phase 1
 = the standards batch in v0.5.6); built + previewed in a connected-Chrome session.
 
-## The shelf (as of v1.0.1)
+## The shelf (as of v1.1.0)
 
 | Book | Form | Progress | Last grown |
 |------|------|----------|-----------|
+| **The Overcount** (SF · **sequel-in-realm to *Cartographer***) | novella | 1 / 11 | 2026-08-02 *(planted)* |
 | ✅ **The Two-O'Clock Launderette** (magical realism · sequel: *The One-O'Clock Bus*) | short story | **3 / 3 — complete** | 2026-07-14 |
 | ✅ **The Girl Who Sold the Wind** (fable · **sequel: *The Wind She Would Not Keep***) | novelette | **5 / 5 — complete** | 2026-07-17 |
 | ✅ **The Cartographer of Decks** (SF) | novelette | **6 / 6 — complete** | 2026-07-17 |
@@ -43,7 +44,25 @@ clause in Terms, hub `/legal/coins/` linked. This was **Phase 2** of the fairyfo
 | **The One-O'Clock Bus** (magical realism · **sequel to *Launderette***) | novella | 3 / 10 | 2026-08-02 |
 | **The Wind She Would Not Keep** (fable · **sequel to *Girl Who Sold the Wind***) | short story | 1 / 3 | 2026-07-24 |
 
-**Ten books — three `complete`, seven `growing`.** Latest run **08-02 (v1.0.1, grow)**: *The
+**Eleven books — three `complete`, eight `growing`.** Latest run **08-02 second (v1.1.0, plant)**:
+**The Overcount** — the farm's **third sequel plant** and the **Long Quiet's first sequel**, taking the
+window the morning grow's sequel roll queued for *The Cartographer of Decks*. A generation-ship SF
+**novella** (form `86`; word-pick `15` → wordCap 21,000; 11 chapters, finale ~1.5×), a new standalone
+tale in the realm (`sequelTo: the-cartographer-of-decks`), by a **new author-persona, Aster Coyle**, and
+the shelf's **first present-tense book** (a deliberate range dial — see `decisions/` 08-02). Universe
+`63` → existing (fixed to the Long Quiet by the queued sequel — a join deepening a one-book realm);
+author `6` → new (skew stepped 55→50 at 7 authors); sequel-lock `18` → not locked. Wren Astel, teller of
+the **Muster** (the office that keeps the sealed *Ark Meridian* balanced to the body, a birth licensed
+against a death), strikes a name and finds the ship breathing for **one body more than any register can
+name** — an overcount that proves to be **twins on one licensed birth**, one child hidden eighteen years
+in the cold decks. The **complicity beat** (she sees him, files it, pays nothing, can't unsee it) and the
+turn (she pays the count's own forfeit openly — licensing the hidden son against his dead mother's
+just-freed share) are mapped; antagonist **Provost Halden** is right about the stakes and wrong about the
+only mercy; **Sela Renn** returns for one sequel-tie scene (no *Cartographer* re-reveal). Blueprint public;
+ch.1 "The Quittance" written to Coyle's taut present-tense voice; cover + ch.1 header (1536×1024)
+generated and viewed clean. `npm test` green (6 + check-links, 56 files); `jekyll build` clean. Chrome not
+connected — rides the eyeball debt. Full audit in `sessions/2026-08/2026-08-02.md`. Before that, **08-02
+(v1.0.1, grow)**: *The
 One-O'Clock Bus* **ch.3 "The Rules of the Hour"** (3/10) — the novella's **first lie to someone he
 respects, and the Corvus escalation**. First run since 07-25 (the scheduled job didn't fire
 07-26→08-01). No override (roll `74` vs ≤18); the blend's clear leader at **0.767** (shelf's highest
@@ -241,19 +260,27 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
   re-verify the domain; the durable structural fix is renaming the user-site repo `junebug12851.github.io` →
   `1fairyfox.github.io`.
 
-- **Sequel queue: ONE PENDING — *The Cartographer of Decks* sequel (rolled 08-02).** The weekly
-  sequel roll came due (last 07-21; overdue after the scheduled job missed 07-26→08-01) and was run
-  this grow. Only one eligible completed series: **Cartographer** (*Launderette* and *Girl* each
-  already have a growing sequel — *One-O'Clock Bus* and *The Wind She Would Not Keep* — so both are
-  out of the roll until those settle). Roll `9` (≤25) → **fires.** So a **Cartographer sequel is now
-  queued as a pending plant** — the Long Quiet's first sequel, a fresh blueprint into the parent's
-  realm (SF, Idris Okonkwo-Vance's realm; the sequel author rolls new-vs-existing at plant time). The
-  **GROW task does not plant**; the sibling **`fairyfox-stories-new`** task takes the window (plant
-  eligible on/after **2026-07-27**, so the window is already open — this pending sequel is first in
-  line ahead of a fresh-universe plant). Weekly sequel-roll eligibility after this: all three
-  completed series now have a growing-or-pending sequel, so **no eligible rollers remain** until one
-  settles. **Next weekly roll due on or after 2026-08-09** (but it will find nothing eligible until a
-  sequel completes).
+- **Sequel queue: DRAINED — planted this run as *The Overcount*.** The 08-02 grow queued the
+  *Cartographer of Decks* sequel (roll `9`); this plant run took that window (drain-the-queue-first,
+  per the *Bus*/*Wind* precedent). It is **The Overcount** (v1.1.0) — a new standalone SF **novella**
+  in the Long Quiet (the realm's second book), by new author **Aster Coyle**, not a plot continuation.
+  Queue now empty. Weekly sequel-roll eligibility: all three completed series (*Launderette*, *Girl*,
+  *Cartographer*) now have a growing sequel, so **no eligible rollers remain** until one settles;
+  **next weekly roll due on/after 2026-08-09** (will find nothing eligible yet). **Next PLANT** eligible
+  on/after **2026-08-05** (last plant *The Overcount* 08-02); with the queue drained it rolls a **fresh
+  universe + form** with no pre-owed window.
+- **The Overcount is at 1/11 (planted 08-02) — ch.2 "A Records Error" is next**: Wren rules out every
+  ordinary explanation for the overcount (mis-logged death, double-counted share, sensor drift) one by
+  one, procedural and tightening; confirms the gap is **~18 years deep**, not Sabine's; and out of pride
+  opens a *quiet* inquiry rather than raise the hall — she will be the one to close the column.
+  Introduce **Provost Halden** (institutional weight) and **Doss** (the airkeeper, uneasy). Ch.1 canon
+  to honour is in the book-notes ledger: the **quittance** mechanic + Sabine's **clean whole adult
+  share, no dependents** (must stay unspent — it's what Ilex is licensed against in ch.10); the
+  **register-vs-model** reconciliation method; Kestrel's "sensor drift / Doss can recalibrate"; the
+  **warm-tomato** Chekhov object; the model running **high by exactly one** as far back as the logs stay
+  fine. Guard: **present tense**, held; Aster Coyle's taut procedural voice; **do not** re-reveal
+  *Cartographer*'s secret (Sela's ch.3 scene may imply merciful fictions, no more). Chapter map + dials
+  + "Ch.1 canon" in `notes/books/the-overcount/book-notes.md`.
 - **The One-O'Clock Bus is at 3/10 (grown 08-02) — ch.4 "The Blue Book" is next**: the canteen at
   3 a.m. Cornered by the find, Abel tells Priya the **truth of the hour** — and the relief of telling
   it is its own information; he shows her how it works (the one gentle impossibility, the honest thing
@@ -379,15 +406,15 @@ on the shelf). Full audit in `sessions/2026-07/2026-07-18.md`.
 
 | Area | Status |
 |------|--------|
-| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.0.0**; `main` branch-protected (solo config; required checks `test` + `CodeQL`) |
+| Repo + branches (dev/main) | ✅ public repo on GitHub; `dev`/`main` in sync, released through **v1.1.0**; `main` branch-protected (solo config; required checks `test` + `CodeQL`) |
 | Notes + craft body of knowledge | ✅ written (`reference/` incl. `craft/`) |
 | Architecture decided | ✅ Jekyll · form-first · collection · comprehensive sub-notes (`decisions/`) |
 | Jekyll scaffold (collections/layouts/reader) | ✅ built + previewed in Chrome |
-| Books on the shelf | ✅ **10 on the shelf — 3 complete, 7 growing** (caper · cosy magical-realism · SF · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story** (the realm now three books) |
-| Authors / universes / characters | ✅ **7 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** added 07-24 as the Salt Road's second fabulist), 6 universes (**the Salt Road three books** as of 07-24; the Hollow Hours three — first three-book realm, 07-21), **23 character pages** (Hadi Sarraf + Naima added 07-24; Zari reused) — meshed + bylined |
-| Cover & chapter art | ✅ **all 10 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Wind She Would Not Keep* generated + viewed clean 07-24. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
-| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (54 files), runs on push/PR |
-| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.0.1**, 2026-08-02 |
+| Books on the shelf | ✅ **11 on the shelf — 3 complete, 8 growing** (caper · cosy magical-realism · SF ×2 · gothic · fable ×3 · night-city magical-realism novella · carnival mystery · night-bus magical-realism novella · generation-ship SF thriller); *The Two-O'Clock Launderette* **finished 07-14**, the farm's first completed book; *The Girl Who Sold the Wind* + *The Cartographer of Decks* **both finished 07-17**; *The Hundredth Wind* **planted 07-18** — first universe-join + first author-reuse; *The One-O'Clock Bus* **planted 07-21** — the farm's **first sequel** (Hollow Hours = first three-book realm); *The Wind She Would Not Keep* **planted 07-24** — the **second sequel** and the **Salt Road's first short story**; *The Overcount* **planted 08-02** — the **third sequel** (the Long Quiet's first, now two books) and the shelf's **first present-tense book** |
+| Authors / universes / characters | ✅ **8 author-personas** (Amara Okri and **Idris Okonkwo-Vance** each have two books; **Yusra Adem** 07-24; **Aster Coyle** added 08-02 for the Long Quiet's second book), 6 universes (**the Salt Road three books**; the Hollow Hours three; **the Long Quiet two** as of 08-02), **28 character pages** (Wren Astel, Ilex, Ondine Verrine, Provost Halden, Doss added 08-02; Sela Renn reused) — meshed + bylined |
+| Cover & chapter art | ✅ **all 11 books have a cover + ch.1 header** (gpt-image-1 via `scripts/generate-art.mjs`) — *The Overcount* generated + viewed clean 08-02. The **PLANT task auto-generates** cover+header for every new book (headers at 1536×1024, not dall-e-3's 1792×1024), so no text-only fallbacks |
+| Integrity check + CI | ✅ `scripts/check-stories.test.mjs` green (**6 checks** — state/sequel-lock consistency added 07-17) + `check-links` (56 files), runs on push/PR |
+| GitHub Pages (`fairyfox.io/fairyfox-stories/`) | ✅ live (deploys on tagged release to `main`); last release **v1.1.0**, 2026-08-02 |
 | Hub registration | ⛔ pending (hub-side edit) |
 | Writing/art tooling (`.env` OpenAI key) | ✅ `.env` key present; art via `generate-art.mjs` (prose hand-drafted for now) |
 | Self-hosted fonts / no third-party | ✅ vendored from the mesh |

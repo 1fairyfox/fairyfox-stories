@@ -2,6 +2,35 @@
 
 Newest first. Each: the decision, why, and what it rules in/out.
 
+## 2026-08-02 — Third sequel plant: present tense as a distinctness lever; author skew steps 55→50
+
+Planting *The Overcount* (the *Cartographer of Decks* sequel-in-realm, taking the window the morning
+grow's sequel roll queued) settled two things worth recording.
+
+**(1) Present tense is now on the shelf, on purpose.** Every book to date narrates in past. *The
+Overcount* is first person **present** and holds it for the whole book. The decision: tense is a
+first-class **range dial** (`craft/voice-and-pov.md` already licenses "choose a tense on purpose;
+present heightens immediacy for tense, close-focus books"), and a generation-ship *hunt* with a ticking
+reconciliation and no *later* to look back from is exactly the book that earns it. **Why it's the right
+call, not a gimmick:** it makes the book unmistakably distinct from its own realm-mate (*Cartographer*,
+Idris, past-tense cool survey) and from the whole past-tense shelf, carried by a new author-voice (Aster
+Coyle) that is built around the choice. **Rules in:** tense joins genre/form/style/author as a thing we
+vary deliberately book to book. **Rules out:** defaulting every book to past; present-tense-by-reflex
+(it's relentless — spend it only where immediacy is the point, and pay the quiet-beat tax).
+
+**(2) Author new-vs-existing skew steps 55 → 50** now the roster sits at **7** author-personas (Yusra
+Adem added 07-24). This continues the 07-18 "-5 per count" stepping (5 authors → 60, 6 → 55, 7 → 50),
+the same gradual, auditable move as the universe skew. **Why:** the roster is deep enough that reuse
+should keep gaining ground so realms accrue bodies of work, while a fresh author stays common. The roll
+this plant (`6`) landed new regardless; the threshold change is recorded for the next one. Constants'
+home stays `operating-model.md`. (Universe skew unchanged at ≤50 — realm count held at 6; this was a
+join, not a new realm.)
+
+**Also affirmed:** the drain-the-queue-first protocol — a queued sequel plant is taken by the next plant
+run before any fresh-universe roll (precedent: *One-O'Clock Bus*, *Wind She Would Not Keep*), and a
+sequel remains a **new standalone tale in the realm** (`sequelTo` + an optional nod-sized crossing — here
+Sela Renn's one scene), never a plot continuation.
+
 ## 2026-07-24 — Second sequel plant: a sequel can be told by a NEW author (roll-driven)
 
 Planting *The Wind She Would Not Keep* (the *Girl Who Sold the Wind* sequel) put the 07-21 semantics to

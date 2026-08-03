@@ -39,9 +39,24 @@ the smell of the farm-decks and the cold of the dark ones. Ritual, rationing, an
 - **The Purpose** — the ship's founding mission, taught as gospel; the thing a curious mind starts
   to doubt.
 - **The Cartographers' Office** — keepers of the ship's maps, and therefore of what's official.
+- **The Muster** — keepers of the ship's living count: the office that holds the *Meridian* balanced
+  to the body, *one aboard for every one the ship can bear.* A birth is licensed only against a death —
+  a freed **quittance** — and the tellers' creed is *the count is the mercy.* The register of who is
+  *named*, set forever against the airkeepers' model of what the ship actually breathes.
+
+## Books here
+
+- ***The Cartographer of Decks*** (novelette) — Sela Renn and the deck that's on no chart; where the
+  ship is really going.
+- ***The Overcount*** (novella) — a teller of the Muster strikes a death and finds the ship breathing
+  for one body more than any book can name. A new tale in the realm; reads standalone.
 
 ## Seeds
 
-- A cartographer who finds a deck that isn't on any chart.
-- The generation that discovers the ship slowed down a century ago and no one was told.
+- A cartographer who finds a deck that isn't on any chart. *(grew into* The Cartographer of Decks*)*
+- ~~The generation that discovers the ship slowed down a century ago and no one was told.~~ *(the
+  ship's true speed + the Purpose as a kind lie — told in* The Cartographer of Decks*)*
 - A recording of the founders, meant never to be played.
+- A teller of the Muster who finds a body the count can't name, and must decide what a count is for.
+  *(grew into* The Overcount*)*
+- The one quittance no one will claim, and the birth-list that has waited a generation for it.
